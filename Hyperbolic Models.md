@@ -43,6 +43,9 @@ Recently, hyperbolic spaces have emerged as a promising alternative for processi
     <td>&ensp;<a href="#213-hyperbolic-operations">2.13 Hyperbolic Operations</a></td>
     <td>&ensp;<a href="#214-llm-and-hyperbolic-space">2.14 LLM && Hyperbolic Space</a></td>
 </tr>
+<tr>
+    <td>&ensp;<a href="#215-hyperbolic-representation-learning">2.15 Hyperbolic Representation Learning</a></td>
+</tr>
 
 <tr><td colspan="2"><a href="#3-applications" style="color:#B22222">3. Applications</a></td></tr>
 <tr>
@@ -79,14 +82,14 @@ Recently, hyperbolic spaces have emerged as a promising alternative for processi
 </tr>
 <tr>
     <td>&ensp;<a href="#317-biology">3.17 Biology</a></td>
-    <td></td>
+    <td>&ensp;<a href="#318-training-and-inference">3.18 Training and Inference</a></td>
 </tr>
 </table>
 
 ## [1. Surveys, Books, Tools, Tutorials](#content)
 ### [1.1 Surveys](#content)
 1. [Hyperbolic Deep Learning for Foundation Models: A Survey](https://arxiv.org/abs/2507.17787), KDD 2025 \
-  *Neil He, Hiren Madhu, Ngoc Bui, Menglin Yang, Rex Ying*
+Neil He, Hiren Madhu, Ngoc Bui, Menglin Yang, Rex Ying
 
 
 ### [1.4 Tutorials](#content)
@@ -96,12 +99,12 @@ Recently, hyperbolic spaces have emerged as a promising alternative for processi
 
 ## [2. Methods and Models](#content)
 ### [2.1 Hyperbolic Shallow Model](#content)
+1. [Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry](https://arxiv.org/abs/1806.03417), ICML 2018 \
+Maximilian Nickel, Douwe Kiela
 
 1. [Poincaré Embeddings for Learning Hierarchical Representations](https://arxiv.org/abs/1705.08039), NeurIPS 2017 \
 Maximilian Nickel, Douwe Kiela
 
-1. [Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry](https://arxiv.org/abs/1806.03417), ICML 2018 \
-Maximilian Nickel, Douwe Kiela
 
 ### [2.2 Hyperbolic Neural Network](#content)
 1. [Hyperbolic Neural Networks](https://arxiv.org/abs/1805.09112), NeurIPS 2018 \
@@ -109,8 +112,10 @@ Octavian-Eugen Ganea, Gary Bécigneul, Thomas Hofmann
 
 
 ### [2.3 Hyperbolic Graph Neural Network](#content)
+1. [Hyperbolic-PDE GNN: Spectral Graph Neural Networks in the Perspective of A System of Hyperbolic Partial Differential Equations](https://arxiv.org/abs/2505.23014), ICML 2025, \
+   Juwei Yue, Haikuo Li, Jiawei Sheng, Xiaodong Li, Taoyu Su, Tingwen Liu, Li Guo
 1. [Hyperbolic Graph Convolutional Neural Networks](https://arxiv.org/abs/1910.12933), NeurIPS 2019 \
-Ines Chami\*, Rex Ying\*, Christopher Ré, Jure Leskovec
+Ines Chami, Rex Ying, Christopher Ré, Jure Leskovec
 
 
 
@@ -124,6 +129,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 
 ### [2.5 Theoretical Foundations](#content)
 ### [2.6 Analysis](#content)
+1. [Hyperbolic Representation Learning: Revisiting and Advancing](https://arxiv.org/abs/2306.09118), ICML 2023, \
+   Menglin Yang, Min Zhou, Rex Ying, Yankai Chen, Irwin King
 ### [2.7 Numerical Problems](#content)
 ### [2.8 Explicitly Tree Embedding](#content)
 ### [2.9 Mixed Curvature Learning](#content)
@@ -137,15 +144,27 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [2.14 LLM and Hyperbolic Space](#content)
 1. [HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts](https://arxiv.org/abs/2505.24722), 2025 \
    Neil He, Rishabh Anand, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying
-
+### [2.15 Hyperbolic Representation Learning](#content)
+1. [Low-distortion and GPU-compatible Tree Embeddings in Hyperbolic Space](https://arxiv.org/abs/2502.17130), ICML 2025, \
+   Max van Spengler, Pascal Mettes
+1. [Learning Along the Arrow of Time: Hyperbolic Geometry for Backward-Compatible Representation Learning](https://arxiv.org/abs/2506.05826), ICML 2025, \
+   Ngoc Bui, Menglin Yang, Runjin Chen, Leonardo Neves, Mingxuan Ju, Rex Ying, Neil Shah, Tong Zhao
 
    
 
 ## [3. Applications](#content)
 ### [3.1 Natural Language Processing](#content)
 ### [3.2 Computer Vision](#content)
+1. [Compositional Entailment Learning for Hyperbolic Vision-Language Models](https://arxiv.org/abs/2410.06912), ICLR Oral 2025, \
+   Avik Pal, Max van Spengler, Guido Maria D'Amely di Melendugno, Alessandro Flaborea, Fabio Galasso, Pascal Mettes
+1. [Hyperbolic Learning with Multimodal Large Language Models](https://link.springer.com/chapter/10.1007/978-3-031-91585-7_23), ECCV Workshops 2024, \
+   Paolo Mandica, Luca Franco, Konstantinos Kallidromitis, Suzanne Petryk, Fabio Galasso
+1. [Hyperbolic Image-Text Representations](https://arxiv.org/abs/2304.09172), ICML 2023, \
+   Karan Desai, Maximilian Nickel, Tanmay Rajpurohit, Justin Johnson, Ramakrishna Vedantam
 ### [3.3 Graph Embeddings](#content)
 ### [3.4 Recommender Systems](#content)
+1. [Hgformer: Hyperbolic Graph Transformer for Collaborative Filtering](https://arxiv.org/abs/2502.15693), ICML 2025, \
+   Xin Yang, Xingrun Li, Heng Chang, Jinze Yang, Xihong Yang, Shengyu Tao, Ningkang Chang, Maiko Shigeno, Junfeng Wang, Dawei Yin, Erxue Min
 ### [3.5 Knowledge Graphs](#content)
 ### [3.6 Molecular Learning](#content)
 ### [3.7 Code Representation](#content)
@@ -166,6 +185,9 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 1. [Learning Electronic Health Records through Hyperbolic Embedding of Medical Ontologies](https://dl.acm.org/doi/10.1145/3307339.3342148), ACM BCB 2019, \
    Lu, Qiuhao and de Silva, Nisansa and Kafle, Sabin and Cao, Jiazhen and Dou, Dejing and Nguyen, Thien Huu and Sen, Prithviraj and Hailpern, Brent and Reinwald, Berthold and Li, Yunyao
 
+### [3.18 Training and Inference](#content)
+1. [Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks](https://arxiv.org/abs/2405.15481), ICML 2025, \
+   Jialin Zhao, Yingtao Zhang, Xinghang Li, Huaping Liu, Carlo Vittorio Cannistraci
 
 
 
