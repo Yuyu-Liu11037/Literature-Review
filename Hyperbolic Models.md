@@ -149,7 +149,10 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Max van Spengler, Pascal Mettes
 1. [Learning Along the Arrow of Time: Hyperbolic Geometry for Backward-Compatible Representation Learning](https://arxiv.org/abs/2506.05826), ICML 2025, \
    Ngoc Bui, Menglin Yang, Runjin Chen, Leonardo Neves, Mingxuan Ju, Rex Ying, Neil Shah, Tong Zhao
-
+1. [Learning Structured Representations with Hyperbolic Embeddings](https://arxiv.org/abs/2412.01023), NeurIPS 2024, \
+   Aditya Sinha, Siqi Zeng, Makoto Yamada, Han Zhao
+1. [Hyperbolic Embeddings of Supervised Models](https://proceedings.neurips.cc/paper_files/paper/2024/file/fe99ca7c293fe083c8fe7e85dce2f814-Paper-Conference.pdf), NeurIPS 2024, \
+   Richard Nock, Ehsan Amid, Frank Nielsen, Alexander Soen, Manfred Warmuth
    
 
 ## [3. Applications](#content)
@@ -157,10 +160,13 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.2 Computer Vision](#content)
 1. [Compositional Entailment Learning for Hyperbolic Vision-Language Models](https://arxiv.org/abs/2410.06912), ICLR Oral 2025, \
    Avik Pal, Max van Spengler, Guido Maria D'Amely di Melendugno, Alessandro Flaborea, Fabio Galasso, Pascal Mettes
+1. [Compositional Entailment Learning for Hyperbolic Vision-Language Models](https://arxiv.org/abs/2410.06912), ICLR 2025, \
+   Avik Pal, Max van Spengler, Guido Maria D'Amely di Melendugno, Alessandro Flaborea, Fabio Galasso, Pascal Mettes
 1. [Hyperbolic Learning with Multimodal Large Language Models](https://link.springer.com/chapter/10.1007/978-3-031-91585-7_23), ECCV Workshops 2024, \
    Paolo Mandica, Luca Franco, Konstantinos Kallidromitis, Suzanne Petryk, Fabio Galasso
 1. [Hyperbolic Image-Text Representations](https://arxiv.org/abs/2304.09172), ICML 2023, \
    Karan Desai, Maximilian Nickel, Tanmay Rajpurohit, Justin Johnson, Ramakrishna Vedantam
+
 ### [3.3 Graph Embeddings](#content)
 ### [3.4 Recommender Systems](#content)
 1. [Hgformer: Hyperbolic Graph Transformer for Collaborative Filtering](https://arxiv.org/abs/2502.15693), ICML 2025, \
@@ -179,7 +185,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.16 Multi-Criteria Learning](#content)
 ### [3.17 Biology](#content)
 **Genomics**
-
+1. [Hyperbolic Genome Embeddings](https://arxiv.org/abs/2507.21648), ICLR 2025, \
+   Raiyan R. Khan, Philippe Chlenski, Itsik Pe'er
 
 **EHR**
 1. [Learning Electronic Health Records through Hyperbolic Embedding of Medical Ontologies](https://dl.acm.org/doi/10.1145/3307339.3342148), ACM BCB 2019, \
@@ -188,6 +195,7 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.18 Training and Inference](#content)
 1. [Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks](https://arxiv.org/abs/2405.15481), ICML 2025, \
    Jialin Zhao, Yingtao Zhang, Xinghang Li, Huaping Liu, Carlo Vittorio Cannistraci
+
 
 
 
