@@ -84,6 +84,9 @@ Recently, hyperbolic spaces have emerged as a promising alternative for processi
     <td>&ensp;<a href="#317-biology">3.17 Biology</a></td>
     <td>&ensp;<a href="#318-training-and-inference">3.18 Training and Inference</a></td>
 </tr>
+<tr>
+    <td>&ensp;<a href="#319-robotics">3.19 Robotics</td>
+</tr>
 </table>
 
 ## [1. Surveys, Books, Tools, Tutorials](#content)
@@ -183,6 +186,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Luca Franco, Paolo Mandica, Konstantinos Kallidromitis, Devin Guillory, Yu-Teng Li, Trevor Darrell, Fabio Galasso
 1. [Hyperbolic Geometric Latent Diffusion Model for Graph Generation](https://arxiv.org/abs/2405.03188), ICML 2024, \
    Xingcheng Fu, Yisen Gao, Yuecen Wei, Qingyun Sun, Hao Peng, Jianxin Li, Xianxian Li
+1. [Fully Hyperbolic Convolutional Neural Networks for Computer Vision](https://arxiv.org/abs/2303.15919), ICLR 2024, \
+   Ahmad Bdeir, Kristian Schwethelm, Niels Landwehr
 1. [Hyperbolic Image-Text Representations](https://arxiv.org/abs/2304.09172), ICML 2023, \
    Karan Desai, Maximilian Nickel, Tanmay Rajpurohit, Justin Johnson, Ramakrishna Vedantam
 1. [Hyperbolic VAE via Latent Gaussian Distributions](https://arxiv.org/abs/2209.15217), NeurIPS 2023, \
@@ -217,6 +222,9 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 1. [Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks](https://arxiv.org/abs/2405.15481), ICML 2025, \
    Jialin Zhao, Yingtao Zhang, Xinghang Li, Huaping Liu, Carlo Vittorio Cannistraci
 
+### [3.19 Robotics](#content)
+1. [Leveraging Hyperbolic Embeddings for Coarse-to-Fine Robot Design](https://arxiv.org/abs/2311.00462), ICLR 2024, \
+   Heng Dong, Junyu Zhang, Chongjie Zhang
 
 
 
