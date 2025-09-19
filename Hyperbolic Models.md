@@ -114,6 +114,8 @@ Octavian-Eugen Ganea, Gary Bécigneul, Thomas Hofmann
 ### [2.3 Hyperbolic Graph Neural Network](#content)
 1. [Hyperbolic-PDE GNN: Spectral Graph Neural Networks in the Perspective of A System of Hyperbolic Partial Differential Equations](https://arxiv.org/abs/2505.23014), ICML 2025, \
    Juwei Yue, Haikuo Li, Jiawei Sheng, Xiaodong Li, Taoyu Su, Tingwen Liu, Li Guo
+1. [Hyperbolic Graph Neural Networks at Scale: A Meta Learning Approach](https://arxiv.org/abs/2310.18918), NeurIPS 2023, \
+   Nurendra Choudhary, Nikhil Rao, Chandan K. Reddy
 1. [Hyperbolic Graph Convolutional Neural Networks](https://arxiv.org/abs/1910.12933), NeurIPS 2019 \
 Ines Chami, Rex Ying, Christopher Ré, Jure Leskovec
 
@@ -128,6 +130,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 
 
 ### [2.5 Theoretical Foundations](#content)
+1. [Functional Equivalence and Path Connectivity of Reducible Hyperbolic Tangent Networks](https://arxiv.org/abs/2305.05089), NeurIPS 2023, \
+   Matthew Farrugia-Roberts
 ### [2.6 Analysis](#content)
 1. [Hyperbolic Representation Learning: Revisiting and Advancing](https://arxiv.org/abs/2306.09118), ICML 2023, \
    Menglin Yang, Min Zhou, Rex Ying, Yankai Chen, Irwin King
@@ -135,6 +139,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [2.8 Explicitly Tree Embedding](#content)
 1. [Low-distortion and GPU-compatible Tree Embeddings in Hyperbolic Space](https://arxiv.org/abs/2502.17130), ICML 2025, \
    Max van Spengler, Pascal Mettes
+2. [Fitting trees to $l_1$-hyperbolic distances](https://arxiv.org/abs/2409.01010), NeurIPS 2023, \
+   Joon-Hyeok Yim, Anna C. Gilbert
    
 ### [2.9 Mixed Curvature Learning](#content)
 1. [HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts](https://arxiv.org/abs/2505.24722), 2025 \
@@ -143,6 +149,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [2.10 Semi-Riemannian Learning](#content)
 ### [2.11 Hyperbolic Generative Models](#content)
 ### [2.12 Hyperbolic Classifiers](#content)
+1. [Horospherical Decision Boundaries for Large Margin Classification in Hyperbolic Space](https://arxiv.org/abs/2302.06807), NeurIPS 2023, \
+   Xiran Fan, Chun-Hao Yang, Baba Vemuri
 ### [2.13 Hyperbolic Operations](#content)
 1. [Hyperbolic Optimizer as a Dynamical System](https://proceedings.mlr.press/v235/alvarado24a.html), ICML 2024, \
    Nico Alvarado, Hans Lobel 
@@ -160,14 +168,14 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Richard Nock, Ehsan Amid, Frank Nielsen, Alexander Soen, Manfred Warmuth
 1. [Bringing Motion Taxonomies to Continuous Domains via GPLVM on Hyperbolic manifolds](https://arxiv.org/abs/2210.01672), ICML 2024, \
    Noémie Jaquier, Leonel Rozo, Miguel González-Duque, Viacheslav Borovitskiy, Tamim Asfour
+1. [Hyperbolic Space with Hierarchical Margin Boosts Fine-Grained Learning from Coarse Labels](https://arxiv.org/abs/2311.11019), NeurIPS 2023, \
+   Shu-Lin Xu, Yifan Sun, Faen Zhang, Anqi Xu, Xiu-Shen Wei, Yi Yang
    
 
 ## [3. Applications](#content)
 ### [3.1 Natural Language Processing](#content)
 ### [3.2 Computer Vision](#content)
 1. [Compositional Entailment Learning for Hyperbolic Vision-Language Models](https://arxiv.org/abs/2410.06912), ICLR Oral 2025, \
-   Avik Pal, Max van Spengler, Guido Maria D'Amely di Melendugno, Alessandro Flaborea, Fabio Galasso, Pascal Mettes
-1. [Compositional Entailment Learning for Hyperbolic Vision-Language Models](https://arxiv.org/abs/2410.06912), ICLR 2025, \
    Avik Pal, Max van Spengler, Guido Maria D'Amely di Melendugno, Alessandro Flaborea, Fabio Galasso, Pascal Mettes
 1. [Hyperbolic Learning with Multimodal Large Language Models](https://link.springer.com/chapter/10.1007/978-3-031-91585-7_23), ECCV Workshops 2024, \
    Paolo Mandica, Luca Franco, Konstantinos Kallidromitis, Suzanne Petryk, Fabio Galasso
@@ -177,6 +185,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Xingcheng Fu, Yisen Gao, Yuecen Wei, Qingyun Sun, Hao Peng, Jianxin Li, Xianxian Li
 1. [Hyperbolic Image-Text Representations](https://arxiv.org/abs/2304.09172), ICML 2023, \
    Karan Desai, Maximilian Nickel, Tanmay Rajpurohit, Justin Johnson, Ramakrishna Vedantam
+1. [Hyperbolic VAE via Latent Gaussian Distributions](https://arxiv.org/abs/2209.15217), NeurIPS 2023, \
+   Seunghyuk Cho, Juyong Lee, Dongwoo Kim
 
 ### [3.3 Graph Embeddings](#content)
 ### [3.4 Recommender Systems](#content)
@@ -206,6 +216,7 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.18 Training and Inference](#content)
 1. [Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks](https://arxiv.org/abs/2405.15481), ICML 2025, \
    Jialin Zhao, Yingtao Zhang, Xinghang Li, Huaping Liu, Carlo Vittorio Cannistraci
+
 
 
 
