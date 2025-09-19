@@ -133,6 +133,9 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Menglin Yang, Min Zhou, Rex Ying, Yankai Chen, Irwin King
 ### [2.7 Numerical Problems](#content)
 ### [2.8 Explicitly Tree Embedding](#content)
+1. [Low-distortion and GPU-compatible Tree Embeddings in Hyperbolic Space](https://arxiv.org/abs/2502.17130), ICML 2025, \
+   Max van Spengler, Pascal Mettes
+   
 ### [2.9 Mixed Curvature Learning](#content)
 1. [HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts](https://arxiv.org/abs/2505.24722), 2025 \
    Neil He, Rishabh Anand, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying
@@ -141,6 +144,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [2.11 Hyperbolic Generative Models](#content)
 ### [2.12 Hyperbolic Classifiers](#content)
 ### [2.13 Hyperbolic Operations](#content)
+1. [Hyperbolic Optimizer as a Dynamical System](https://proceedings.mlr.press/v235/alvarado24a.html), ICML 2024, \
+   Nico Alvarado, Hans Lobel 
 ### [2.14 LLM and Hyperbolic Space](#content)
 1. [HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts](https://arxiv.org/abs/2505.24722), 2025 \
    Neil He, Rishabh Anand, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying
@@ -153,6 +158,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Aditya Sinha, Siqi Zeng, Makoto Yamada, Han Zhao
 1. [Hyperbolic Embeddings of Supervised Models](https://proceedings.neurips.cc/paper_files/paper/2024/file/fe99ca7c293fe083c8fe7e85dce2f814-Paper-Conference.pdf), NeurIPS 2024, \
    Richard Nock, Ehsan Amid, Frank Nielsen, Alexander Soen, Manfred Warmuth
+1. [Bringing Motion Taxonomies to Continuous Domains via GPLVM on Hyperbolic manifolds](https://arxiv.org/abs/2210.01672), ICML 2024, \
+   Noémie Jaquier, Leonel Rozo, Miguel González-Duque, Viacheslav Borovitskiy, Tamim Asfour
    
 
 ## [3. Applications](#content)
@@ -164,6 +171,10 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Avik Pal, Max van Spengler, Guido Maria D'Amely di Melendugno, Alessandro Flaborea, Fabio Galasso, Pascal Mettes
 1. [Hyperbolic Learning with Multimodal Large Language Models](https://link.springer.com/chapter/10.1007/978-3-031-91585-7_23), ECCV Workshops 2024, \
    Paolo Mandica, Luca Franco, Konstantinos Kallidromitis, Suzanne Petryk, Fabio Galasso
+1. [Hyperbolic Active Learning for Semantic Segmentation under Domain Shift](https://arxiv.org/abs/2306.11180), ICML 2024, \
+   Luca Franco, Paolo Mandica, Konstantinos Kallidromitis, Devin Guillory, Yu-Teng Li, Trevor Darrell, Fabio Galasso
+1. [Hyperbolic Geometric Latent Diffusion Model for Graph Generation](https://arxiv.org/abs/2405.03188), ICML 2024, \
+   Xingcheng Fu, Yisen Gao, Yuecen Wei, Qingyun Sun, Hao Peng, Jianxin Li, Xianxian Li
 1. [Hyperbolic Image-Text Representations](https://arxiv.org/abs/2304.09172), ICML 2023, \
    Karan Desai, Maximilian Nickel, Tanmay Rajpurohit, Justin Johnson, Ramakrishna Vedantam
 
@@ -195,6 +206,7 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.18 Training and Inference](#content)
 1. [Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks](https://arxiv.org/abs/2405.15481), ICML 2025, \
    Jialin Zhao, Yingtao Zhang, Xinghang Li, Huaping Liu, Carlo Vittorio Cannistraci
+
 
 
 
