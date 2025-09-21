@@ -146,8 +146,6 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Joon-Hyeok Yim, Anna C. Gilbert
    
 ### [2.9 Mixed Curvature Learning](#content)
-1. [HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts](https://arxiv.org/abs/2505.24722), 2025 \
-   Neil He, Rishabh Anand, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying
 
 ### [2.10 Semi-Riemannian Learning](#content)
 ### [2.11 Hyperbolic Generative Models](#content)
@@ -158,8 +156,6 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 1. [Hyperbolic Optimizer as a Dynamical System](https://proceedings.mlr.press/v235/alvarado24a.html), ICML 2024, \
    Nico Alvarado, Hans Lobel 
 ### [2.14 LLM and Hyperbolic Space](#content)
-1. [HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts](https://arxiv.org/abs/2505.24722), 2025 \
-   Neil He, Rishabh Anand, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying
 ### [2.15 Hyperbolic Representation Learning](#content)
 1. [Low-distortion and GPU-compatible Tree Embeddings in Hyperbolic Space](https://arxiv.org/abs/2502.17130), ICML 2025, \
    Max van Spengler, Pascal Mettes
@@ -225,6 +221,7 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.19 Robotics](#content)
 1. [Leveraging Hyperbolic Embeddings for Coarse-to-Fine Robot Design](https://arxiv.org/abs/2311.00462), ICLR 2024, \
    Heng Dong, Junyu Zhang, Chongjie Zhang
+
 
 
 
