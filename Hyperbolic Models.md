@@ -190,6 +190,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Seunghyuk Cho, Juyong Lee, Dongwoo Kim
 
 ### [3.3 Graph Embeddings](#content)
+1. [DHGAT: Hyperbolic representation learning on dynamic graphs via attention networks](https://dl.acm.org/doi/10.1016/j.neucom.2023.127038), Neurocomputing 2024, \
+   Hao Li, Hao Jiang, Dongsheng Ye, Qiang Wang, Liang Du, Yuanyuan Zeng, Liu yuan, Yingxue Wang, and Cheng Chen
 ### [3.4 Recommender Systems](#content)
 1. [Hgformer: Hyperbolic Graph Transformer for Collaborative Filtering](https://arxiv.org/abs/2502.15693), ICML 2025, \
    Xin Yang, Xingrun Li, Heng Chang, Jinze Yang, Xihong Yang, Shengyu Tao, Ningkang Chang, Maiko Shigeno, Junfeng Wang, Dawei Yin, Erxue Min
@@ -221,6 +223,7 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.19 Robotics](#content)
 1. [Leveraging Hyperbolic Embeddings for Coarse-to-Fine Robot Design](https://arxiv.org/abs/2311.00462), ICLR 2024, \
    Heng Dong, Junyu Zhang, Chongjie Zhang
+
 
 
 
