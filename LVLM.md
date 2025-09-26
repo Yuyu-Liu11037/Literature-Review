@@ -1,2 +1,3 @@
-## Large Vision Language Models
+## Introduction
+
 Hallucination mitigation in Large Vision-Language Models (LVLMs) focuses on reducing instances where the model generates outputs that are factually incorrect, logically inconsistent, or not grounded in the given input. These hallucinations often arise from overgeneralization, spurious correlations, or limitations in aligning visual and textual representations. Effective mitigation strategies combine improved model architectures, training with high-quality multimodal datasets, alignment techniques such as reinforcement learning with human feedback, and post-hoc methods like retrieval augmentation or uncertainty estimation. Together, these approaches aim to enhance the reliability, trustworthiness, and safety of LVLMs in real-world applications.
