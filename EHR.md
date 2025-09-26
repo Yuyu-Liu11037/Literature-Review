@@ -14,10 +14,7 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
   </tr>
   <tr>
     <td>&ensp;<a href="#15-sequential-modeling">1.5 Sequential Modeling</a></td>
-    <td>&ensp;<a href="#16-hybrid-models">1.6 Hybrid Models</a></td>
-  </tr>
-  <tr>
-    <td>&ensp;<a href="#17-graph-based-models">1.7 Graph Based Models</a></td>
+    <td>&ensp;<a href="#16-graph-based-models">1.6 Graph Based Models</a></td>
   </tr>
 </table>
 
@@ -46,15 +43,17 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
    Yeonsu Kwon, Jiho Kim, Gyubok Lee, Seongsu Bae, Daeun Kyung, Wonchul Cha, Tom Pollard, Alistair Johnson, Edward Choi
 
 ### [1.4 Structure-aware Models](#content)
+1. [BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare](https://www.cs.emory.edu/~jyang71/files/boxlm.pdf), ICML 2025, \
+   Yanchao Tan, Hang Lv, Yunfei Zhan, Guofang Ma, Bo Xiong, Carl Yang
+1. [BoxCare: A Box Embedding Model for Disease Representation and Diagnosis Prediction in Healthcare Data](https://dl.acm.org/doi/10.1145/3589335.3651448), WWW 2024, \
+   Hang Lv, Zehai Chen, Yacong Yang, Guofang Ma, Tan Yanchao, Carl Yang
+1. [Hi-BEHRT: Hierarchical Transformer-based model for accurate prediction of clinical events using multimodal longitudinal electronic health records](https://arxiv.org/abs/2106.11360), IEEE J Biomed Health Inform 2023, \
+   Yikuan Li, Mohammad Mamouei, Gholamreza Salimi-Khorshidi, Shishir Rao, Abdelaali Hassaine, Dexter Canoy, Thomas Lukasiewicz, Kazem Rahimi
 1. [HiTANet: Hierarchical Time-Aware Attention Networks for Risk Prediction on Electronic Health Records](https://dl.acm.org/doi/10.1145/3394486.3403107), KDD 2020, \
    Junyu Luo, Muchao Ye, Cao Xiao, Fenglong Ma
 1. [Learning Electronic Health Records through Hyperbolic Embedding of Medical Ontologies](https://dl.acm.org/doi/10.1145/3307339.3342148), ACM BNB 2019, \
    Qiuhao Lu, Nisansa de Silva, Sabin Kafle, Jiazhen Cao, Dejing Dou, Thien Huu Nguyen, Prithviraj Sen, Brent Hailpern, Berthold Reinwald, and Yunyao Li
 ### [1.5 Sequential Modeling](#content)
-### [1.6 Hybrid Models](#content)
-Structure + Semantic Fusion Models
-1. [BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare](https://www.cs.emory.edu/~jyang71/files/boxlm.pdf), ICML 2025, \
-   Yanchao Tan, Hang Lv, Yunfei Zhan, Guofang Ma, Bo Xiong, Carl Yang
-### [1.7 Graph Based Models](#content)
+### [1.6 Graph Based Models](#content)
 1. [Graph Transformers on EHRs: Better Representation Improves Downstream Performance](https://openreview.net/pdf?id=pe0Vdv7rsL), ICLR 2024, \
    Raphael Poulain, Rahmatollah Beheshti
