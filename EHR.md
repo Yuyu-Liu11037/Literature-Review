@@ -2,6 +2,8 @@
 
 Electronic Health Records (EHR) data have become a critical resource for advancing machine learning in healthcare. EHRs contain rich, longitudinal information about patients, including demographics, diagnoses, medications, lab results, imaging reports, and clinical notes. This wealth of structured and unstructured data enables the development of predictive models for disease risk, treatment outcomes, and personalized care. However, EHR data also present challenges such as high dimensionality, missing values, coding variability, and privacy concerns, requiring specialized methods for preprocessing, modeling, and interpretation.
 
+## Table of Contents
+
 <table>
   <tr><td colspan="2"><a href="#1-methods-and-models" style="color:#B22222">1. Methods and Models</a></td></tr>
   <tr>
