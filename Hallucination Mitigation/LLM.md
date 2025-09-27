@@ -8,9 +8,14 @@ Hallucination mitigation in Large Language Models (LLMs) addresses the challenge
 <tr><td colspan="2"><a href="#1-surveys-books-tools-tutorials" style="color:#B22222">1. Surveys, Books, Tools, Tutorials</a></td></tr>
 <tr><td colspan="2"><a href="#2-methods-and-models" style="color:#B22222">2. Methods and Models</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#21-inference-approaches">2.1 Inference Approaches</a></td>
+    <td>&ensp;<a href="#21-llm-inference">2.1 LLM Inference</a></td>
     <td>&ensp;<a href="#22-datasets-and-benchmarks">2.2 Datasets and Benchmarks</a></td>
-  </tr>
+</tr>
+<tr>
+    <td>&ensp;<a href="#23-diffusion-models">2.3 Diffusion Models</a></td>
+    <td>&ensp;<a href="#24-hallucination-detection">2.4 Hallucination Detection</a></td>
+</tr>
+
 <tr><td colspan="2"><a href="#3-applications" style="color:#B22222">3. Applications</a></td></tr>
 <tr>
     <td>&ensp;<a href="#31-agent">3.1 Agent</a></td>
@@ -21,7 +26,7 @@ Hallucination mitigation in Large Language Models (LLMs) addresses the challenge
 ## [1. Surveys, Books, Tools, Tutorials](#content)
 
 ## [2. Methods and Models](#content)
-### [2.1 Inference Approaches](#content)
+### [2.1 LLM Inference](#content)
 1. [Steer LLM Latents for Hallucination Detection](https://arxiv.org/abs/2503.01917), ICML 2025, \
 Seongheon Park, Xuefeng Du, Min-Hsuan Yeh, Haobo Wang, Yixuan Li
 1. [In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation](https://arxiv.org/abs/2403.01548), ICML 2024, \
@@ -30,6 +35,21 @@ Shiqi Chen, Miao Xiong, Junteng Liu, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxia
 ### [2.2 Datasets and Benchmarks](#content)
 1. [How Language Model Hallucinations Can Snowball](https://arxiv.org/abs/2305.13534), ICML 2024, \
 Muru Zhang, Ofir Press, William Merrill, Alisa Liu, Noah A. Smith
+1.[ERBench: An Entity-Relationship based Automatically Verifiable Hallucination Benchmark for Large Language Models](https://nips.cc/virtual/2024/poster/97458), NeurIPS 2024, \
+Jio Oh, Soyeon Kim, Junseok Seo, Jindong Wang, Ruochen Xu, Xing Xie, Steven Whang
+
+
+### [2.3 Diffusion Models](#content)
+1. [Understanding Hallucinations in Diffusion Models through Mode Interpolation](https://arxiv.org/abs/2406.09358), NeurIPS 2024, \
+Sumukh K Aithal, Pratyush Maini, Zachary C. Lipton, J. Zico Kolter
+
+### [2.4 Hallucination Detection](#content)
+1.[HaloScope: Harnessing Unlabeled LLM Generations for Hallucination Detection](https://arxiv.org/abs/2409.17504), NeurIPS 2024, \
+Xuefeng Du, Chaowei Xiao, Yixuan Li
+1. [ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models](https://arxiv.org/abs/2407.04693), NeurIPS 2024, \
+Yuzhe Gu, Ziwei Ji, Wenwei Zhang, Chengqi Lyu, Dahua Lin, Kai Chen
+1. [LLM-Check: Investigating Detection of Hallucinations in Large Language Models](https://nips.cc/virtual/2024/poster/95584), NeurIPS 2024, \
+Gaurang Sriramanan, Siddhant Bharti, Vinu Sankar Sadasivan, Shoumik Saha, Priyatham Kattakinda, Soheil Feizi
 
 
 
