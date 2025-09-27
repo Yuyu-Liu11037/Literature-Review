@@ -45,6 +45,8 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
    Yeonsu Kwon, Jiho Kim, Gyubok Lee, Seongsu Bae, Daeun Kyung, Wonchul Cha, Tom Pollard, Alistair Johnson, Edward Choi
 
 ### [1.4 Structure-aware Models](#content)
+1. [ProtoEHR: Hierarchical Prototype Learning for EHR-based Healthcare Predictions](https://arxiv.org/abs/2508.18313), CIKM 2025, \
+   Zi Cai, Yu Liu, Zhiyao Luo, Tingting Zhu
 1. [BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare](https://www.cs.emory.edu/~jyang71/files/boxlm.pdf), ICML 2025, \
    Yanchao Tan, Hang Lv, Yunfei Zhan, Guofang Ma, Bo Xiong, Carl Yang
 1. [BoxCare: A Box Embedding Model for Disease Representation and Diagnosis Prediction in Healthcare Data](https://dl.acm.org/doi/10.1145/3589335.3651448), WWW 2024, \
