@@ -17,6 +17,7 @@ Hallucination mitigation in Large Language Models (LLMs) addresses the challenge
 </tr>
 <tr>
     <td>&ensp;<a href="#25-analysis">2.5 Analysis</a></td>
+    <td>&ensp;<a href="#26-knowledge-editing">2.6 Knowledge Editing</a></td>
 </tr>
 
 <tr><td colspan="2"><a href="#3-applications" style="color:#B22222">3. Applications</a></td></tr>
@@ -68,6 +69,11 @@ Gaurang Sriramanan, Siddhant Bharti, Vinu Sankar Sadasivan, Shoumik Saha, Priyat
 Javier Ferrando, Oscar Obeso, Senthooran Rajamanoharan, Neel Nanda
 1. [LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations](https://iclr.cc/virtual/2025/poster/30060), ICLR 2025, \
 Hadas Orgad, Michael Toker, Zorik Gekhman, Roi Reichart, Idan Szpektor, Hadas Kotek, Yonatan Belinkov
+
+### [2.6 Knowledge Editing](#content)
+1. [AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models](https://arxiv.org/abs/2410.02355), ICLR 2025 (Oral), \
+Junfeng Fang, Houcheng Jiang, Kun Wang, Yunshan Ma, Shi Jie, Xiang Wang, Xiangnan He, Tat-seng Chua
+
 
 
 ## [3. Applications](#content)
