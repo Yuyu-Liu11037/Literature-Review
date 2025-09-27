@@ -56,7 +56,7 @@ Zhengyi Ho, Siyuan Liang, Sen Zhang, Yibing Zhan, Dacheng Tao
 ### [2.4 Hallucination Detection](#content)
 1. [HaDeMiF: Hallucination Detection and Mitigation in Large Language Models](https://iclr.cc/virtual/2025/poster/29391), ICLR 2025, \
 Xiaoling Zhou, Mingjie Zhang, Zhemg Lee, Wei Ye, Shikun Zhang
-1.[HaloScope: Harnessing Unlabeled LLM Generations for Hallucination Detection](https://arxiv.org/abs/2409.17504), NeurIPS 2024, \
+1. [HaloScope: Harnessing Unlabeled LLM Generations for Hallucination Detection](https://arxiv.org/abs/2409.17504), NeurIPS 2024, \
 Xuefeng Du, Chaowei Xiao, Yixuan Li
 1. [ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models](https://arxiv.org/abs/2407.04693), NeurIPS 2024, \
 Yuzhe Gu, Ziwei Ji, Wenwei Zhang, Chengqi Lyu, Dahua Lin, Kai Chen
