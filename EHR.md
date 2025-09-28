@@ -27,10 +27,14 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
    Xiaorui Su, Shvat Messica, Yepeng Huang, Ruth Johnson, Lukas Fesser, Shanghua Gao, Faryad Sahneh, Marinka Zitnik
 1. [Zero shot health trajectory prediction using transformer](https://www.nature.com/articles/s41746-024-01235-0), NPJ Digit Med 2024, \
    Pawel Renc, Yugang Jia, Anthony E. Samir, Jaroslaw Was, Quanzheng Li, David W. Bates, Arkadiusz Sitek
+1. [EHR foundation models improve robustness in the presence of temporal distribution shift](https://www.nature.com/articles/s41598-023-30820-8?error=cookies_not_supported&code=9f53fd13-a174-4176-a1d6-bb271f818ba6#Sec2), Scientific Reports 2023, \
+   Lin Lawrence Guo, Ethan Steinberg, Scott Lanyon Fleming, Jose Posada, Joshua Lemmon, Stephen R. Pfohl, Nigam Shah, Jason Fries, Lillian Sung
 1. [Hi-BEHRT: Hierarchical Transformer-based model for accurate prediction of clinical events using multimodal longitudinal electronic health records](https://arxiv.org/abs/2106.11360), IEEE J Biomed Health Inform 2023, \
    Yikuan Li, Mohammad Mamouei, Gholamreza Salimi-Khorshidi, Shishir Rao, Abdelaali Hassaine, Dexter Canoy, Thomas Lukasiewicz, Kazem Rahimi
 1. [TransformEHR: transformer-based encoder-decoder generative model to enhance prediction of disease outcomes using electronic health records](https://www.nature.com/articles/s41467-023-43715-z), Nature communications 2023, \
    Zhichao Yang, Avijit Mitra, Weisong Liu, Dan Berlowitz & Hong Yu
+1. [Med-BERT: pre-trained contextualized embeddings on large-scale structured electronic health records for disease prediction](https://arxiv.org/abs/2005.12833), npj digital medicine 2021, \
+   Laila Rasmy, Yang Xiang, Ziqian Xie, Cui Tao, and Degui Zhi
 1. [BEHRT: Transformer for Electronic Health Records](https://www.nature.com/articles/s41598-020-62922-y), Scientific Reports 2020, \
    Yikuan Li, Shishir Rao, José Roberto Ayala Solares, Abdelaali Hassaine, Rema Ramakrishnan, Dexter Canoy, Yajie Zhu, Kazem Rahimi, Gholamreza Salimi-Khorshidi 
 
