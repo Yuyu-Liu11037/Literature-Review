@@ -55,8 +55,8 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
    Yanchao Tan, Hang Lv, Yunfei Zhan, Guofang Ma, Bo Xiong, Carl Yang
 1. [BoxCare: A Box Embedding Model for Disease Representation and Diagnosis Prediction in Healthcare Data](https://dl.acm.org/doi/10.1145/3589335.3651448), WWW 2024, \
    Hang Lv, Zehai Chen, Yacong Yang, Guofang Ma, Tan Yanchao, Carl Yang
-1. [Hi-BEHRT: Hierarchical Transformer-based model for accurate prediction of clinical events using multimodal longitudinal electronic health records](https://arxiv.org/abs/2106.11360), IEEE J Biomed Health Inform 2023, \
-   Yikuan Li, Mohammad Mamouei, Gholamreza Salimi-Khorshidi, Shishir Rao, Abdelaali Hassaine, Dexter Canoy, Thomas Lukasiewicz, Kazem Rahimi
+1. [Self-Supervised Graph Learning with Hyperbolic Embedding for Temporal Health Event Prediction](https://arxiv.org/abs/2106.04751), IEEE Trans. Cybern. 2023, \
+   Chang Lu, Chandan K. Reddy, Yue Ning
 1. [Exploiting hierarchy in medical concept embedding](https://pubmed.ncbi.nlm.nih.gov/33748691/#:~:text=Results%3A%20%20We%20found%20that,training%20embeddings%20improved%20classification), JAMIA Open 2021, \
    Anthony Finch, Alexander Crowell, Mamta Bhatia, Pooja Parameshwarappa, Yung-Chieh Chang, Jose Martinez, Michael Horberg
 1. [HiTANet: Hierarchical Time-Aware Attention Networks for Risk Prediction on Electronic Health Records](https://dl.acm.org/doi/10.1145/3394486.3403107), KDD 2020, \
