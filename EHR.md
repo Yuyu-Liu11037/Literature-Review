@@ -57,10 +57,16 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
    Hang Lv, Zehai Chen, Yacong Yang, Guofang Ma, Tan Yanchao, Carl Yang
 1. [Hi-BEHRT: Hierarchical Transformer-based model for accurate prediction of clinical events using multimodal longitudinal electronic health records](https://arxiv.org/abs/2106.11360), IEEE J Biomed Health Inform 2023, \
    Yikuan Li, Mohammad Mamouei, Gholamreza Salimi-Khorshidi, Shishir Rao, Abdelaali Hassaine, Dexter Canoy, Thomas Lukasiewicz, Kazem Rahimi
+1. [Exploiting hierarchy in medical concept embedding](https://pubmed.ncbi.nlm.nih.gov/33748691/#:~:text=Results%3A%20%20We%20found%20that,training%20embeddings%20improved%20classification), JAMIA Open 2021, \
+   Anthony Finch, Alexander Crowell, Mamta Bhatia, Pooja Parameshwarappa, Yung-Chieh Chang, Jose Martinez, Michael Horberg
 1. [HiTANet: Hierarchical Time-Aware Attention Networks for Risk Prediction on Electronic Health Records](https://dl.acm.org/doi/10.1145/3394486.3403107), KDD 2020, \
    Junyu Luo, Muchao Ye, Cao Xiao, Fenglong Ma
 1. [Learning Electronic Health Records through Hyperbolic Embedding of Medical Ontologies](https://dl.acm.org/doi/10.1145/3307339.3342148), ACM BNB 2019, \
    Qiuhao Lu, Nisansa de Silva, Sabin Kafle, Jiazhen Cao, Dejing Dou, Thien Huu Nguyen, Prithviraj Sen, Brent Hailpern, Berthold Reinwald, and Yunyao Li
+1. [GRAM: Graph-based Attention Model for Healthcare Representation Learning](https://arxiv.org/abs/1611.07012), KDD 2017, \
+   Edward Choi, Mohammad Taha Bahadori, Le Song, Walter F. Stewart, Jimeng Sun
+
+   
 ### [1.5 Sequential Modeling](#content)
 ### [1.6 Graph Based Models](#content)
 1. [Graph Transformers on EHRs: Better Representation Improves Downstream Performance](https://openreview.net/pdf?id=pe0Vdv7rsL), ICLR 2024, \
