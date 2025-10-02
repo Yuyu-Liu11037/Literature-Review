@@ -80,10 +80,10 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
 
    
 ### [1.5 Sequential Modeling](#content)
-1. [Vecocare: Visit sequencesclinical notes joint learning for diagnosis prediction in healthcare data](https://www.ijcai.org/proceedings/2023/547), IJCAI 2023, \
-   Yongxin Xu, Kai Yang, Chaohe Zhang, Peinie Zou, Zhiyuan Wang, Hongxin Ding, Junfeng Zhao, Yasha Wang, Bing Xie
 1. [Predictive modeling with temporal graphical representation on electronic  health records](https://arxiv.org/abs/2405.03943), IJCAI 2024, \
    Jiayuan Chen, Changchang Yin, Yuanlong Wang, Ping Zhang
+1. [Vecocare: Visit sequencesclinical notes joint learning for diagnosis prediction in healthcare data](https://www.ijcai.org/proceedings/2023/547), IJCAI 2023, \
+   Yongxin Xu, Kai Yang, Chaohe Zhang, Peinie Zou, Zhiyuan Wang, Hongxin Ding, Junfeng Zhao, Yasha Wang, Bing Xie
 
 ### [1.6 Graph Based Models](#content)
 1. [Predictive modeling with temporal graphical representation on electronic  health records](https://arxiv.org/abs/2405.03943), IJCAI 2024, \
