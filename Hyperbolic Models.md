@@ -213,6 +213,8 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
    Raiyan R. Khan, Philippe Chlenski, Itsik Pe'er
 
 **EHR**
+1. [Graph learning with label attention and hyperbolic embedding for temporal event prediction in healthcare](https://www.sciencedirect.com/science/article/pii/S0925231224005071), Neurocomputing 2024, \
+   Usman Naseem, Surendrabikram Thapa, Qi Zhang, Shoujin Wang, Junaid Rashid, Liang Hu, Amir Hussain
 1. [Self-Supervised Graph Learning with Hyperbolic Embedding for Temporal Health Event Prediction](https://arxiv.org/abs/2106.04751), IEEE Trans. Cybern. 2023, \
    Chang Lu, Chandan K. Reddy, Yue Ning
 1. [Learning Electronic Health Records through Hyperbolic Embedding of Medical Ontologies](https://dl.acm.org/doi/10.1145/3307339.3342148), ACM BCB 2019, \
@@ -225,6 +227,7 @@ Weize Chen, Xu Han, Yankai Lin, Hexu Zhao, Zhiyuan Liu, Peng Li, Maosong Sun, Ji
 ### [3.19 Robotics](#content)
 1. [Leveraging Hyperbolic Embeddings for Coarse-to-Fine Robot Design](https://arxiv.org/abs/2311.00462), ICLR 2024, \
    Heng Dong, Junyu Zhang, Chongjie Zhang
+
 
 
 
