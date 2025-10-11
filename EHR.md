@@ -46,7 +46,9 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
 1. [Biobert: a pre-trained biomedical language representation model for biomedical text mining](https://arxiv.org/abs/1901.08746), Bioinformatics 2020, \
    Jinhyuk Lee, Wonjin Yoon, Sungdong Kim, Donghyeon Kim, Sunkyu Kim, Chan Ho So, Jaewoo Kang
 1. [BEHRT: Transformer for Electronic Health Records](https://www.nature.com/articles/s41598-020-62922-y), Scientific Reports 2020, \
-   Yikuan Li, Shishir Rao, José Roberto Ayala Solares, Abdelaali Hassaine, Rema Ramakrishnan, Dexter Canoy, Yajie Zhu, Kazem Rahimi, Gholamreza Salimi-Khorshidi 
+   Yikuan Li, Shishir Rao, José Roberto Ayala Solares, Abdelaali Hassaine, Rema Ramakrishnan, Dexter Canoy, Yajie Zhu, Kazem Rahimi, Gholamreza Salimi-Khorshidi
+1. [Clinicalbert: Modeling clinical notes and predicting hospital readmission](https://arxiv.org/abs/1904.05342), CHIL 2020 Workshop, \
+   Kexin Huang, Jaan Altosaar, Rajesh Ranganath
 
 
 
