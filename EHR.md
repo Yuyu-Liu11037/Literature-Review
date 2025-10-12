@@ -24,7 +24,7 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
   </tr>
   <tr>
     <td>&ensp;<a href="#19-rnn-based-models">1.9 RNN Based Models</a></td>
-    <!-- <td>&ensp;<a href="#18-interpretable-models">1.8 Interpretable Models</a></td> -->
+    <td>&ensp;<a href="#110-multi-task-learning">1.10 Multi Task Learning</a></td>
   </tr>
 </table>
 
@@ -108,3 +108,7 @@ Electronic Health Records (EHR) data have become a critical resource for advanci
 ### [1.9 RNN Based Models](#content)
 1. [Doctor ai: Predicting clinical events via recurrent neural networks](https://arxiv.org/abs/1511.05942), MLHC 2016, \
    Edward Choi, Mohammad Taha Bahadori, Andy Schuetz, Walter F. Stewart, Jimeng Sun
+
+### [1.10 Multi Task Learning](#content)
+1. [Automated Multi-Task Learning for Joint Disease Prediction on Electronic Health Records](https://arxiv.org/abs/2403.04086), NeurIPS 2024, \
+   Suhan Cui, Prasenjit Mitra
