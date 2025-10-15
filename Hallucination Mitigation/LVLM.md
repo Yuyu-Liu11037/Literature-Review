@@ -24,7 +24,7 @@ Hallucination mitigation in Large Vision-Language Models (LVLMs) focuses on redu
 </tr>
 <tr>
   <td>&ensp;<a href="#19-preference-learning">1.9 Preference Learning</a></td>
-  <!-- <td>&ensp;<a href="#18-model-weights-editing">1.8 Model Weights Editing</a></td> -->
+  <td>&ensp;<a href="#110-model-weights-editing">1.10 Data Bias Mitigation</a></td>
 </tr>
 
 <tr><td colspan="2"><a href="#2-applications" style="color:#B22222">2. Applications</a></td></tr>
@@ -145,6 +145,11 @@ Le Yang, Ziwei Zheng, Boxu Chen, Zhengyu Zhao, Chenhao Lin, Chao Shen
 Dokyoon Yoon, Youngsook Song, Woomyong Park
 1. [Mitigating Hallucinations in Large Vision-Language Models via DPO: On-Policy Data Hold the Key](https://chatgpt.com/c/68d76812-3148-8326-b324-0f8bae04582f), CVPR 2025, \
 Zhihe Yang, Xufang Luo, Dongqi Han, Yunjian Xu, Dongsheng Li
+
+### [1.10 Data Bias Mitigation](#content)
+1. [CIEM: Contrastive Instruction Evaluation Method for Better Instruction Tuning](https://arxiv.org/abs/2309.02301), NeurIPS 2023 Workshop, \
+   Hongyu Hu, Jiyuan Zhang, Minyi Zhao, Zhenbang Sun
+
 
 
 ## [2. Applications](#content)
