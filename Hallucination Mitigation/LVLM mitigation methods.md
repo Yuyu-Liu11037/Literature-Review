@@ -1,18 +1,14 @@
-## Introduction
-
-Hallucination mitigation in Large Vision-Language Models (LVLMs) focuses on reducing instances where the model generates outputs that are factually incorrect, logically inconsistent, or not grounded in the given input. These hallucinations often arise from overgeneralization, spurious correlations, or limitations in aligning visual and textual representations. Effective mitigation strategies combine improved model architectures, training with high-quality multimodal datasets, alignment techniques such as reinforcement learning with human feedback, and post-hoc methods like retrieval augmentation or uncertainty estimation. Together, these approaches aim to enhance the reliability, trustworthiness, and safety of LVLMs in real-world applications.
-
 ## Table of Contents
 
 <table>
 <tr><td colspan="2"><a href="#1-methods-and-models" style="color:#B22222">1. Methods and Models</a></td></tr>
 <tr>
   <td>&ensp;<a href="#11-lvlm-inference">1.1 LVLM Inference</a></td>
-  <td>&ensp;<a href="#12-datasets-and-benchmarks">1.2 Datasets and Benchmarks</a></td>
+  <!-- <td>&ensp;<a href="#12-datasets-and-benchmarks">1.2 Datasets and Benchmarks</a></td> -->
 </tr>
 <tr>
   <td>&ensp;<a href="#13-model-architechture">1.3 Model Architecture</a></td>
-  <td>&ensp;<a href="#14-hallucination-detection">1.4 Hallucination Detection</a></td>
+  <!-- <td>&ensp;<a href="#14-hallucination-detection">1.4 Hallucination Detection</a></td> -->
 </tr>
 <tr>
   <td>&ensp;<a href="#15-fine-tuning">1.5 Fine Tuning</a></td>
@@ -93,31 +89,9 @@ Zhaorun Chen, Zhuokai Zhao, Hongyin Luo, Huaxiu Yao, Bo Li, Jiawei Zhou
 Junho Kim, Hyunjun Kim, Yeonju Kim, Yong Man Ro
 
 
-### [1.2 Datasets and Benchmarks](#content)
-1. [ODE: Open-Set Evaluation of Hallucinations in Multimodal Large Language Models](https://arxiv.org/abs/2409.09318), CVPR 2025, \
-Yahan Tu, Rui Hu, Jitao Sang
-1. [PhD: A ChatGPT-Prompted Visual Hallucination Evaluation Dataset](https://huggingface.co/datasets/AIMClab-RUC/PhD), CVPR 2025, \
-Jiazhen Liu, Yuhan Fu, Ruobing Xie, Runquan Xie, Xingwu Sun, Fengzong Lian, Zhanhui Kang, Xirong Li
-1. [3D-GRAND: A Million-Scale Dataset for 3D-LLMs with Better Grounding and Less Hallucination](https://arxiv.org/abs/2406.05132), CVPR 2025, \
-Jianing Yang, Xuweiyi Chen, Nikhil Madaan, Madhavan Iyengar, Shengyi Qian, David F. Fouhey, Joyce Chai
-1. [Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models](https://arxiv.org/abs/2406.16449), ICML 2024, \
-Mingrui Wu, Jiayi Ji, Oucheng Huang, Jiale Li, Yuhang Wu, Xiaoshuai Sun, Rongrong Ji
-1. [Toward a Stable, Fair, and Comprehensive Evaluation of Object Hallucination in Large Vision-Language Models](https://nips.cc/virtual/2024/poster/93023), NeurIPS 2024, \
-Hongliang Wei, Xingtao Wang, Xianqi Zhang, Xiaopeng Fan, Debin Zhao
-1. [Multi-Object Hallucination in Vision Language Models](https://nips.cc/virtual/2024/poster/95666), NeurIPS 2024, \
-Xuweiyi Chen, Ziqiao Ma, Xuejun Zhang, Sihan Xu, Shengyi Qian, Jianing Yang, David Fouhey, Joyce Chai
-
 ### [1.3 Model Architecture](#content)
 1. [Mitigating Object Hallucination via Concentric Causal Attention](https://arxiv.org/abs/2410.15926), NeurIPS 2024, \
 Yun Xing, Yiheng Li, Ivan Laptev, Shijian Lu
-
-### [1.4 Hallucination Detection](#content)
-1. [HalLoc: Token-level Localization of Hallucinations for Vision Language Models](https://arxiv.org/abs/2506.10286), CVPR 2025, \
-Eunkyu Park, Minyeong Kim, Gunhee Kim
-1. [Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d75660d6eb0ce31360c768fef85301dd-Abstract-Conference.html), NeurIPS 2024, \
-Hongbo Wang, Jie Cao, Jin Liu, Xiaoqiang Zhou, Huaibo Huang, Ran He
-1. [Estimating the Hallucination Rate of Generative AI](https://nips.cc/virtual/2024/poster/95553), NeurIPS 2024, \
-Andrew Jesson, Nicolas Beltran Velez, Quentin Chu, Sweta Karlekar, Jannik Kossen, Yarin Gal, John Cunningham, David Blei
 
 
 ### [1.5 Fine Tuning](#content)

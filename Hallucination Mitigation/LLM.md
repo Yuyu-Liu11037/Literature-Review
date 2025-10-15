@@ -31,6 +31,8 @@ Hallucination mitigation in Large Language Models (LLMs) addresses the challenge
 </table>
 
 ## [1. Surveys, Books, Tools, Tutorials](#content)
+1. [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://dl.acm.org/doi/full/10.1145/3703155), ACM TIS 2025, \
+Lei Huang, Weijiang Yu, Weitao Ma, Weihong Zhong, Zhangyin Feng, Haotian Wang, Qianglong Chen, Weihua Peng, Xiaocheng Feng, Bing Qin, Ting Liu
 
 ## [2. Methods and Models](#content)
 ### [2.1 LLM Inference](#content)
