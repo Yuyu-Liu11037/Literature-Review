@@ -13,6 +13,8 @@ Eunkyu Park, Minyeong Kim, Gunhee Kim
 Hongbo Wang, Jie Cao, Jin Liu, Xiaoqiang Zhou, Huaibo Huang, Ran He
 1. [Estimating the Hallucination Rate of Generative AI](https://nips.cc/virtual/2024/poster/95553), NeurIPS 2024, \
 Andrew Jesson, Nicolas Beltran Velez, Quentin Chu, Sweta Karlekar, Jannik Kossen, Yarin Gal, John Cunningham, David Blei
+1. [Detecting and preventing hallucinations in large vision language models](https://arxiv.org/abs/2308.06394), AAAI 2024, \
+Anisha Gunjal, Jihan Yin, Erhan Bas
 1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), ICAR 2025, \
 Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
 1. [LLaVA-RLHF: Aligning Large Multimodal Models with Factually Augmented RLHF](https://llava-rlhf.github.io/), arXiv 2023, \
@@ -33,9 +35,9 @@ Hongliang Wei, Xingtao Wang, Xianqi Zhang, Xiaopeng Fan, Debin Zhao
 Xuweiyi Chen, Ziqiao Ma, Xuejun Zhang, Sihan Xu, Shengyi Qian, Jianing Yang, David Fouhey, Joyce Chai
 1. [Mm-sap: A comprehensive benchmark for assessing self-awareness of multimodal large language models in perception](), arXiv 2024, \
 Y. Wang, Y. Liao, H. Liu, H. Liu, Y. Wang, and Y. Wang
-1. [Visual hallucinations of multi-modal large language models](), arXiv 2024, \
+1. [(VHTest) Visual hallucinations of multi-modal large language models](), arXiv 2024, \
 W. Huang, H. Liu, M. Guo, and N. Z. Gong
-1. [How easy is it to fool your multimodal llms? an empirical analysis on deceptive prompts](), arXiv 2024, \
+1. [(MAD-Bench) How easy is it to fool your multimodal llms? an empirical analysis on deceptive prompts](), arXiv 2024, \
 Y. Qian, H. Zhang, Y. Yang, and Z. Gan
 1. [The all-seeing project v2: Towards general relation comprehension of the open world](), arXiv 2024, \
 W. Wang, Y. Ren, H. Luo, T. Li, C. Yan, Z. Chen, W. Wang, Q. Li, L. Lu, X. Zhu et al.

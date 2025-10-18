@@ -4,11 +4,11 @@
 <tr><td colspan="2"><a href="#1-methods-and-models" style="color:#B22222">1. Methods and Models</a></td></tr>
 <tr>
   <td>&ensp;<a href="#11-inference">1.1 Inference</a></td>
-  <!-- <td>&ensp;<a href="#12-datasets-and-benchmarks">1.2 Datasets and Benchmarks</a></td> -->
+  <td>&ensp;<a href="#12-modality-align">1.2 Modality Align</a></td>
 </tr>
 <tr>
   <td>&ensp;<a href="#13-model-architechture">1.3 Model Architecture</a></td>
-  <!-- <td>&ensp;<a href="#14-hallucination-detection">1.4 Hallucination Detection</a></td> -->
+  <td>&ensp;<a href="#14-post-hoc-remediation">1.4 Post Hoc Remediation</a></td>
 </tr>
 <tr>
   <td>&ensp;<a href="#15-fine-tuning">1.5 Fine Tuning</a></td>
@@ -85,16 +85,44 @@ Zhangqi Jiang, Junkai Chen, Beier Zhu, Tingjin Luo, Yankun Shen, Xu Yang
 Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xuming Hu
 1. [Seeing Far and Clearly: Mitigating Hallucinations in MLLMs with Attention Causal Decoding](https://arxiv.org/abs/2505.16652), CVPR 2025, \
 Feilong Tang, Chengzhi Liu, Zhongxing Xu, Ming Hu, Zelin Peng, Zhiwei Yang, Jionglong Su, Minquan Lin, Yifan Peng, Xuelian Cheng, Imran Razzak, Zongyuan Ge
+1. [Fact: Teaching mllms with faithful, concise and transferable rationales](https://arxiv.org/abs/2404.11129), ACM MM 2024, \
+Minghe Gao, Shuang Chen, Liang Pang, Yuan Yao, Jisheng Dang, Wenqiao Zhang, Juncheng Li, Siliang Tang, Yueting Zhuang, Tat-Seng Chua
+1. [Cantor: Inspiring multimodal chainof-thought of mllm](https://arxiv.org/abs/2404.16033), ACM MM 2024, \
+Timin Gao, Peixian Chen, Mengdan Zhang, Chaoyou Fu, Yunhang Shen, Yan Zhang, Shengchuan Zhang, Xiawu Zheng, Xing Sun, Liujuan Cao, Rongrong Ji
+1. [Opera: Alleviating hallucination in multimodal large language models via over-trust penalty and retrospectionallocation](https://arxiv.org/abs/2311.17911), CVPR 2024, \
+Qidong Huang, Xiaoyi Dong, Pan Zhang, Bin Wang, Conghui He, Jiaqi Wang, Dahua Lin, Weiming Zhang, Nenghai Yu
+1. [Pensieve: Retrospectthen-compare mitigates visual hallucination](https://arxiv.org/abs/2403.14401), arXiv 2024, \
+Dingchen Yang, Bowen Cao, Guang Chen, Changjun Jiang
+1. [Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models](https://arxiv.org/abs/2402.09801), EMNLP 2024, \
+Shangyu Xing, Fei Zhao, Zhen Wu, Tuo An, Weihao Chen, Chunhui Li, Jianbing Zhang, Xinyu Dai
 1. [HALC: Object Hallucination Reduction via Adaptive Focal-Contrast Decoding](https://arxiv.org/abs/2403.00425), ICML 2024, \
 Zhaorun Chen, Zhuokai Zhao, Hongyin Luo, Huaxiu Yao, Bo Li, Jiawei Zhou
 1. [CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models](https://arxiv.org/abs/2406.01920), NeurIPS 2024, \
 Junho Kim, Hyunjun Kim, Yeonju Kim, Yong Man Ro
 
+### [1.2 Modality Align](#content)
+1. [(MOF) Eyes wide shut? exploring the visual shortcomings of multimodal llms](https://arxiv.org/abs/2401.06209), arXiv 2024, \
+Shengbang Tong, Zhuang Liu, Yuexiang Zhai, Yi Ma, Yann LeCun, Saining Xie
+1. [Enhancing multimodal large language models with vision detection models: An empirical study](https://arxiv.org/abs/2401.17981v2), arXiv 2024, \
+Qirui Jiao, Daoyuan Chen, Yilun Huang, Yaliang Li, Ying Shen
+1. [Dualfocus: Integrating macro and micro perspectives in multi-modal large language models](https://arxiv.org/abs/2402.14767), arXiv 2024, \
+Yuhang Cao, Pan Zhang, Xiaoyi Dong, Dahua Lin, Jiaqi Wang
+1. [(VTPrompt) Joint visual and text prompting for improved object-centric perception with multimodal large language models](https://arxiv.org/abs/2404.04514), arXiv 2024, \
+Songtao Jiang, Yan Zhang, Chenyi Zhou, Yeying Jin, Yang Feng, Jian Wu, Zuozhu Liu
+1. [(COMM) From clip to dino: Visual encoders shout in multi-modal large language models](https://arxiv.org/abs/2310.08825), arXiv 2023, \
+Dongsheng Jiang, Yuchen Liu, Songlin Liu, Jin'e Zhao, Hao Zhang, Zhen Gao, Xiaopeng Zhang, Jin Li, Hongkai Xiong
 
 ### [1.3 Model Architecture](#content)
 1. [Mitigating Object Hallucination via Concentric Causal Attention](https://arxiv.org/abs/2410.15926), NeurIPS 2024, \
 Yun Xing, Yiheng Li, Ivan Laptev, Shijian Lu
 
+### [1.4 Post Hoc Remediation](#content)
+1. [Volcano: mitigating multimodal hallucination through self-feedback guided revision](https://arxiv.org/abs/2311.07362), NAACL 2024, \
+Seongyun Lee, Sue Hyun Park, Yongrae Jo, Minjoon Seo
+1. [Woodpecker: Hallucination correction for multimodal large language models](https://arxiv.org/abs/2310.16045), arXiv 2023, \
+Shukang Yin, Chaoyou Fu, Sirui Zhao, Tong Xu, Hao Wang, Dianbo Sui, Yunhang Shen, Ke Li, Xing Sun, Enhong Chen
+1. [Analyzing and mitigating object hallucination in large visionlanguage models](https://arxiv.org/abs/2310.00754), arXiv 2023, \
+Yiyang Zhou, Chenhang Cui, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, Huaxiu Yao
 
 ### [1.5 Fine Tuning](#content)
 1. [Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment](https://iclr.cc/virtual/2025/poster/27739), ICLR 2025, \
@@ -121,10 +149,28 @@ Le Yang, Ziwei Zheng, Boxu Chen, Zhengyu Zhao, Chenhao Lin, Chao Shen
 Dokyoon Yoon, Youngsook Song, Woomyong Park
 1. [Mitigating Hallucinations in Large Vision-Language Models via DPO: On-Policy Data Hold the Key](https://chatgpt.com/c/68d76812-3148-8326-b324-0f8bae04582f), CVPR 2025, \
 Zhihe Yang, Xufang Luo, Dongqi Han, Yunjian Xu, Dongsheng Li
+1. [(Fact-RLHF) Aligning large multimodal models with factually augmented rlhf](https://arxiv.org/abs/2309.14525), NAACL 2024, \
+Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, Kurt Keutzer, Trevor Darrell
+1. [Detecting and preventing hallucinations in large vision language models](https://arxiv.org/abs/2308.06394), AAAI 2024, \
+Anisha Gunjal, Jihan Yin, Erhan Bas
+1. [Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization](https://arxiv.org/abs/2311.16839), arXiv 2023, \
+Zhiyuan Zhao, Bin Wang, Linke Ouyang, Xiaoyi Dong, Jiaqi Wang, Conghui He
+1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155), NeurIPS 2022, \
+Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda Askell, Peter Welinder, Paul Christiano, Jan Leike, Ryan Lowe
+1. [Training a helpful and harmless assistant with reinforcement learning from human feedback](https://arxiv.org/abs/2204.05862), arXiv 2022, \
+Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, Nicholas Joseph, Saurav Kadavath, Jackson Kernion, Tom Conerly, Sheer El-Showk, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Tristan Hume, Scott Johnston, Shauna Kravec, Liane Lovitt, Neel Nanda, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, Chris Olah, Ben Mann, Jared Kaplan
+1. [Learning to summarize with human feedback](https://arxiv.org/abs/2009.01325), NeurIPS 2020, \
+Nisan Stiennon, Long Ouyang, Jeff Wu, Daniel M. Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, Paul Christiano
 
 ### [1.10 Data](#content)
 1. [CIEM: Contrastive Instruction Evaluation Method for Better Instruction Tuning](https://arxiv.org/abs/2309.02301), NeurIPS 2023 Workshop, \
    Hongyu Hu, Jiyuan Zhang, Minyi Zhao, Zhenbang Sun
+1. [Mllms-augmented visual-language representation learning](), arXiv 2023, \
+Y. Liu, K. Wang, W. Shao, P. Luo, Y. Qiao, M. Z. Shou, K. Zhang
+1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), ICLR 2023, \
+F. Liu, K. Lin, L. Li, J. Wang, Y. Yacoob, and L. Wang
+1. [Hallucidoctor: Mitigating hallucinatory toxicity in visual instruction data](), arXiv 2023, \
+Q. Yu, J. Li, L. Wei, L. Pang, W. Ye, B. Qin, S. Tang, Q. Tian, and Y. Zhuang
 
 
 

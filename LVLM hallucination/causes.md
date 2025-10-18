@@ -18,8 +18,6 @@ Fuxiao Liu, Kevin Lin, Linjie Li, et al.
 Tianyu Yu, Yuan Yao, Haoye Zhang, et al.
 1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
 Fuxiao Liu, Kevin Lin, Linjie Li, et al.
-1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
-Fuxiao Liu, Kevin Lin, Linjie Li, et al.
 
 ## [2. Visual Encoder](#content)
 1. [Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption](), arXiv 2023, \
@@ -44,11 +42,11 @@ Shukang Yin, Chaoyou Fu, Sirui Zhao, et al.
 Zhe Chen, Jiannan Wu, Wenhai Wang, et al.
 
 ## [4. From LLM](#content)
+1. [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://dl.acm.org/doi/full/10.1145/3703155), ACM TIS 2025, \
+Lei Huang, Weijiang Yu, Weitao Ma, Weihong Zhong, Zhangyin Feng, Haotian Wang, Qianglong Chen, Weihua Peng, Xiaocheng Feng, Bing Qin, Ting Liu
 1. [Vigc: Visual instruction generation and correction](), arXiv 2023, \
 Bin Wang, Fan Wu, Xiao Han, et al.
-1. [The curious case of neural text degeneration](), ICLR 2020, \
-Ari Holtzman, Jan Buys, Li Du, et al.
 1. [Neural path hunter: Reducing hallucination in dialogue systems via path grounding](), EMNLP 2021, \
 Nouha Dziri, Andrea Madotto, Osmar R Zaiane, et al.
-1. [A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions](), ACM TIS 2024, \
-Lei Huang, Weijiang Yu, Weitao Ma, et al.
+1. [The curious case of neural text degeneration](), ICLR 2020, \
+Ari Holtzman, Jan Buys, Li Du, et al.
