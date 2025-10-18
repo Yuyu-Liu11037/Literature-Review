@@ -1,17 +1,8 @@
 ## Table of Contents
 <table>
 <tr><td colspan="2"><a href="#1-detection" style="color:#B22222">1. Detection</a></td></tr>
-<tr>
-  <td>&ensp;<a href="#11-automated-post-hoc-detection-models">1.1 Automated Post hoc Detection Models</a></td>
-  <td>&ensp;<a href="#12-human-in-the-loop-detection">1.2 Human in the loop Detection</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#13-task-specific-detection">1.3 Task Specific Detectors</a></td>
-  <!-- <td>&ensp;<a href="#12-human-in-the-loop-detection">1.2 Human in the loop Detection</a></td> -->
-</tr>
 
-<tr><td colspan="2"><a href="#2-evaluation-methods" style="color:#B22222">2. Evaluation Methods</a></td></tr>
-<tr><td colspan="2"><a href="#3-benchmarks" style="color:#B22222">3. Benchmarks</a></td></tr>
+<tr><td colspan="2"><a href="#2-benchmarks" style="color:#B22222">2. Benchmarks</a></td></tr>
 
 </table>
 
@@ -22,37 +13,12 @@ Eunkyu Park, Minyeong Kim, Gunhee Kim
 Hongbo Wang, Jie Cao, Jin Liu, Xiaoqiang Zhou, Huaibo Huang, Ran He
 1. [Estimating the Hallucination Rate of Generative AI](https://nips.cc/virtual/2024/poster/95553), NeurIPS 2024, \
 Andrew Jesson, Nicolas Beltran Velez, Quentin Chu, Sweta Karlekar, Jannik Kossen, Yarin Gal, John Cunningham, David Blei
-
-### [1.1 Automated Post hoc Detection Models](#content)
 1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), ICAR 2025, \
 Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
-
-### [1.2 Human in the loop Detection](#content)
 1. [LLaVA-RLHF: Aligning Large Multimodal Models with Factually Augmented RLHF](https://llava-rlhf.github.io/), arXiv 2023, \
 Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, Kurt Keutzer, Trevor Darrell
 
-### [1.3 Task Specific Detectors](#content)
-
-
-## [2. Evaluation Methods](#content)
-1. [Evaluation and mitigation of agnosia in multimodal large language models](), arXiv 2023, \
-Jiaying Lu, Jinmeng Rao, Kezhen Chen, et al.
-1. [Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption](), arXiv 2023, \
-Bohan Zhai, Shijia Yang, Xiangchen Zhao, et al.
-1. [Faithscore: Evaluating hallucinations in large visionlanguage models](), arXiv 2023, \
-Liqiang Jing, Ruosen Li, Yunmo Chen, et al.
-1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
-Fuxiao Liu, Kevin Lin, Linjie Li, et al.
-1. [Aligning large multimodal models with factually augmented rlhf](), arXiv 2023, \
-Zhiqing Sun, Sheng Shen, Shengcao Cao, et al.
-1. [Detecting and preventing hallucinations in large vision language models](), arXiv 2023, \
-Anisha Gunjal, Jihan Yin, and Erhan Bas
-1. [Instructblip: Towards general-purpose visionlanguage models with instruction tuning](), arXiv 2023, \
-Wenliang Dai, Junnan Li, Dongxu Li, et al.
-1. [Evaluation and analysis of hallucination in large vision-language models](), arXiv 2023, \
-Junyang Wang, Yiyang Zhou, Guohai Xu, et al.
-
-## [3. Benchmark](#content)
+## [2. Benchmark](#content)
 1. [ODE: Open-Set Evaluation of Hallucinations in Multimodal Large Language Models](https://arxiv.org/abs/2409.09318), CVPR 2025, \
 Yahan Tu, Rui Hu, Jitao Sang
 1. [PhD: A ChatGPT-Prompted Visual Hallucination Evaluation Dataset](https://huggingface.co/datasets/AIMClab-RUC/PhD), CVPR 2025, \
@@ -95,5 +61,21 @@ A. Villa, J. C. L. Alcazar, A. Soto, and B. Ghanem
 Chaoyou Fu, Peixian Chen, Yunhang Shen, Yulei Qin, Mengdan Zhang, Xu Lin, Jinrui Yang, Xiawu Zheng, Ke Li, Xing Sun, Yunsheng Wu, Rongrong Ji
 1. [Hallusionbench: An advanced diagnostic suite for entangled language hallucination & visual illusion in large vision-language models](), arXiv 2023, \
 T. Guan, F. Liu, X. Wu, R. Xian, Z. Li, X. Liu, X. Wang, L. Chen, F. Huang, Y. Yacoob et al
+1. [Evaluation and mitigation of agnosia in multimodal large language models](), arXiv 2023, \
+Jiaying Lu, Jinmeng Rao, Kezhen Chen, et al.
+1. [Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption](), arXiv 2023, \
+Bohan Zhai, Shijia Yang, Xiangchen Zhao, et al.
+1. [Faithscore: Evaluating hallucinations in large visionlanguage models](), arXiv 2023, \
+Liqiang Jing, Ruosen Li, Yunmo Chen, et al.
+1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
+Fuxiao Liu, Kevin Lin, Linjie Li, et al.
+1. [Aligning large multimodal models with factually augmented rlhf](), arXiv 2023, \
+Zhiqing Sun, Sheng Shen, Shengcao Cao, et al.
+1. [Detecting and preventing hallucinations in large vision language models](), arXiv 2023, \
+Anisha Gunjal, Jihan Yin, and Erhan Bas
+1. [Instructblip: Towards general-purpose visionlanguage models with instruction tuning](), arXiv 2023, \
+Wenliang Dai, Junnan Li, Dongxu Li, et al.
+1. [Evaluation and analysis of hallucination in large vision-language models](), arXiv 2023, \
+Junyang Wang, Yiyang Zhou, Guohai Xu, et al.
 1. [(CHAIR) Object hallucination in image captioning](), EMNLP 2018, \
 Anna Rohrbach, Lisa Anne Hendricks, Kaylee Burns, et al.

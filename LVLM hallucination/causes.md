@@ -1,42 +1,23 @@
 ## Table of Contents
 <table>
 <tr><td colspan="2"><a href="#1-data" style="color:#B22222">1. Data</a></td></tr>
-<tr>
-  <td>&ensp;<a href="#11-distribution-imbalance">1.1 Distribution Imbalance</a></td>
-  <td>&ensp;<a href="#12-data-homogeneity">1.2 Data Homogeneity</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#13-annotation-irrelevance">1.3 Annotation Irrelevance</a></td>
-</tr>
 
 <tr><td colspan="2"><a href="#2-visual-encoder" style="color:#B22222">2. Visual Encoder</a></td></tr>
 
 <tr><td colspan="2"><a href="#3-modality-aligning" style="color:#B22222">3. Modality Aligning</a></td></tr>
 
 <tr><td colspan="2"><a href="#4-from-llm" style="color:#B22222">4. From LLM</a></td></tr>
-<tr>
-  <td>&ensp;<a href="#41-insufficient-context-attention">4.1 Insufficient Context Attention</a></td>
-  <td>&ensp;<a href="#42-stochastic-sampling-decoding">4.2 Stochastic Sampling Decoding</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#43-capability-misalignment">4.3 Capability Misalignment</a></td>
-</tr>
 </table>
 
 ## [1. Data](#content)
-### [1.1 Distribution Imbalance](#content)
 1. [Ciem: Contrastive instruction evaluation method for better instruction tuning](), NeurIPS workshop 2023, \
 Hongyu Hu, Jiyuan Zhang, Minyi Zhao, et al.
 1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
 Fuxiao Liu, Kevin Lin, Linjie Li, et al.
-
-### [1.2 Data Homogeneity](#content)
 1. [Rlhf-v: Towards trustworthy mllms via behavior alignment from fine-grained correctional human feedback](), arXiv 2023, \
 Tianyu Yu, Yuan Yao, Haoye Zhang, et al.
 1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
 Fuxiao Liu, Kevin Lin, Linjie Li, et al.
-
-### [1.3 Annotation Irrelevance](#content)
 1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
 Fuxiao Liu, Kevin Lin, Linjie Li, et al.
 
@@ -63,16 +44,11 @@ Shukang Yin, Chaoyou Fu, Sirui Zhao, et al.
 Zhe Chen, Jiannan Wu, Wenhai Wang, et al.
 
 ## [4. From LLM](#content)
-### [4.1 Insufficient Context Attention](#content)
 1. [Vigc: Visual instruction generation and correction](), arXiv 2023, \
 Bin Wang, Fan Wu, Xiao Han, et al.
-
-### [4.2 Stochastic Sampling Decoding](#content)
 1. [The curious case of neural text degeneration](), ICLR 2020, \
 Ari Holtzman, Jan Buys, Li Du, et al.
 1. [Neural path hunter: Reducing hallucination in dialogue systems via path grounding](), EMNLP 2021, \
 Nouha Dziri, Andrea Madotto, Osmar R Zaiane, et al.
-
-### [4.3 Capability Misalignment](#content)
 1. [A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions](), ACM TIS 2024, \
 Lei Huang, Weijiang Yu, Weitao Ma, et al.
