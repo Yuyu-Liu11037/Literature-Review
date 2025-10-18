@@ -3,7 +3,7 @@
 <table>
 <tr><td colspan="2"><a href="#1-methods-and-models" style="color:#B22222">1. Methods and Models</a></td></tr>
 <tr>
-  <td>&ensp;<a href="#11-lvlm-inference">1.1 LVLM Inference</a></td>
+  <td>&ensp;<a href="#11-inference">1.1 Inference</a></td>
   <!-- <td>&ensp;<a href="#12-datasets-and-benchmarks">1.2 Datasets and Benchmarks</a></td> -->
 </tr>
 <tr>
@@ -20,7 +20,7 @@
 </tr>
 <tr>
   <td>&ensp;<a href="#19-preference-learning">1.9 Preference Learning</a></td>
-  <td>&ensp;<a href="#110-model-weights-editing">1.10 Data Bias Mitigation</a></td>
+  <td>&ensp;<a href="#110-data">1.10 Data</a></td>
 </tr>
 
 <tr><td colspan="2"><a href="#2-applications" style="color:#B22222">2. Applications</a></td></tr>
@@ -34,7 +34,7 @@
 </tr>
 <tr>
   <td>&ensp;<a href="#25-biology">2.5 Biology</a></td>
-  <td>&ensp;<a href="#26-vision-question-answering">2.6 Vision Question Answering</a></td>
+  <!-- <td>&ensp;<a href="#26-vision-question-answering">2.6 Vision Question Answering</a></td> -->
 </tr>
 <tr>
   <td>&ensp;<a href="#27-counterfactual-presupposition-questions">2.7 Counterfactual Presupposition Questions</a></td>
@@ -44,7 +44,7 @@
 
 
 ## [1. Methods and Models](#content)
-### [1.1 LVLM Inference](#content)
+### [1.1 Inference](#content)
 1. [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering](https://arxiv.org/abs/2502.03628), ICML 2025, \
 Zhuowei Li, Haizhou Shi, Yunhe Gao, Di Liu, Zhenting Wang, Yuxiao Chen, Ting Liu, Long Zhao, Hao Wang, Dimitris N. Metaxas
 1. [SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding](https://arxiv.org/abs/2506.08391), ICML 2025, \
@@ -83,6 +83,8 @@ Wenbin An, Feng Tian, Sicong Leng, Jiahao Nie, Haonan Lin, QianYing Wang, Ping C
 Zhangqi Jiang, Junkai Chen, Beier Zhu, Tingjin Luo, Yankun Shen, Xu Yang
 1. [ICT: Image-Object Cross-Level Trusted Intervention for Mitigating Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2411.15268), CVPR 2025, \
 Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xuming Hu
+1. [Seeing Far and Clearly: Mitigating Hallucinations in MLLMs with Attention Causal Decoding](https://arxiv.org/abs/2505.16652), CVPR 2025, \
+Feilong Tang, Chengzhi Liu, Zhongxing Xu, Ming Hu, Zelin Peng, Zhiwei Yang, Jionglong Su, Minquan Lin, Yifan Peng, Xuelian Cheng, Imran Razzak, Zongyuan Ge
 1. [HALC: Object Hallucination Reduction via Adaptive Focal-Contrast Decoding](https://arxiv.org/abs/2403.00425), ICML 2024, \
 Zhaorun Chen, Zhuokai Zhao, Hongyin Luo, Huaxiu Yao, Bo Li, Jiawei Zhou
 1. [CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models](https://arxiv.org/abs/2406.01920), NeurIPS 2024, \
@@ -120,7 +122,7 @@ Dokyoon Yoon, Youngsook Song, Woomyong Park
 1. [Mitigating Hallucinations in Large Vision-Language Models via DPO: On-Policy Data Hold the Key](https://chatgpt.com/c/68d76812-3148-8326-b324-0f8bae04582f), CVPR 2025, \
 Zhihe Yang, Xufang Luo, Dongqi Han, Yunjian Xu, Dongsheng Li
 
-### [1.10 Data Bias Mitigation](#content)
+### [1.10 Data](#content)
 1. [CIEM: Contrastive Instruction Evaluation Method for Better Instruction Tuning](https://arxiv.org/abs/2309.02301), NeurIPS 2023 Workshop, \
    Hongyu Hu, Jiyuan Zhang, Minyi Zhao, Zhenbang Sun
 
@@ -149,10 +151,6 @@ Kyungho Bae, Jinhyung Kim, Sihaeng Lee, Soonyoung Lee, Gunhee Lee, Jinwoo Choi
 **CXR**
 1. [FactCheXcker: Mitigating Measurement Hallucinations in Chest X-ray Report Generation Models](https://arxiv.org/abs/2411.18672), CVPR 2025, \
 Alice Heiman, Xiaoman Zhang, Emma Chen, Sung Eun Kim, Pranav Rajpurkar
-
-### [2.6 Vision Question Answering](#content)
-1. [Seeing Far and Clearly: Mitigating Hallucinations in MLLMs with Attention Causal Decoding](https://arxiv.org/abs/2505.16652), CVPR 2025, \
-Feilong Tang, Chengzhi Liu, Zhongxing Xu, Ming Hu, Zelin Peng, Zhiwei Yang, Jionglong Su, Minquan Lin, Yifan Peng, Xuelian Cheng, Imran Razzak, Zongyuan Ge
 
 ### [2.7 Counterfactual Presupposition Questions](#content)
 1. [Antidote: A Unified Framework for Mitigating LVLM Hallucinations in Counterfactual Presupposition and Object Perception](https://arxiv.org/abs/2504.20468), CVPR 2025, \
