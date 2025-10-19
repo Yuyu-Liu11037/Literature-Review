@@ -19,6 +19,10 @@ Hallucination mitigation in Large Language Models (LLMs) addresses the challenge
     <td>&ensp;<a href="#25-analysis">2.5 Analysis</a></td>
     <td>&ensp;<a href="#26-knowledge-editing">2.6 Knowledge Editing</a></td>
 </tr>
+<tr>
+    <td>&ensp;<a href="#27-attention-sink">2.7 Attention Sink</a></td>
+    <!-- <td>&ensp;<a href="#26-knowledge-editing">2.6 Knowledge Editing</a></td> -->
+</tr>
 
 <tr><td colspan="2"><a href="#3-applications" style="color:#B22222">3. Applications</a></td></tr>
 <tr>
@@ -76,7 +80,21 @@ Hadas Orgad, Michael Toker, Zorik Gekhman, Roi Reichart, Idan Szpektor, Hadas Ko
 1. [AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models](https://arxiv.org/abs/2410.02355), ICLR 2025 (Oral), \
 Junfeng Fang, Houcheng Jiang, Kun Wang, Yunshan Ma, Shi Jie, Xiang Wang, Xiangnan He, Tat-seng Chua
 
-
+### [2.7 Attention Sink](#content)
+1. [When attention sink emerges in language models: An empirical view](https://arxiv.org/abs/2410.10781), ICLR 2025, \
+Xiangming Gu, Tianyu Pang, Chao Du, Qian Liu, Fengzhuo Zhang, Cunxiao Du, Ye Wang, Min Lin
+1. [Unveiling and harnessing hidden attention sinks: Enhancing large language models without training through attention calibration](https://arxiv.org/abs/2406.15765), ICML 2024, \
+Zhongzhi Yu, Zheng Wang, Yonggan Fu, Huihong Shi, Khalid Shaikh, Yingyan Celine Lin
+1. [Efficient streaming language models with attention sinks](https://arxiv.org/abs/2309.17453), ICLR 2024, \
+Guangxuan Xiao, Yuandong Tian, Beidi Chen, Song Han, Mike Lewis
+1. [Information Flow Routes: Automatically Interpreting Language Models at Scale](https://arxiv.org/abs/2403.00824), EMNLP 2024, \
+Javier Ferrando, Elena Voita
+1. [Vision transformers need registers](https://arxiv.org/abs/2309.16588), ICLR 2024 Oral, \
+Timothée Darcet, Maxime Oquab, Julien Mairal, Piotr Bojanowski
+1. [Massive activations in large language models](https://arxiv.org/abs/2402.17762), COLM 2024, \
+Mingjie Sun, Xinlei Chen, J. Zico Kolter, Zhuang Liu
+1. [Spectral filters, dark signals, and attention sinks](https://arxiv.org/abs/2402.09221), ACL 2024, \
+Nicola Cancedda
 
 ## [3. Applications](#content)
 ### [3.1 Agent](#content)

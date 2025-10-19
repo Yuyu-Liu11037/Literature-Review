@@ -85,6 +85,8 @@ Zhangqi Jiang, Junkai Chen, Beier Zhu, Tingjin Luo, Yankun Shen, Xu Yang
 Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xuming Hu
 1. [Seeing Far and Clearly: Mitigating Hallucinations in MLLMs with Attention Causal Decoding](https://arxiv.org/abs/2505.16652), CVPR 2025, \
 Feilong Tang, Chengzhi Liu, Zhongxing Xu, Ming Hu, Zelin Peng, Zhiwei Yang, Jionglong Su, Minquan Lin, Yifan Peng, Xuelian Cheng, Imran Razzak, Zongyuan Ge
+1. [IBD: Alleviating Hallucinations in Large Vision-Language Models via Image-Biased Decoding](https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Zhu_IBD_Alleviating_Hallucinations_in_Large_Vision-Language_Models_via_Image-Biased_Decoding_CVPRW_2025_paper.html), CVPR Workshop 2025, \
+Lanyun Zhu, Deyi Ji, Tianrun Chen, Peng Xu, Jieping Ye, Jun Liu
 1. [Fact: Teaching mllms with faithful, concise and transferable rationales](https://arxiv.org/abs/2404.11129), ACM MM 2024, \
 Minghe Gao, Shuang Chen, Liang Pang, Yuan Yao, Jisheng Dang, Wenqiao Zhang, Juncheng Li, Siliang Tang, Yueting Zhuang, Tat-Seng Chua
 1. [Cantor: Inspiring multimodal chainof-thought of mllm](https://arxiv.org/abs/2404.16033), ACM MM 2024, \
@@ -101,6 +103,8 @@ Zhaorun Chen, Zhuokai Zhao, Hongyin Luo, Huaxiu Yao, Bo Li, Jiawei Zhou
 Junho Kim, Hyunjun Kim, Yeonju Kim, Yong Man Ro
 
 ### [1.2 Modality Align](#content)
+1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), ICLR 2025, \
+Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
 1. [(MOF) Eyes wide shut? exploring the visual shortcomings of multimodal llms](https://arxiv.org/abs/2401.06209), arXiv 2024, \
 Shengbang Tong, Zhuang Liu, Yuexiang Zhai, Yi Ma, Yann LeCun, Saining Xie
 1. [Enhancing multimodal large language models with vision detection models: An empirical study](https://arxiv.org/abs/2401.17981v2), arXiv 2024, \
@@ -139,6 +143,10 @@ Cong Chen, Mingyu Liu, Chenchen Jing, Yizhou Zhou, Fengyun Rao, Hao Chen, Bo Zha
 Nick Jiang, Anish Kachinthaya, Suzanne Petryk, Yossi Gandelsman
 1. [VASparse: Towards Efficient Visual Hallucination Mitigation via Visual-Aware Token Sparsification](https://arxiv.org/abs/2501.06553), CVPR 2025, \
 Xianwei Zhuang, Zhihong Zhu, Yuxin Xie, Liming Liang, Yuexian Zou
+1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), arXiv 2025, \
+Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
+1. [Don't Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models](https://arxiv.org/abs/2405.17820), ACL Findings 2025, \
+Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
 
 ### [1.8 Model Weights Editing](#content)
 1. [Nullu: Mitigating Object Hallucinations in Large Vision-Language Models via HalluSpace Projection](https://arxiv.org/abs/2412.13817), CVPR 2025, \

@@ -5,6 +5,10 @@
 <tr><td colspan="2"><a href="#2-visual-encoder" style="color:#B22222">2. Visual Encoder</a></td></tr>
 
 <tr><td colspan="2"><a href="#3-modality-aligning" style="color:#B22222">3. Modality Aligning</a></td></tr>
+<tr>
+  <td>&ensp;<a href="#31-attention-sink">3.1 Attention Sink</a></td>
+  <!-- <td>&ensp;<a href="#12-modality-align">1.2 Modality Align</a></td> -->
+</tr>
 
 <tr><td colspan="2"><a href="#4-from-llm" style="color:#B22222">4. From LLM</a></td></tr>
 </table>
@@ -16,8 +20,6 @@ Hongyu Hu, Jiyuan Zhang, Minyi Zhao, et al.
 Fuxiao Liu, Kevin Lin, Linjie Li, et al.
 1. [Rlhf-v: Towards trustworthy mllms via behavior alignment from fine-grained correctional human feedback](), arXiv 2023, \
 Tianyu Yu, Yuan Yao, Haoye Zhang, et al.
-1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
-Fuxiao Liu, Kevin Lin, Linjie Li, et al.
 
 ## [2. Visual Encoder](#content)
 1. [Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption](), arXiv 2023, \
@@ -40,6 +42,10 @@ Chaoya Jiang, Haiyang Xu, Mengfan Dong, et al.
 Shukang Yin, Chaoyou Fu, Sirui Zhao, et al.
 1. [Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks](), arXiv 2023, \
 Zhe Chen, Jiannan Wu, Wenhai Wang, et al.
+
+### [3.1 Attention Sink](#content)
+1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), ICLR 2025, \
+Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
 
 ## [4. From LLM](#content)
 1. [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://dl.acm.org/doi/full/10.1145/3703155), ACM TIS 2025, \

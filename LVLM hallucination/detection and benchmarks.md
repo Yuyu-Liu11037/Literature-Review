@@ -7,6 +7,8 @@
 </table>
 
 ## [1. Detection](#content)
+1. [Detecting and mitigating hallucination in large vision language models via fine-grained ai feedback](https://arxiv.org/abs/2404.14233), AAAI 2025, \
+Wenyi Xiao, Ziwei Huang, Leilei Gan, Wanggui He, Haoyuan Li, Zhelun Yu, Fangxun Shu, Hao Jiang, Linchao Zhu
 1. [HalLoc: Token-level Localization of Hallucinations for Vision Language Models](https://arxiv.org/abs/2506.10286), CVPR 2025, \
 Eunkyu Park, Minyeong Kim, Gunhee Kim
 1. [Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d75660d6eb0ce31360c768fef85301dd-Abstract-Conference.html), NeurIPS 2024, \
