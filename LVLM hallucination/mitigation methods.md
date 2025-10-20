@@ -22,6 +22,10 @@
   <td>&ensp;<a href="#19-preference-learning">1.9 Preference Learning</a></td>
   <td>&ensp;<a href="#110-data">1.10 Data</a></td>
 </tr>
+<tr>
+  <td>&ensp;<a href="#111-rag">1.11 RAG</a></td>
+  <!-- <td>&ensp;<a href="#110-data">1.10 Data</a></td> -->
+</tr>
 
 <tr><td colspan="2"><a href="#2-applications" style="color:#B22222">2. Applications</a></td></tr>
 <tr>
@@ -87,6 +91,10 @@ Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xu
 Feilong Tang, Chengzhi Liu, Zhongxing Xu, Ming Hu, Zelin Peng, Zhiwei Yang, Jionglong Su, Minquan Lin, Yifan Peng, Xuelian Cheng, Imran Razzak, Zongyuan Ge
 1. [IBD: Alleviating Hallucinations in Large Vision-Language Models via Image-Biased Decoding](https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Zhu_IBD_Alleviating_Hallucinations_in_Large_Vision-Language_Models_via_Image-Biased_Decoding_CVPRW_2025_paper.html), CVPR Workshop 2025, \
 Lanyun Zhu, Deyi Ji, Tianrun Chen, Peng Xu, Jieping Ye, Jun Liu
+1. [INTER: Mitigating Hallucination in Large Vision-Language Models by Interaction Guidance Sampling](https://arxiv.org/abs/2507.05056), ICCV 2025, \
+Xin Dong, Shichao Dong, Jin Wang, Jing Huang, Li Zhou, Zenghui Sun, Lihua Jing, Jingsong Lan, Xiaoyong Zhu, Bo Zheng
+1. [Mitigating Hallucination of Large Vision-Language Models via Dynamic Logits Calibration](https://arxiv.org/abs/2506.21509), arXiv 2025, \
+Jiahe Chen, Jiaying He, Qian Shao, Qiyuan Chen, Jiahe Ying, Hongxia Xu, Jintai Chen, Jianwei Zheng, Jian Wu
 1. [Fact: Teaching mllms with faithful, concise and transferable rationales](https://arxiv.org/abs/2404.11129), ACM MM 2024, \
 Minghe Gao, Shuang Chen, Liang Pang, Yuan Yao, Jisheng Dang, Wenqiao Zhang, Juncheng Li, Siliang Tang, Yueting Zhuang, Tat-Seng Chua
 1. [Cantor: Inspiring multimodal chainof-thought of mllm](https://arxiv.org/abs/2404.16033), ACM MM 2024, \
@@ -105,6 +113,10 @@ Junho Kim, Hyunjun Kim, Yeonju Kim, Yong Man Ro
 ### [1.2 Modality Align](#content)
 1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), ICLR 2025, \
 Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
+1. [Mitigating hallucination for large vision language model by inter-modality correlation calibration decoding](https://arxiv.org/abs/2501.01926), arXiv 2025, \
+Jiaming Li, Jiacheng Zhang, Zequn Jie, Lin Ma, Guanbin Li
+1. [Cure or Poison? Embedding Instructions Visually Alters Hallucination in Vision-Language Models](https://arxiv.org/abs/2508.01678), arXiv 2025, \
+Zhaochen Wang, Yiwei Wang, Yujun Cai
 1. [(MOF) Eyes wide shut? exploring the visual shortcomings of multimodal llms](https://arxiv.org/abs/2401.06209), arXiv 2024, \
 Shengbang Tong, Zhuang Liu, Yuexiang Zhai, Yi Ma, Yann LeCun, Saining Xie
 1. [Enhancing multimodal large language models with vision detection models: An empirical study](https://arxiv.org/abs/2401.17981v2), arXiv 2024, \
@@ -117,6 +129,8 @@ Songtao Jiang, Yan Zhang, Chenyi Zhou, Yeying Jin, Yang Feng, Jian Wu, Zuozhu Li
 Dongsheng Jiang, Yuchen Liu, Songlin Liu, Jin'e Zhao, Hao Zhang, Zhen Gao, Xiaopeng Zhang, Jin Li, Hongkai Xiong
 
 ### [1.3 Model Architecture](#content)
+1. [MCA-LLaVA: Manhattan Causal Attention for Reducing Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2507.09184), ACM MM 2025, \
+Qiyan Zhao, Xiaofeng Zhang, Yiheng Li, Yun Xing, Xiaosong Yuan, Feilong Tang, Sinan Fan, Xuhang Chen, Xuyao Zhang, Dahan Wang
 1. [Mitigating Object Hallucination via Concentric Causal Attention](https://arxiv.org/abs/2410.15926), NeurIPS 2024, \
 Yun Xing, Yiheng Li, Ivan Laptev, Shijian Lu
 
@@ -131,12 +145,16 @@ Yiyang Zhou, Chenhang Cui, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, 
 ### [1.5 Fine Tuning](#content)
 1. [Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment](https://iclr.cc/virtual/2025/poster/27739), ICLR 2025, \
 Pritam Sarkar, Sayna Ebrahimi, Ali Etemad, Ahmad Beirami, Sercan Arik, Tomas Pfister
+1. [Mitigating Object Hallucinations in Large Vision-Language Models via Attention Calibration](https://arxiv.org/abs/2502.01969), arXiv 2025, \
+Younan Zhu, Linwei Tao, Minjing Dong, Chang Xu
 1. [Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization](https://nips.cc/virtual/2024/poster/95118), NeurIPS 2024, \
 Xinyu Lyu, Beitao Chen, Lianli Gao, Hengtao Shen, Jingkuan Song
 
 ### [1.6 Training](#content)
 1. [PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training](https://iclr.cc/virtual/2025/poster/28657), ICLR 2025, \
 Cong Chen, Mingyu Liu, Chenchen Jing, Yizhou Zhou, Fengyun Rao, Hao Chen, Bo Zhang, Chunhua Shen
+1. [Generate, but Verify: Reducing Hallucination in Vision-Language Models with Retrospective Resampling](https://arxiv.org/abs/2504.13169), arXiv 2025, \
+Tsung-Han Wu, Heekyung Lee, Jiaxin Ge, Joseph E. Gonzalez, Trevor Darrell, David M. Chan
 
 ### [1.7 Internal Embeddings](#content)
 1. [Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations](https://iclr.cc/virtual/2025/poster/30724), ICLR 2025, \
@@ -147,6 +165,8 @@ Xianwei Zhuang, Zhihong Zhu, Yuxin Xie, Liming Liang, Yuexian Zou
 Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
 1. [Don't Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models](https://arxiv.org/abs/2405.17820), ACL Findings 2025, \
 Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
+1. [Mitigating hallucinations in large vision-language models by adaptively constraining information flow](https://arxiv.org/abs/2502.20750), AAAI 2025, \
+Jiaqi Bai, Hongcheng Guo, Zhongyuan Peng, Jian Yang, Zhoujun Li, Mohan Li, Zhihong Tian
 
 ### [1.8 Model Weights Editing](#content)
 1. [Nullu: Mitigating Object Hallucinations in Large Vision-Language Models via HalluSpace Projection](https://arxiv.org/abs/2412.13817), CVPR 2025, \
@@ -180,7 +200,9 @@ F. Liu, K. Lin, L. Li, J. Wang, Y. Yacoob, and L. Wang
 1. [Hallucidoctor: Mitigating hallucinatory toxicity in visual instruction data](), arXiv 2023, \
 Q. Yu, J. Li, L. Wei, L. Pang, W. Ye, B. Qin, S. Tang, Q. Tian, and Y. Zhuang
 
-
+### [1.11 RAG](#content)
+1. [(ARA) Alleviating Hallucination in Large Vision-Language Models with Active Retrieval Augmentation](https://dl.acm.org/doi/full/10.1145/3742434), ACM TMC 2025, \
+Xiaoye Qu, Qiyuan Chen, Wei Wei, Jiashuo Sun, Daizong Liu, Jianfeng Dong
 
 ## [2. Applications](#content)
 ### [2.1 Revolutionay Generative Models](#content)

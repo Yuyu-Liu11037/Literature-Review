@@ -11,6 +11,8 @@
 </tr>
 
 <tr><td colspan="2"><a href="#4-from-llm" style="color:#B22222">4. From LLM</a></td></tr>
+
+<tr><td colspan="2"><a href="#5-uncategorized" style="color:#B22222">5. Uncategorized</a></td></tr>
 </table>
 
 ## [1. Data](#content)
@@ -22,6 +24,8 @@ Fuxiao Liu, Kevin Lin, Linjie Li, et al.
 Tianyu Yu, Yuan Yao, Haoye Zhang, et al.
 
 ## [2. Visual Encoder](#content)
+1. [(VHBench-10) Diving into Mitigating Hallucinations from a Vision Perspective for Large Vision-Language Models](https://arxiv.org/abs/2509.13836), EMNLP 2025, \
+Weihang Wang, Xinhao Li, Ziyue Wang, Yan Pang, Jielei Zhang, Peiyi Li, Qiang Zhang, Longwen Gao
 1. [Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption](), arXiv 2023, \
 Bohan Zhai, Shijia Yang, Xiangchen Zhao
 1. [Monkey: Image resolution and text label are important things for large multi-modal models](), arXiv 2023, \
@@ -56,3 +60,7 @@ Bin Wang, Fan Wu, Xiao Han, et al.
 Nouha Dziri, Andrea Madotto, Osmar R Zaiane, et al.
 1. [The curious case of neural text degeneration](), ICLR 2020, \
 Ari Holtzman, Jan Buys, Li Du, et al.
+
+## [5. Uncategorized](#content)
+1. [A Comprehensive Analysis for Visual Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2505.01958), arXiv 2025, \
+Liqiang Jing, Guiming Hardy Chen, Ehsan Aghazadeh, Xin Eric Wang, Xinya Du

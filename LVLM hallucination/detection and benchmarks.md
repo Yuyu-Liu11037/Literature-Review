@@ -4,6 +4,7 @@
 
 <tr><td colspan="2"><a href="#2-benchmarks" style="color:#B22222">2. Benchmarks</a></td></tr>
 
+<tr><td colspan="2"><a href="#3-applications" style="color:#B22222">3. Applications</a></td></tr>
 </table>
 
 ## [1. Detection](#content)
@@ -29,6 +30,14 @@ Yahan Tu, Rui Hu, Jitao Sang
 Jiazhen Liu, Yuhan Fu, Ruobing Xie, Runquan Xie, Xingwu Sun, Fengzong Lian, Zhanhui Kang, Xirong Li
 1. [3D-GRAND: A Million-Scale Dataset for 3D-LLMs with Better Grounding and Less Hallucination](https://arxiv.org/abs/2406.05132), CVPR 2025, \
 Jianing Yang, Xuweiyi Chen, Nikhil Madaan, Madhavan Iyengar, Shengyi Qian, David F. Fouhey, Joyce Chai
+1. [(VHBench-10) Diving into Mitigating Hallucinations from a Vision Perspective for Large Vision-Language Models](https://arxiv.org/abs/2509.13836), EMNLP 2025, \
+Weihang Wang, Xinhao Li, Ziyue Wang, Yan Pang, Jielei Zhang, Peiyi Li, Qiang Zhang, Longwen Gao
+1. [(VHILT) Defining and Quantifying Visual Hallucinations in Vision-Language Models](https://aclanthology.org/2025.trustnlp-main.32/), TrustNLP 2025, \
+Vipula Rawte, Aryan Mishra, Amit Sheth, Amitava Das
+1. [A Comprehensive Analysis for Visual Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2505.01958), arXiv 2025, \
+Liqiang Jing, Guiming Hardy Chen, Ehsan Aghazadeh, Xin Eric Wang, Xinya Du
+1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), IJAR 2025, \
+Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
 1. [Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models](https://arxiv.org/abs/2406.16449), ICML 2024, \
 Mingrui Wu, Jiayi Ji, Oucheng Huang, Jiale Li, Yuhang Wu, Xiaoshuai Sun, Rongrong Ji
 1. [Toward a Stable, Fair, and Comprehensive Evaluation of Object Hallucination in Large Vision-Language Models](https://nips.cc/virtual/2024/poster/93023), NeurIPS 2024, \
@@ -83,3 +92,7 @@ Wenliang Dai, Junnan Li, Dongxu Li, et al.
 Junyang Wang, Yiyang Zhou, Guohai Xu, et al.
 1. [(CHAIR) Object hallucination in image captioning](), EMNLP 2018, \
 Anna Rohrbach, Lisa Anne Hendricks, Kaylee Burns, et al.
+
+## [3. Applications](#content)
+1. [Aerial Mirage: Unmasking Hallucinations in Large Vision Language Models](https://ieeexplore.ieee.org/abstract/document/10943891), WACV 2025, \
+Debolena Basak, Soham Bhatt, Sahith Kanduri, Maunendra Sankar Desarkar
