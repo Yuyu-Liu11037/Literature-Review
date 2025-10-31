@@ -20,7 +20,7 @@ Andrew Jesson, Nicolas Beltran Velez, Quentin Chu, Sweta Karlekar, Jannik Kossen
 Anisha Gunjal, Jihan Yin, Erhan Bas
 1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), ICAR 2025, \
 Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
-1. [LLaVA-RLHF: Aligning Large Multimodal Models with Factually Augmented RLHF](https://llava-rlhf.github.io/), arXiv 2023, \
+1. [(MMHal-Bench) LLaVA-RLHF: Aligning Large Multimodal Models with Factually Augmented RLHF](https://llava-rlhf.github.io/), arXiv 2023, \
 Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, Kurt Keutzer, Trevor Darrell
 
 ## [2. Benchmark](#content)
@@ -38,6 +38,8 @@ Vipula Rawte, Aryan Mishra, Amit Sheth, Amitava Das
 Liqiang Jing, Guiming Hardy Chen, Ehsan Aghazadeh, Xin Eric Wang, Xinya Du
 1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), IJAR 2025, \
 Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
+1. [Mm-vet: Evaluating large multimodal models for integrated capabilities](https://arxiv.org/abs/2308.02490), ICML 2024, \
+   Weihao Yu, Zhengyuan Yang, Linjie Li, Jianfeng Wang, Kevin Lin, Zicheng Liu, Xinchao Wang, Lijuan Wang
 1. [Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models](https://arxiv.org/abs/2406.16449), ICML 2024, \
 Mingrui Wu, Jiayi Ji, Oucheng Huang, Jiale Li, Yuhang Wu, Xiaoshuai Sun, Rongrong Ji
 1. [Toward a Stable, Fair, and Comprehensive Evaluation of Object Hallucination in Large Vision-Language Models](https://nips.cc/virtual/2024/poster/93023), NeurIPS 2024, \
@@ -52,6 +54,8 @@ W. Huang, H. Liu, M. Guo, and N. Z. Gong
 Y. Qian, H. Zhang, Y. Yang, and Z. Gan
 1. [The all-seeing project v2: Towards general relation comprehension of the open world](), arXiv 2024, \
 W. Wang, Y. Ren, H. Luo, T. Li, C. Yan, Z. Chen, W. Wang, Q. Li, L. Lu, X. Zhu et al.
+1. [(LLaVA-Bench) Visual instruction tuning](https://arxiv.org/abs/2304.08485), NeurIPS 2023, \
+   Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
 1. [(POPE) Evaluating object hallucination in large vision-language models](https://arxiv.org/abs/2305.10355), EMNLP 2023, \
 Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne Xin Zhao, Ji-Rong Wen
 1. [(NOPE) Negative object presence evaluation (nope) to measure object hallucination in vision-language models](), ALVR 2024, \
@@ -90,6 +94,8 @@ Anisha Gunjal, Jihan Yin, and Erhan Bas
 Wenliang Dai, Junnan Li, Dongxu Li, et al.
 1. [Evaluation and analysis of hallucination in large vision-language models](), arXiv 2023, \
 Junyang Wang, Yiyang Zhou, Guohai Xu, et al.
+1. [A-okvqa: A benchmark for visual question answering using world knowledge](https://arxiv.org/abs/2206.01718), ECCV 2022, \
+   Dustin Schwenk, Apoorv Khandelwal, Christopher Clark, Kenneth Marino, Roozbeh Mottaghi
 1. [(CHAIR) Object hallucination in image captioning](), EMNLP 2018, \
 Anna Rohrbach, Lisa Anne Hendricks, Kaylee Burns, et al.
 
