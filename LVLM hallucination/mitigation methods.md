@@ -24,7 +24,7 @@
 </tr>
 <tr>
   <td>&ensp;<a href="#111-rag">1.11 RAG</a></td>
-  <td>&ensp;<a href="#112-contrastive-decoding">1.12 Contrastive Decoding</a></td>
+  <td>&ensp;<a href="#112-(visual)-contrastive-decoding">1.12 (Visual) Contrastive Decoding</a></td>
 </tr>
 
 <tr><td colspan="2"><a href="#2-applications" style="color:#B22222">2. Applications</a></td></tr>
@@ -101,8 +101,6 @@ Jiahe Chen, Jiaying He, Qian Shao, Qiyuan Chen, Jiahe Ying, Hongxia Xu, Jintai C
 Minghe Gao, Shuang Chen, Liang Pang, Yuan Yao, Jisheng Dang, Wenqiao Zhang, Juncheng Li, Siliang Tang, Yueting Zhuang, Tat-Seng Chua
 1. [Cantor: Inspiring multimodal chainof-thought of mllm](https://arxiv.org/abs/2404.16033), ACM MM 2024, \
 Timin Gao, Peixian Chen, Mengdan Zhang, Chaoyou Fu, Yunhang Shen, Yan Zhang, Shengchuan Zhang, Xiawu Zheng, Xing Sun, Liujuan Cao, Rongrong Ji
-1. [Opera: Alleviating hallucination in multimodal large language models via over-trust penalty and retrospectionallocation](https://arxiv.org/abs/2311.17911), CVPR 2024, \
-Qidong Huang, Xiaoyi Dong, Pan Zhang, Bin Wang, Conghui He, Jiaqi Wang, Dahua Lin, Weiming Zhang, Nenghai Yu
 1. [Pensieve: Retrospectthen-compare mitigates visual hallucination](https://arxiv.org/abs/2403.14401), arXiv 2024, \
 Dingchen Yang, Bowen Cao, Guang Chen, Changjun Jiang
 1. [Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models](https://arxiv.org/abs/2402.09801), EMNLP 2024, \
@@ -206,7 +204,7 @@ Q. Yu, J. Li, L. Wei, L. Pang, W. Ye, B. Qin, S. Tang, Q. Tian, and Y. Zhuang
 1. [(ARA) Alleviating Hallucination in Large Vision-Language Models with Active Retrieval Augmentation](https://dl.acm.org/doi/full/10.1145/3742434), ACM TMC 2025, \
 Xiaoye Qu, Qiyuan Chen, Wei Wei, Jiashuo Sun, Daizong Liu, Jianfeng Dong
 
-### [1.12 Contrastive Decoding](#content)
+### [1.12 (Visual) Contrastive Decoding](#content)
 1. [Self-Augmented Visual Contrastive Decoding](https://arxiv.org/abs/2510.13315), arXiv 2025, \
 Eun Woo Im, Muhammad Kashif Ali, Vivek Gupta
     <details> 
@@ -229,10 +227,20 @@ Kyungryul Back, Seongbeom Park, Milim Kim, Mincheol Kwon, SangHyeok Lee, Hyunyou
 Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
 1. [Octopus: Alleviating Hallucination via Dynamic Contrastive Decoding](https://arxiv.org/abs/2503.00361), CVPR 2025, \
 Wei Suo, Lijun Zhang, Mengyang Sun, Lin Yuanbo Wu, Peng Wang, Yanning Zhang
+1. [Alleviating hallucinations of large language models through induced hallucinations](https://arxiv.org/abs/2312.15710), NAACL 2025, \
+   Yue Zhang, Leyang Cui, Wei Bi, Shuming Shi
+1. [Opera: Alleviating hallucination in multi-modal large language models via over-trust penalty and retrospection-allocation](https://arxiv.org/abs/2311.17911), CVPR 2024, \
+Qidong Huang, Xiaoyi Dong, Pan Zhang, Bin Wang, Conghui He, Jiaqi Wang, Dahua Lin, Weiming Zhang, Nenghai Yu
 1. [Multi-modal hallucination control by visual information grounding](https://arxiv.org/abs/2403.14003), CVPR 2024, \
    Alessandro Favero, Luca Zancato, Matthew Trager, Siddharth Choudhary, Pramuditha Perera, Alessandro Achille, Ashwin Swaminathan, Stefano Soatto
-1. [Mitigating object hallucinations in large visionlanguage models through visual contrastive decoding](https://arxiv.org/abs/2311.16922), arXiv 2023, \
+1. [Mitigating object hallucinations in large vision-language models through visual contrastive decoding](https://arxiv.org/abs/2311.16922), CVPR 2024, \
    Sicong Leng, Hang Zhang, Guanzheng Chen, Xin Li, Shijian Lu, Chunyan Miao, Lidong Bing
+1. [Inference-time intervention: Eliciting truthful answers from a language model](https://arxiv.org/abs/2306.03341), NeurIPS 2023, \
+   Kenneth Li, Oam Patel, Fernanda Viégas, Hanspeter Pfister, Martin Wattenberg
+1. [Dola: Decoding by contrasting layers improves factuality in large language models](https://arxiv.org/abs/2309.03883), arXiv 2023, \
+   Yung-Sung Chuang, Yujia Xie, Hongyin Luo, Yoon Kim, James Glass, Pengcheng He
+1. [Contrastive decoding: Open-ended text generation as optimization](https://arxiv.org/abs/2210.15097), ACL 2023, \
+   Xiang Lisa Li, Ari Holtzman, Daniel Fried, Percy Liang, Jason Eisner, Tatsunori Hashimoto, Luke Zettlemoyer, Mike Lewis
 
 ## [2. Applications](#content)
 ### [2.1 Revolutionay Generative Models](#content)
