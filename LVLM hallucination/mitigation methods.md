@@ -24,7 +24,7 @@
 </tr>
 <tr>
   <td>&ensp;<a href="#111-rag">1.11 RAG</a></td>
-  <!-- <td>&ensp;<a href="#110-data">1.10 Data</a></td> -->
+  <td>&ensp;<a href="#112-contrastive-decoding">1.12 Contrastive Decoding</a></td>
 </tr>
 
 <tr><td colspan="2"><a href="#2-applications" style="color:#B22222">2. Applications</a></td></tr>
@@ -49,10 +49,6 @@
 
 ## [1. Methods and Models](#content)
 ### [1.1 Inference](#content)
-1. [Watermarking for Factuality: Guiding Vision-Language Models Toward Truth via Tri-layer Contrastive Decoding](https://arxiv.org/abs/2510.14304), arXiv 2025, \
-Kyungryul Back, Seongbeom Park, Milim Kim, Mincheol Kwon, SangHyeok Lee, Hyunyoung Lee, Junhee Cho, Seunghyun Park, Jinkyu Kim
-1. [Self-Augmented Visual Contrastive Decoding](https://arxiv.org/abs/2510.13315), arXiv 2025, \
-Eun Woo Im, Muhammad Kashif Ali, Vivek Gupta
 1. [When Images Speak Louder: Mitigating Language Bias-induced Hallucinations in VLMs through Cross-Modal Guidance](https://arxiv.org/abs/2510.10466), arXiv 2025, \
 Jinjin Cao, Zhiyang Chen, Zijun Wang, Liyuan Ma, Weijian Luo, Guojun Qi
 1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), arXiv 2025, \
@@ -87,8 +83,6 @@ Ce Zhang, Zifu Wan, Zhehan Kan, Martin Q. Ma, Simon Stepputtis, Deva Ramanan, Ru
 Sreyan Ghosh, Chandra Kiran Evuru, Sonal Kumar, Utkarsh Tyagi, Oriol Nieto, Zeyu Jin, Dinesh Manocha
 1. [ClearSight: Visual Signal Enhancement for Object Hallucination Mitigation in Multimodal Large Language Models](https://arxiv.org/abs/2503.13107), CVPR 2025, \
 Hao Yin, Guangzong Si, Zilei Wang
-1. [Octopus: Alleviating Hallucination via Dynamic Contrastive Decoding](https://arxiv.org/abs/2503.00361), CVPR 2025, \
-Wei Suo, Lijun Zhang, Mengyang Sun, Lin Yuanbo Wu, Peng Wang, Yanning Zhang
 1. [Mitigating Object Hallucinations in Large Vision-Language Models with Assembly of Global and Local Attention](https://arxiv.org/abs/2406.12718), CVPR 2025, \
 Wenbin An, Feng Tian, Sicong Leng, Jiahao Nie, Haonan Lin, QianYing Wang, Ping Chen, Xiaoqin Zhang, Shijian Lu
 1. [Devils in Middle Layers of Large Vision-Language Models: Interpreting, Detecting and Mitigating Object Hallucinations via Attention Lens](https://arxiv.org/abs/2411.16724), CVPR 2025, \
@@ -211,6 +205,34 @@ Q. Yu, J. Li, L. Wei, L. Pang, W. Ye, B. Qin, S. Tang, Q. Tian, and Y. Zhuang
 ### [1.11 RAG](#content)
 1. [(ARA) Alleviating Hallucination in Large Vision-Language Models with Active Retrieval Augmentation](https://dl.acm.org/doi/full/10.1145/3742434), ACM TMC 2025, \
 Xiaoye Qu, Qiyuan Chen, Wei Wei, Jiashuo Sun, Daizong Liu, Jianfeng Dong
+
+### [1.12 Contrastive Decoding](#content)
+1. [Self-Augmented Visual Contrastive Decoding](https://arxiv.org/abs/2510.13315), arXiv 2025, \
+Eun Woo Im, Muhammad Kashif Ali, Vivek Gupta
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The method (SAVCD) first uses a self-augmentation selection prompt to have the model pick a text-query–relevant visual augmentation, then applies visual contrastive decoding with a new Sparsity Adaptive Truncation that sets a confidence-aware threshold from the full logit entropy to prune implausible next-token candidates.
+      
+      2. Cause: auto-regressive training objective / modality misalignment / contextual failures
+    </details>
+1. [Watermarking for Factuality: Guiding Vision-Language Models Toward Truth via Tri-layer Contrastive Decoding](https://arxiv.org/abs/2510.14304), EMNLP 2025 Findings, \
+Kyungryul Back, Seongbeom Park, Milim Kim, Mincheol Kwon, SangHyeok Lee, Hyunyoung Lee, Junhee Cho, Seunghyun Park, Jinkyu Kim
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: A training-free tri-layer contrastive decoding: pick a mature (top) layer and an amateur layer, use a watermark question to find a visually grounded pivot layer, then contrast their logits to generate the final answer.
+      
+      2. Cause: modality imbalance
+    </details>
+1. [Don't Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models](https://arxiv.org/abs/2405.17820), ACL Findings 2025, \
+Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
+1. [Octopus: Alleviating Hallucination via Dynamic Contrastive Decoding](https://arxiv.org/abs/2503.00361), CVPR 2025, \
+Wei Suo, Lijun Zhang, Mengyang Sun, Lin Yuanbo Wu, Peng Wang, Yanning Zhang
+1. [Multi-modal hallucination control by visual information grounding](https://arxiv.org/abs/2403.14003), CVPR 2024, \
+   Alessandro Favero, Luca Zancato, Matthew Trager, Siddharth Choudhary, Pramuditha Perera, Alessandro Achille, Ashwin Swaminathan, Stefano Soatto
+1. [Mitigating object hallucinations in large visionlanguage models through visual contrastive decoding](https://arxiv.org/abs/2311.16922), arXiv 2023, \
+   Sicong Leng, Hang Zhang, Guanzheng Chen, Xin Li, Shijian Lu, Chunyan Miao, Lidong Bing
 
 ## [2. Applications](#content)
 ### [2.1 Revolutionay Generative Models](#content)
