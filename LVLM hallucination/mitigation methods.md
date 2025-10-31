@@ -49,6 +49,14 @@
 
 ## [1. Methods and Models](#content)
 ### [1.1 Inference](#content)
+1. [Watermarking for Factuality: Guiding Vision-Language Models Toward Truth via Tri-layer Contrastive Decoding](https://arxiv.org/abs/2510.14304), arXiv 2025, \
+Kyungryul Back, Seongbeom Park, Milim Kim, Mincheol Kwon, SangHyeok Lee, Hyunyoung Lee, Junhee Cho, Seunghyun Park, Jinkyu Kim
+1. [Self-Augmented Visual Contrastive Decoding](https://arxiv.org/abs/2510.13315), arXiv 2025, \
+Eun Woo Im, Muhammad Kashif Ali, Vivek Gupta
+1. [When Images Speak Louder: Mitigating Language Bias-induced Hallucinations in VLMs through Cross-Modal Guidance](https://arxiv.org/abs/2510.10466), arXiv 2025, \
+Jinjin Cao, Zhiyang Chen, Zijun Wang, Liyuan Ma, Weijian Luo, Guojun Qi
+1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), arXiv 2025, \
+Xintong Wang, Jingheng Pan, Liang Ding, Chris Biemann
 1. [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering](https://arxiv.org/abs/2502.03628), ICML 2025, \
 Zhuowei Li, Haizhou Shi, Yunhe Gao, Di Liu, Zhenting Wang, Yuxiao Chen, Ting Liu, Long Zhao, Hao Wang, Dimitris N. Metaxas
 1. [SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding](https://arxiv.org/abs/2506.08391), ICML 2025, \
@@ -231,3 +239,7 @@ Alice Heiman, Xiaoman Zhang, Emma Chen, Sung Eun Kim, Pranav Rajpurkar
 ### [2.7 Counterfactual Presupposition Questions](#content)
 1. [Antidote: A Unified Framework for Mitigating LVLM Hallucinations in Counterfactual Presupposition and Object Perception](https://arxiv.org/abs/2504.20468), CVPR 2025, \
 Yuanchen Wu, Lu Zhang, Hang Yao, Junlong Du, Ke Yan, Shouhong Ding, Yunsheng Wu, Xiaoqiang Li
+
+### [2.8 Reasoning Models](#content)
+1. [Mitigating Hallucination in Multimodal Reasoning via Functional Attention Control](https://arxiv.org/abs/2510.10285), arXiv 2025, \
+Haolang Lu, Bolun Chu, WeiYe Fu, Guoshun Nan, Junning Liu, Minghui Pan, Qiankun Li, Yi Yu, Hua Wang, Kun Wang

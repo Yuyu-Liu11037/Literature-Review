@@ -50,6 +50,8 @@ Zhe Chen, Jiannan Wu, Wenhai Wang, et al.
 ### [3.1 Attention Sink](#content)
 1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), ICLR 2025, \
 Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
+1. [What drives attention sinks? A study of massive activations and rotational positional encoding in large vision–language models](https://www.sciencedirect.com/science/article/abs/pii/S0306457325003723), IPM 2025, \
+Xiaofeng Zhang, Yuanchao Zhu, Chaochen Gu, Jiawei Cao, Hao Cheng, Kaijie Wu
 
 ## [4. From LLM](#content)
 1. [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://dl.acm.org/doi/full/10.1145/3703155), ACM TIS 2025, \
