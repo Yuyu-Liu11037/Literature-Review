@@ -49,9 +49,7 @@
 
 ## [1. Methods and Models](#content)
 ### [1.1 Inference](#content)
-1. [When Images Speak Louder: Mitigating Language Bias-induced Hallucinations in VLMs through Cross-Modal Guidance](https://arxiv.org/abs/2510.10466), arXiv 2025, \
-Jinjin Cao, Zhiyang Chen, Zijun Wang, Liyuan Ma, Weijian Luo, Guojun Qi
-1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), arXiv 2025, \
+1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), ACL Findings 2024, \
 Xintong Wang, Jingheng Pan, Liang Ding, Chris Biemann
 1. [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering](https://arxiv.org/abs/2502.03628), ICML 2025, \
 Zhuowei Li, Haizhou Shi, Yunhe Gao, Di Liu, Zhenting Wang, Yuxiao Chen, Ting Liu, Long Zhao, Hao Wang, Dimitris N. Metaxas
@@ -169,6 +167,15 @@ Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
 Jiaqi Bai, Hongcheng Guo, Zhongyuan Peng, Jian Yang, Zhoujun Li, Mohan Li, Zhihong Tian
 
 ### [1.8 Model Weights Editing](#content)
+1. [When Images Speak Louder: Mitigating Language Bias-induced Hallucinations in VLMs through Cross-Modal Guidance](https://arxiv.org/abs/2510.10466), arXiv 2025, \
+Jinjin Cao, Zhiyang Chen, Zijun Wang, Liyuan Ma, Weijian Luo, Guojun Qi
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: They propose Cross-Modal Guidance (CMG), a training-free decoding scheme that builds an “amateur” model by masking cross-modal and inter-visual attention in selected layers, then reweights the original logits using a PMI-style ratio between the original and masked output distributions, with dynamic attention masking and dynamic layer selection (via cosine-similarity) to choose where to mask.
+      
+      2. Cause: language bias (image-token attention decays through depth while text/system tokens dominate)
+    </details>
 1. [Nullu: Mitigating Object Hallucinations in Large Vision-Language Models via HalluSpace Projection](https://arxiv.org/abs/2412.13817), CVPR 2025, \
 Le Yang, Ziwei Zheng, Boxu Chen, Zhengyu Zhao, Chenhao Lin, Chao Shen
 
@@ -229,6 +236,8 @@ Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
 Wei Suo, Lijun Zhang, Mengyang Sun, Lin Yuanbo Wu, Peng Wang, Yanning Zhang
 1. [Alleviating hallucinations of large language models through induced hallucinations](https://arxiv.org/abs/2312.15710), NAACL 2025, \
    Yue Zhang, Leyang Cui, Wei Bi, Shuming Shi
+1. [Trusting Your Evidence: Hallucinate Less with Context-aware Decoding](https://arxiv.org/abs/2305.14739), NAACL 2024, \
+   Weijia Shi, Xiaochuang Han, Mike Lewis, Yulia Tsvetkov, Luke Zettlemoyer, Scott Wen-tau Yih
 1. [Opera: Alleviating hallucination in multi-modal large language models via over-trust penalty and retrospection-allocation](https://arxiv.org/abs/2311.17911), CVPR 2024, \
 Qidong Huang, Xiaoyi Dong, Pan Zhang, Bin Wang, Conghui He, Jiaqi Wang, Dahua Lin, Weiming Zhang, Nenghai Yu
 1. [Multi-modal hallucination control by visual information grounding](https://arxiv.org/abs/2403.14003), CVPR 2024, \
