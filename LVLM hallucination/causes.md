@@ -13,6 +13,8 @@
 <tr><td colspan="2"><a href="#4-from-llm" style="color:#B22222">4. From LLM</a></td></tr>
 
 <tr><td colspan="2"><a href="#5-uncategorized" style="color:#B22222">5. Uncategorized</a></td></tr>
+
+<tr><td colspan="2"><a href="#6-language-priors" style="color:#B22222">5. Language Priors</a></td></tr>
 </table>
 
 ## [1. Data](#content)
@@ -66,3 +68,7 @@ Ari Holtzman, Jan Buys, Li Du, et al.
 ## [5. Uncategorized](#content)
 1. [A Comprehensive Analysis for Visual Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2505.01958), arXiv 2025, \
 Liqiang Jing, Guiming Hardy Chen, Ehsan Aghazadeh, Xin Eric Wang, Xinya Du
+
+## [6. Language Priors](#content)
+1. [Overcoming Language Priors with Counterfactual Inference for Visual Question Answering](https://aclanthology.org/2023.ccl-1.52/), CNCCL 2023, \
+   Ren Zhibo, Wang Huizhen, Zhu Muhua, Wang Yichao, Xiao Tong, Zhu Jingbo
