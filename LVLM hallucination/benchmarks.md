@@ -8,6 +8,17 @@
 </table>
 
 ## [1. Detection](#content)
+1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), ACL Findings 2024, \
+Xintong Wang, Jingheng Pan, Liang Ding, Chris Biemann
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: Instruction Contrastive Decoding (ICD) appends “disturbance” role prefixes to the instruction to elicit hallucinatory tendencies, computes token distributions under standard vs. disturbed instructions, and selects tokens by penalizing the disturbed distribution—with an adaptive plausibility constraint that truncates to likely tokens.
+      
+      2. Cause: statistical biases and over-reliance on language priors
+  
+      3. Detection: They (1) run a hallucination detection analysis on MSCOCO by computing a “hallucination ratio” of objects predicted but absent in the image under baseline/positive/negative disturbance settings; (2) evaluate object-level hallucinations with the POPE binary QA benchmark (reporting Accuracy/Precision/Recall/F1); and (3) use the MME hallucination subset (existence/count/position/color) as QA with task scores. Generative LLaVa-Bench is assessed qualitatively (no automatic metric).
+    </details>
 1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), ICAR 2025, \
 Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
 1. [Detecting and mitigating hallucination in large vision language models via fine-grained ai feedback](https://arxiv.org/abs/2404.14233), AAAI 2025, \
