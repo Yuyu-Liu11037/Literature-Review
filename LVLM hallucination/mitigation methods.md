@@ -51,6 +51,15 @@
 ### [1.1 Inference](#content)
 1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), ACL Findings 2024, \
 Xintong Wang, Jingheng Pan, Liang Ding, Chris Biemann
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: Instruction Contrastive Decoding (ICD) appends “disturbance” role prefixes to the instruction to elicit hallucinatory tendencies, computes token distributions under standard vs. disturbed instructions, and selects tokens by penalizing the disturbed distribution—with an adaptive plausibility constraint that truncates to likely tokens.
+      
+      2. Cause: statistical biases and over-reliance on language priors
+  
+      3. Detection: They (1) run a hallucination detection analysis on MSCOCO by computing a “hallucination ratio” of objects predicted but absent in the image under baseline/positive/negative disturbance settings; (2) evaluate object-level hallucinations with the POPE binary QA benchmark (reporting Accuracy/Precision/Recall/F1); and (3) use the MME hallucination subset (existence/count/position/color) as QA with task scores. Generative LLaVa-Bench is assessed qualitatively (no automatic metric).
+    </details>
 1. [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering](https://arxiv.org/abs/2502.03628), ICML 2025, \
 Zhuowei Li, Haizhou Shi, Yunhe Gao, Di Liu, Zhenting Wang, Yuxiao Chen, Ting Liu, Long Zhao, Hao Wang, Dimitris N. Metaxas
 1. [SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding](https://arxiv.org/abs/2506.08391), ICML 2025, \
@@ -244,6 +253,8 @@ Qidong Huang, Xiaoyi Dong, Pan Zhang, Bin Wang, Conghui He, Jiaqi Wang, Dahua Li
    Alessandro Favero, Luca Zancato, Matthew Trager, Siddharth Choudhary, Pramuditha Perera, Alessandro Achille, Ashwin Swaminathan, Stefano Soatto
 1. [Mitigating object hallucinations in large vision-language models through visual contrastive decoding](https://arxiv.org/abs/2311.16922), CVPR 2024, \
    Sicong Leng, Hang Zhang, Guanzheng Chen, Xin Li, Shijian Lu, Chunyan Miao, Lidong Bing
+1. [Hallucination Augmented Contrastive Learning for Multimodal Large Language Model](https://arxiv.org/abs/2312.06968), CVPR 2024, \
+   Chaoya Jiang, Haiyang Xu, Mengfan Dong, Jiaxing Chen, Wei Ye, Ming Yan, Qinghao Ye, Ji Zhang, Fei Huang, Shikun Zhang
 1. [Inference-time intervention: Eliciting truthful answers from a language model](https://arxiv.org/abs/2306.03341), NeurIPS 2023, \
    Kenneth Li, Oam Patel, Fernanda Viégas, Hanspeter Pfister, Martin Wattenberg
 1. [Dola: Decoding by contrasting layers improves factuality in large language models](https://arxiv.org/abs/2309.03883), arXiv 2023, \
