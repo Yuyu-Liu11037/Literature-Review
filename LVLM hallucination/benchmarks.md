@@ -8,6 +8,21 @@
 </table>
 
 ## [1. Detection](#content)
+1. [SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding](https://arxiv.org/abs/2506.08391), ICML 2025, \
+Woohyeon Park, Woojin Kim, Jaeik Kim, Jaeyoung Do
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: A training-free, multi-stage pipeline that (i) builds multi-scale visual tokens via down-/re-scaling and positional-embedding interpolation, (ii) selects high-attention patches stage-by-stage using an entropy-controlled rate, and (iii) applies multi-stage contrastive decoding that contrasts successive “amateur→expert” outputs to sharpen grounding.
+      
+      2. Cause: indiscriminately fuse multi-scale patches
+  
+      3. Detection: They (a) define a hallucination probability P_Hal from the model’s token likelihoods and analyze it, and (b) compute an Attention Dice Coefficient by combining vision self-attention and cross-attention against segmentation masks to quantify grounding; empirically, higher alignment ↔ lower P_Hal. Benchmarks then evaluate hallucination via POPE’s yes/no object-presence queries.
+    </details>
+1. [Detecting and mitigating hallucination in large vision language models via fine-grained ai feedback](https://arxiv.org/abs/2404.14233), AAAI 2025, \
+Wenyi Xiao, Ziwei Huang, Leilei Gan, Wanggui He, Haoyuan Li, Zhelun Yu, Fangxun Shu, Hao Jiang, Linchao Zhu
+1. [HalLoc: Token-level Localization of Hallucinations for Vision Language Models](https://arxiv.org/abs/2506.10286), CVPR 2025, \
+Eunkyu Park, Minyeong Kim, Gunhee Kim
 1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), ACL Findings 2024, \
 Xintong Wang, Jingheng Pan, Liang Ding, Chris Biemann
     <details> 
@@ -19,12 +34,17 @@ Xintong Wang, Jingheng Pan, Liang Ding, Chris Biemann
   
       3. Detection: They (1) run a hallucination detection analysis on MSCOCO by computing a “hallucination ratio” of objects predicted but absent in the image under baseline/positive/negative disturbance settings; (2) evaluate object-level hallucinations with the POPE binary QA benchmark (reporting Accuracy/Precision/Recall/F1); and (3) use the MME hallucination subset (existence/count/position/color) as QA with task scores. Generative LLaVa-Bench is assessed qualitatively (no automatic metric).
     </details>
-1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), ICAR 2025, \
-Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
-1. [Detecting and mitigating hallucination in large vision language models via fine-grained ai feedback](https://arxiv.org/abs/2404.14233), AAAI 2025, \
-Wenyi Xiao, Ziwei Huang, Leilei Gan, Wanggui He, Haoyuan Li, Zhelun Yu, Fangxun Shu, Hao Jiang, Linchao Zhu
-1. [HalLoc: Token-level Localization of Hallucinations for Vision Language Models](https://arxiv.org/abs/2506.10286), CVPR 2025, \
-Eunkyu Park, Minyeong Kim, Gunhee Kim
+1. [MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation](https://iclr.cc/virtual/2025/poster/30978), ICLR 2025, \
+Chenxi Wang, Xiang Chen, Ningyu Zhang, Bozhong Tian, Haoming Xu, Shumin Deng, Huajun Chen
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: DeCo, a training-free, model-agnostic decoding tweak that dynamically picks a “preceding (anchor) layer” where ground-truth tokens are stronger and softly adds its logits to the final layer (scaled by a modulation coefficient) to correct the next-token distribution.
+      
+      2. Cause: Visual evidence is recognized in earlier layers but gets suppressed by language priors in deeper layers
+
+      3. Detection: via probing: they train a probe at each transformer layer to answer is-there-an-object (isexist(obj)) and show accuracy peaks in preceding layers; they also perform early-exit analyses to observe activation of ground-truth tokens across layers.
+    </details>
 1. [Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d75660d6eb0ce31360c768fef85301dd-Abstract-Conference.html), NeurIPS 2024, \
 Hongbo Wang, Jie Cao, Jin Liu, Xiaoqiang Zhou, Huaibo Huang, Ran He
 1. [Estimating the Hallucination Rate of Generative AI](https://nips.cc/virtual/2024/poster/95553), NeurIPS 2024, \
@@ -37,6 +57,8 @@ Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Ch
    Bohan Zhai, Shijia Yang, Chenfeng Xu, Sheng Shen, Kurt Keutzer, Chunyuan Li, Manling Li
 
 ## [2. Benchmark](#content)
+1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), ICAR 2025, \
+Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
 1. [ODE: Open-Set Evaluation of Hallucinations in Multimodal Large Language Models](https://arxiv.org/abs/2409.09318), CVPR 2025, \
 Yahan Tu, Rui Hu, Jitao Sang
 1. [PhD: A ChatGPT-Prompted Visual Hallucination Evaluation Dataset](https://huggingface.co/datasets/AIMClab-RUC/PhD), CVPR 2025, \

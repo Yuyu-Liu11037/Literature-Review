@@ -18,6 +18,15 @@
 </table>
 
 ## [1. Data](#content)
+1. [Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding](https://iclr.cc/virtual/2025/poster/27655), ICLR 2025, \
+Yeongjae Cho, Keonwoo Kim, Taebaek Hwang, Sungzoon Cho
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: splits an input image into sub-images, uses attention-guided weights to ensemble their logits with the original image’s logits, applies an adaptive plausibility constraint to keep plausible tokens, and provides a faster two-pass variant (FastED).
+      
+      2. Cause: data (images contain unnecessary/irrelevant objects (misdirecting attention) and when object resolution is low)
+    </details>
 1. [Ciem: Contrastive instruction evaluation method for better instruction tuning](), NeurIPS workshop 2023, \
 Hongyu Hu, Jiyuan Zhang, Minyi Zhao, et al.
 1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), arXiv 2023, \
