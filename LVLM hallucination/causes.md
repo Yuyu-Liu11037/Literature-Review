@@ -14,7 +14,7 @@
 
 <tr><td colspan="2"><a href="#5-uncategorized" style="color:#B22222">5. Uncategorized</a></td></tr>
 
-<tr><td colspan="2"><a href="#6-language-priors" style="color:#B22222">5. Language Priors</a></td></tr>
+<tr><td colspan="2"><a href="#6-language-priors" style="color:#B22222">6. Language Priors</a></td></tr>
 </table>
 
 ## [1. Data](#content)
@@ -79,5 +79,14 @@ Ari Holtzman, Jan Buys, Li Du, et al.
 Liqiang Jing, Guiming Hardy Chen, Ehsan Aghazadeh, Xin Eric Wang, Xinya Du
 
 ## [6. Language Priors](#content)
+1. [Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention](https://iclr.cc/virtual/2025/poster/30556), ICLR 2025, \
+Tianyun Yang, Ziniu Li, Juan Cao, Chang Xu
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: Use causal mediation via zero-ablation to quantify each module/head’s effect, identify “hallucination heads” (mostly mid/deep MHA heads), analyze their text-over-image attention bias and inheritance from the base LLM, then mitigate with a decoding-time adaptive deactivation (AD-HH) and a targeted fine-tuning (TF-HH) that reduce text-token reliance.
+      
+      2. Cause: specific multi-head attention heads that over-attend to prior text (vs. image)
+    </details>
 1. [Overcoming Language Priors with Counterfactual Inference for Visual Question Answering](https://aclanthology.org/2023.ccl-1.52/), CNCCL 2023, \
    Ren Zhibo, Wang Huizhen, Zhu Muhua, Wang Yichao, Xiao Tong, Zhu Jingbo

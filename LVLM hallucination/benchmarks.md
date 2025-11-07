@@ -45,6 +45,28 @@ Chenxi Wang, Xiang Chen, Ningyu Zhang, Bozhong Tian, Haoming Xu, Shumin Deng, Hu
 
       3. Detection: via probing: they train a probe at each transformer layer to answer is-there-an-object (isexist(obj)) and show accuracy peaks in preceding layers; they also perform early-exit analyses to observe activation of ground-truth tokens across layers.
     </details>
+1. [Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models](https://iclr.cc/virtual/2025/poster/28052), ICLR 2025, \
+Ce Zhang, Zifu Wan, Zhehan Kan, Martin Q. Ma, Simon Stepputtis, Deva Ramanan, Russ Salakhutdinov, Louis-Philippe Morency, Katia Sycara, Yaqi Xie
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: Generate an auxiliary image from the LVLM’s initial response with a text-to-image model, compare next-token distributions conditioned on the original vs. generated image via JS divergence, and apply self-correcting decoding that switches between complementary and contrastive logits fusion (thresholded by that divergence) to fix hallucinations—training-free.
+      
+      2. Cause: Modality alignment (Primarily over-reliance on language priors from biased training data, and also visual shortcomings (e.g., recognition/counting errors) that aren’t explained by language bias alone.)
+
+      3. Detection: Response-level: lower CLIP similarity between the original image and the image generated from the model’s caption correlates with higher CHAIR hallucination rates; Token-level: larger JS divergence between next-token distributions conditioned on the original vs. generated image aligns with hallucinatory tokens; this same signal gates the decoding (detect-then-correct).
+    </details>
+1. [Devils in Middle Layers of Large Vision-Language Models: Interpreting, Detecting and Mitigating Object Hallucinations via Attention Lens](https://arxiv.org/abs/2411.16724), CVPR 2025, \
+Zhangqi Jiang, Junkai Chen, Beier Zhu, Tingjin Luo, Yankun Shen, Xu Yang
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The paper analyzes middle-layer attention using an “attention lens” (VAR/SVAR) and a logit lens to reveal two stages—visual information enrichment and semantic refinement—then detects hallucinations via low mid-layer visual attention and head inconsistency, and finally mitigates them at inference by reweighting visual attention using head-averaged scores.
+      
+      2. Cause: improper visual-information processing in middle layers
+  
+      3. Detection: using SVAR_{5–18} (summed/averaged visual attention ratios across heads in mid layers)
+    </details>
 1. [Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d75660d6eb0ce31360c768fef85301dd-Abstract-Conference.html), NeurIPS 2024, \
 Hongbo Wang, Jie Cao, Jin Liu, Xiaoqiang Zhou, Huaibo Huang, Ran He
 1. [Estimating the Hallucination Rate of Generative AI](https://nips.cc/virtual/2024/poster/95553), NeurIPS 2024, \
