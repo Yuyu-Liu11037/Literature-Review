@@ -419,12 +419,12 @@ Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
 Wei Suo, Lijun Zhang, Mengyang Sun, Lin Yuanbo Wu, Peng Wang, Yanning Zhang
 1. [Alleviating hallucinations of large language models through induced hallucinations](https://arxiv.org/abs/2312.15710), NAACL 2025, \
    Yue Zhang, Leyang Cui, Wei Bi, Shuming Shi
-1. [Pensieve: Retrospectthen-compare mitigates visual hallucination](https://arxiv.org/abs/2403.14401), arXiv 2024, \
+1. [Pensieve: Retrospect-then-compare mitigates visual hallucination](https://arxiv.org/abs/2403.14401), arXiv 2024, \
 Dingchen Yang, Bowen Cao, Guang Chen, Changjun Jiang
     <details> 
       <summary>Digest</summary>
       
-      1. Methodology: Pensieve is a training-free “retrospect-then-compare” decoder that retrieves semantically similar reference images, subtracts their per-token confidence (logits) from the test image’s logits—plus a diffused (text-only) view—and adaptively scales these terms to suppress visually/textually deceptive candidates during generation.
+      1. Methodology: Pensieve is a training-free “retrospect-then-compare” decoder that retrieves semantically similar reference images, subtracts their per-token confidence (logits) from the test image’s logits—plus a diffused (text-only) view and adaptively scales these terms to suppress visually/textually deceptive candidates during generation.
       
       2. Cause: The visual branch often gives similar confidence to both accurate and wrong token candidates (i.e., it’s uncertain and “equally advocates” them), and similar images tend to induce analogous hallucinations
     </details>
