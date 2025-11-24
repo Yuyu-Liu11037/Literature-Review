@@ -1,63 +1,13 @@
-## Table of Contents
-
-<table>
-<tr><td colspan="2"><a href="#1-methods-and-models" style="color:#B22222">1. Methods and Models</a></td></tr>
-<tr>
-  <td>&ensp;<a href="#11-inference">1.1 Inference</a></td>
-  <td>&ensp;<a href="#12-modality-align">1.2 Modality Align</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#13-model-architechture">1.3 Model Architecture</a></td>
-  <td>&ensp;<a href="#14-post-hoc-remediation">1.4 Post Hoc Remediation</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#15-fine-tuning">1.5 Fine Tuning</a></td>
-  <td>&ensp;<a href="#16-training">1.6 Training</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#17-internal-embeddings">1.7 Internal Embeddings</a></td>
-  <td>&ensp;<a href="#18-model-weights-editing">1.8 Model Weights Editing</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#19-preference-learning">1.9 Preference Learning</a></td>
-  <td>&ensp;<a href="#110-data">1.10 Data</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#111-rag">1.11 RAG</a></td>
-  <td>&ensp;<a href="#112-(visual)-contrastive-decoding">1.12 (Visual) Contrastive Decoding</a></td>
-</tr>
-
-<tr><td colspan="2"><a href="#2-applications" style="color:#B22222">2. Applications</a></td></tr>
-<tr>
-  <td>&ensp;<a href="#21-revolutionary-generation-models">2.1 Revolutionay Generative Models</a></td>
-  <td>&ensp;<a href="#22-promptable-segmentation">2.2 Promptable Segmentation</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#23-audio-visual-models">2.3 Audio Visual Models</a></td>
-  <td>&ensp;<a href="#24-video">2.4 Video</a></td>
-</tr>
-<tr>
-  <td>&ensp;<a href="#25-biology">2.5 Biology</a></td>
-  <!-- <td>&ensp;<a href="#26-vision-question-answering">2.6 Vision Question Answering</a></td> -->
-</tr>
-<tr>
-  <td>&ensp;<a href="#27-counterfactual-presupposition-questions">2.7 Counterfactual Presupposition Questions</a></td>
-  <!-- <td>&ensp;<a href="#26-vision-question-answering">2.6 Vision Question Answering</a></td> -->
-</tr>
-</table>
-
-
-## [1. Methods and Models](#content)
-### [1.1 Inference](#content)
-i.e. Inference-time Decoding
+## [1. Methods and Models]
+### [1.1 Inference-time Intervention]
 1. [Mitigating Object Hallucinations in Large Vision-Language Models with Assembly of Global and Local Attention](https://arxiv.org/abs/2406.12718), CVPR 2025, \
 Wenbin An, Feng Tian, Sicong Leng, Jiahao Nie, Haonan Lin, QianYing Wang, Ping Chen, Xiaoqin Zhang, Shijian Lu
     <details> 
       <summary>Digest</summary>
       
-      1. Methodology: Instruction Contrastive Decoding (ICD) appends “disturbance” role prefixes to the instruction to elicit hallucinatory tendencies, computes token distributions under standard vs. disturbed instructions, and selects tokens by penalizing the disturbed distribution—with an adaptive plausibility constraint that truncates to likely tokens.
+      1. Methodology: The paper proposes AGLA, a training-free, plug-and-play decoding method that uses an Image-Prompt Matching module with GradCAM to build a prompt-relevant augmented image and then fuses logits from the original (global) and augmented (local) views with plausibility truncation to reduce hallucinations while preserving generative ability.
       
-      2. Cause: statistical biases and over-reliance on language priors
+      2. Cause: visual attention sink?
   
       3. Detection: They (1) run a hallucination detection analysis on MSCOCO by computing a “hallucination ratio” of objects predicted but absent in the image under baseline/positive/negative disturbance settings; (2) evaluate object-level hallucinations with the POPE binary QA benchmark (reporting Accuracy/Precision/Recall/F1); and (3) use the MME hallucination subset (existence/count/position/color) as QA with task scores. Generative LLaVa-Bench is assessed qualitatively (no automatic metric).
     </details>
@@ -68,7 +18,16 @@ Xin Dong, Shichao Dong, Jin Wang, Jing Huang, Li Zhou, Zenghui Sun, Lihua Jing, 
       
       1. Methodology: INTER adds an Interactive Guided Locator that flags likely “keyword” steps using the variance of Harsanyi-dividend interaction contributions, and an Interaction Probability Modifier that injects an interaction prior into the logits only at those steps—biasing sampling toward tokens supported by image-text interactions, with no extra training.
       
-      2. Cause: modality imbalance
+      2. Cause: Over-reliance on language prior
+    </details>
+1. [Mitigating hallucination for large vision language model by inter-modality correlation calibration decoding](https://arxiv.org/abs/2501.01926), arXiv 2025, \
+Jiaming Li, Jiacheng Zhang, Zequn Jie, Lin Ma, Guanbin Li
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The paper proposes Inter-Modality Correlation Calibration Decoding (IMCCD), a training-free contrastive decoding framework that (1) distorts cross-modal value vectors for highly attended image–text pairs via Cross-Modal Value-Enhanced Decoding (CMVED) to expose hallucination-prone distributions and (2) refines cross-modal attention with Content-Driven Attention Refinement (CDAR) to reduce positional bias and better focus on relevant visual content.
+      
+      2. Cause: spurious inter-modality correlations
     </details>
 1. [Cantor: Inspiring multimodal chainof-thought of mllm](https://arxiv.org/abs/2404.16033), ACM MM 2024, \
 Timin Gao, Peixian Chen, Mengdan Zhang, Chaoyou Fu, Yunhang Shen, Yan Zhang, Shengchuan Zhang, Xiawu Zheng, Xing Sun, Liujuan Cao, Rongrong Ji
@@ -77,224 +36,28 @@ Timin Gao, Peixian Chen, Mengdan Zhang, Chaoyou Fu, Yunhang Shen, Yan Zhang, She
       
       1. Methodology: Cantor, a perception-decision CoT framework that injects visual context into the decision-generation stage and then dispatches sub-tasks to four expert roles (TextIntel Extractor, ObjectQuant Locator, VisionIQ Analyst, ChartSense Expert) implemented by a single MLLM, whose outputs are finally synthesized to produce the answer.
       
-      2. Cause: 
+      2. Cause: decisions are made without sufficient visual context
     </details>
+1. [ZoomEye: Enhancing Multimodal LLMs with Human-Like Zooming Capabilities through Tree-Based Image Exploration](https://aclanthology.org/2025.emnlp-main.335/), EMNLP 2025, \
+Haozhan Shen, Kangjia Zhao, Tiancheng Zhao, Ruochen Xu, Zilun Zhang, Mingwei Zhu, Jianwei Yin
 
-### [1.2 Modality Align](#content)
-1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), ICLR 2025, \
-Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
-1. [Mitigating hallucination for large vision language model by inter-modality correlation calibration decoding](https://arxiv.org/abs/2501.01926), arXiv 2025, \
-Jiaming Li, Jiacheng Zhang, Zequn Jie, Lin Ma, Guanbin Li
-1. [Cure or Poison? Embedding Instructions Visually Alters Hallucination in Vision-Language Models](https://arxiv.org/abs/2508.01678), arXiv 2025, \
-Zhaochen Wang, Yiwei Wang, Yujun Cai
-1. [(MOF) Eyes wide shut? exploring the visual shortcomings of multimodal llms](https://arxiv.org/abs/2401.06209), arXiv 2024, \
-Shengbang Tong, Zhuang Liu, Yuexiang Zhai, Yi Ma, Yann LeCun, Saining Xie
-1. [Enhancing multimodal large language models with vision detection models: An empirical study](https://arxiv.org/abs/2401.17981v2), arXiv 2024, \
-Qirui Jiao, Daoyuan Chen, Yilun Huang, Yaliang Li, Ying Shen
-1. [Dualfocus: Integrating macro and micro perspectives in multi-modal large language models](https://arxiv.org/abs/2402.14767), arXiv 2024, \
-Yuhang Cao, Pan Zhang, Xiaoyi Dong, Dahua Lin, Jiaqi Wang
-1. [(VTPrompt) Joint visual and text prompting for improved object-centric perception with multimodal large language models](https://arxiv.org/abs/2404.04514), arXiv 2024, \
-Songtao Jiang, Yan Zhang, Chenyi Zhou, Yeying Jin, Yang Feng, Jian Wu, Zuozhu Liu
-1. [(COMM) From clip to dino: Visual encoders shout in multi-modal large language models](https://arxiv.org/abs/2310.08825), arXiv 2023, \
-Dongsheng Jiang, Yuchen Liu, Songlin Liu, Jin'e Zhao, Hao Zhang, Zhen Gao, Xiaopeng Zhang, Jin Li, Hongkai Xiong
+[1.1.1 (Visual) Contrastive Decoding]
 
-### [1.3 Model Architecture](#content)
-1. [MCA-LLaVA: Manhattan Causal Attention for Reducing Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2507.09184), ACM MM 2025, \
-Qiyan Zhao, Xiaofeng Zhang, Yiheng Li, Yun Xing, Xiaosong Yuan, Feilong Tang, Sinan Fan, Xuhang Chen, Xuyao Zhang, Dahan Wang
-1. [Mitigating Object Hallucination via Concentric Causal Attention](https://arxiv.org/abs/2410.15926), NeurIPS 2024, \
-Yun Xing, Yiheng Li, Ivan Laptev, Shijian Lu
+CD-based methods use CD to mitigate hallucination without examine the root cause in-depth.
 
-### [1.4 Post Hoc Remediation](#content)
-1. [Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance](https://arxiv.org/abs/2402.08680), ICML 2025, \
-Linxi Zhao, Yihe Deng, Weitong Zhang, Quanquan Gu
+1. [MaskCD: Mitigating LVLM Hallucinations by Image Head Masked Contrastive Decoding](https://www.arxiv.org/abs/2510.02790), EMNLP 2025, \
+Jingyuan Deng, Yujiu Yang
+1. [Multi-Frequency Contrastive Decoding: Alleviating Hallucinations for Large Vision-Language Models](https://aclanthology.org/2025.emnlp-main.1452.pdf), EMNLP 2025, \
+Bingqian Liu, Fu Zhang, Guoqing Chen, Jingwei Cheng
+1. [The Mirage of Performance Gains: Why Contrastive Decoding Fails to Mitigate Object Hallucinations in MLLMs?](https://arxiv.org/abs/2504.10020), NeurIPS 2025, \
+Hao Yin, Guangzong Si, Zilei Wang
     <details> 
       <summary>Digest</summary>
       
-      1. Methodology: MARINE is a training-free, API-free decoding framework that aggregates object-level signals from open-source image-grounded models (e.g., DETR, RAM++) into a textual guidance prompt and linearly mixes guided vs. unguided logits with a strength parameter γ during generation.
-      
-      2. Cause: (1) insufficient visual context from the vision encoder, (2) distortion/loss during vision→text projection, and (3) inherent LLM hallucinations
+      Special
     </details>
-1. [Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models](https://arxiv.org/abs/2410.03577), ICML 2025, \
-Xin Zou, Yizhou Wang, Yibo Yan, Yuanhuiyi Lyu, Kening Zheng, Sirui Huang, Junkai Chen, Peijie Jiang, Jia Liu, Chang Tang, Xuming Hu
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: MemVR “looks twice” by dynamically detecting high token-level uncertainty and re-injecting visual tokens into a middle FFN layer as key–value “memory,” shifting hidden states without extra training or multi-round decoding.
-      
-      2. Cause: Modality imbalance
-    </details>
-1. [DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models](https://iclr.cc/virtual/2025/poster/30108), ICLR 2025, \
-Kaishen Wang, Hengrui Gu, Meijun Gao, Kaixiong Zhou
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: DAMO, a training-free decoding scheme that accumulates “activation momentum” across layers and, when a divergence in layer-wise prediction trends is detected, adaptively refines later-layer activations with a higher momentum weight to preserve earlier visual semantics.
-      
-      2. Cause: localized surges in later layers —- models “overthink”
-    </details>
-1. [Mitigating Modality Prior-Induced Hallucinations in Multimodal Large Language Models via Deciphering Attention Causality](https://iclr.cc/virtual/2025/poster/30629), ICLR 2025, \
-Guanyu Zhou, Yibo Yan, Xin Zou, Kun Wang, Aiwei Liu, Xuming Hu
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: CAUSALMM, a structural-causal-model–based decoding framework that treats visual and language priors as confounders and applies back-door adjustment with counterfactual interventions on both visual and language attention to realign outputs with the actual multimodal inputs.
-      
-      2. Cause: Bias from modality priors
-    </details>
-1. [Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs](https://iclr.cc/virtual/2025/poster/27678), ICLR 2025, \
-Barrett Tang, Zile Huang, Chengzhi Liu, Qiang Sun, Harry Yang, Ser-Nam Lim
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: TAME—a plug-and-play inference-time reparameterization of the QK matrix, which dynamically shrinks/puffs the eigenspectrum variance to curb over-propagation of anchor tokens—requiring no extra decoding passes or training.
-      
-      2. Cause: anchor tokens over-propagate
-    </details>
-1. [Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention](https://iclr.cc/virtual/2025/poster/30556), ICLR 2025, \
-Tianyun Yang, Ziniu Li, Juan Cao, Chang Xu
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: Use causal mediation via zero-ablation to quantify each module/head’s effect, identify “hallucination heads” (mostly mid/deep MHA heads), analyze their text-over-image attention bias and inheritance from the base LLM, then mitigate with a decoding-time adaptive deactivation (AD-HH) and a targeted fine-tuning (TF-HH) that reduce text-token reliance.
-      
-      2. Cause: specific multi-head attention heads that over-attend to prior text (vs. image)
-    </details>
-1. [Seeing Far and Clearly: Mitigating Hallucinations in MLLMs with Attention Causal Decoding](https://arxiv.org/abs/2505.16652), CVPR 2025, \
-Feilong Tang, Chengzhi Liu, Zhongxing Xu, Ming Hu, Zelin Peng, Zhiwei Yang, Jionglong Su, Minquan Lin, Yifan Peng, Xuelian Cheng, Imran Razzak, Zongyuan Ge
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: FarSight, a plug-and-play decoding strategy that alters the causal mask with (i) upper-triangular attention registers to absorb outlier-token attention and (ii) a progressively diminishing masking rate to encode absolute positional awareness, improving vision↔text token propagation without extra training.
-      
-      2. Cause: attention collapse and positional information decay
-    </details>
-1. [Analyzing and Mitigating Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2310.00754), ICLR 2024, \
-Yiyang Zhou, Chenhang Cui, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, Huaxiu Yao
-1. [Volcano: mitigating multimodal hallucination through self-feedback guided revision](https://arxiv.org/abs/2311.07362), NAACL 2024, \
-Seongyun Lee, Sue Hyun Park, Yongrae Jo, Minjoon Seo
-1. [Woodpecker: Hallucination correction for multimodal large language models](https://arxiv.org/abs/2310.16045), arXiv 2023, \
-Shukang Yin, Chaoyou Fu, Sirui Zhao, Tong Xu, Hao Wang, Dianbo Sui, Yunhang Shen, Ke Li, Xing Sun, Enhong Chen
-1. [Analyzing and mitigating object hallucination in large visionlanguage models](https://arxiv.org/abs/2310.00754), arXiv 2023, \
-Yiyang Zhou, Chenhang Cui, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, Huaxiu Yao
-
-### [1.5 Fine Tuning](#content)
-1. [Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment](https://iclr.cc/virtual/2025/poster/27739), ICLR 2025, \
-Pritam Sarkar, Sayna Ebrahimi, Ali Etemad, Ahmad Beirami, Sercan Arik, Tomas Pfister
-1. [Mitigating Object Hallucinations in Large Vision-Language Models via Attention Calibration](https://arxiv.org/abs/2502.01969), arXiv 2025, \
-Younan Zhu, Linwei Tao, Minjing Dong, Chang Xu
-1. [Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models](https://arxiv.org/abs/2402.09801), EMNLP 2024, \
-Shangyu Xing, Fei Zhao, Zhen Wu, Tuo An, Weihao Chen, Chunhui Li, Jianbing Zhang, Xinyu Dai
-Timin Gao, Peixian Chen, Mengdan Zhang, Chaoyou Fu, Yunhang Shen, Yan Zhang, Shengchuan Zhang, Xiawu Zheng, Xing Sun, Liujuan Cao, Rongrong Ji
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: EFUF curates positive/negative sub-sentences using CLIP-based object–image relevance (no paired human labels), then fine-tunes with three losses—positive, negative via gradient ascent, and a sentence loss—to “unlearn” hallucinated objects while preserving fluency.
-      
-      2. Cause: modality alignment
-    </details>
-1. [Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization](https://nips.cc/virtual/2024/poster/95118), NeurIPS 2024, \
-Xinyu Lyu, Beitao Chen, Lianli Gao, Hengtao Shen, Jingkuan Song
-
-### [1.6 Training](#content)
-1. [PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training](https://iclr.cc/virtual/2025/poster/28657), ICLR 2025, \
-Cong Chen, Mingyu Liu, Chenchen Jing, Yizhou Zhou, Fengyun Rao, Hao Chen, Bo Zhang, Chunhua Shen
-1. [Generate, but Verify: Reducing Hallucination in Vision-Language Models with Retrospective Resampling](https://arxiv.org/abs/2504.13169), arXiv 2025, \
-Tsung-Han Wu, Heekyung Lee, Jiaxin Ge, Joseph E. Gonzalez, Trevor Darrell, David M. Chan
-
-### [1.7 Internal Embeddings](#content)
-1. [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering](https://arxiv.org/abs/2502.03628), ICML 2025, \
-Zhuowei Li, Haizhou Shi, Yunhe Gao, Di Liu, Zhenting Wang, Yuxiao Chen, Ting Liu, Long Zhao, Hao Wang, Dimitris N. Metaxas
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: The authors propose VISTA, a training-free, inference-time method that (i) injects a Visual Steering Vector (VSV) into activations to reinforce image evidence and (ii) performs Self-Logits Augmentation (SLA) by ensembling late-layer (pre-final) logits to bias decoding toward semantically grounded tokens, improving factual grounding across decoding strategies.
-      
-      2. Cause: gradual visual information loss as language priors accumulate in the residual stream
-    </details>
-1. [Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering](https://iclr.cc/virtual/2025/poster/30013), ICLR 2025, \
-Sheng Liu, Haotian Ye, James Y Zou
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: Visual & Textual Intervention (VTI)—a training-free, test-time latent-space steering method that pre-computes stable “directions” from (i) averaged embeddings of lightly masked images and (ii) pairs of non-hallucinated vs. hallucinated captions, then adds these vectors to all layers during decoding to curb hallucinations.
-      
-      2. Cause: Modality imbalance
-    </details>
-1. [Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations](https://iclr.cc/virtual/2025/poster/30724), ICLR 2025, \
-Nick Jiang, Anish Kachinthaya, Suzanne Petryk, Yossi Gandelsman
-1. [VASparse: Towards Efficient Visual Hallucination Mitigation via Visual-Aware Token Sparsification](https://arxiv.org/abs/2501.06553), CVPR 2025, \
-Xianwei Zhuang, Zhihong Zhu, Yuxin Xie, Liming Liang, Yuexian Zou
-1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), arXiv 2025, \
-Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
-1. [Don't Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models](https://arxiv.org/abs/2405.17820), ACL Findings 2025, \
-Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
-1. [Mitigating hallucinations in large vision-language models by adaptively constraining information flow](https://arxiv.org/abs/2502.20750), AAAI 2025, \
-Jiaqi Bai, Hongcheng Guo, Zhongyuan Peng, Jian Yang, Zhoujun Li, Mohan Li, Zhihong Tian
-1. [ICT: Image-Object Cross-Level Trusted Intervention for Mitigating Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2411.15268), CVPR 2025, \
-Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xuming Hu
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: ICT applies training-free, forward-pass interventions that add precomputed activation-shift vectors to selected attention heads—at both image-level and object-level—identified via headwise binary classifiers, to boost reliance on visual evidence without erasing helpful language priors.
-      
-      2. Cause: over-reliance on language priors
-    </details>
-
-### [1.8 Model Weights Editing](#content)
-1. [When Images Speak Louder: Mitigating Language Bias-induced Hallucinations in VLMs through Cross-Modal Guidance](https://arxiv.org/abs/2510.10466), arXiv 2025, \
-Jinjin Cao, Zhiyang Chen, Zijun Wang, Liyuan Ma, Weijian Luo, Guojun Qi
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: They propose Cross-Modal Guidance (CMG), a training-free decoding scheme that builds an “amateur” model by masking cross-modal and inter-visual attention in selected layers, then reweights the original logits using a PMI-style ratio between the original and masked output distributions, with dynamic attention masking and dynamic layer selection (via cosine-similarity) to choose where to mask.
-      
-      2. Cause: language bias (image-token attention decays through depth while text/system tokens dominate)
-    </details>
-1. [Nullu: Mitigating Object Hallucinations in Large Vision-Language Models via HalluSpace Projection](https://arxiv.org/abs/2412.13817), CVPR 2025, \
-Le Yang, Ziwei Zheng, Boxu Chen, Zhengyu Zhao, Chenhao Lin, Chao Shen
-
-### [1.9 Preference Learning](#content)
-1. [Stop Learning it all to Mitigate Visual Hallucination, Focus on the Hallucination Target](https://arxiv.org/abs/2506.11417), CVPR 2025, \
-Dokyoon Yoon, Youngsook Song, Woomyong Park
-1. [Mitigating Hallucinations in Large Vision-Language Models via DPO: On-Policy Data Hold the Key](https://chatgpt.com/c/68d76812-3148-8326-b324-0f8bae04582f), CVPR 2025, \
-Zhihe Yang, Xufang Luo, Dongqi Han, Yunjian Xu, Dongsheng Li
-1. [(Fact-RLHF) Aligning large multimodal models with factually augmented rlhf](https://arxiv.org/abs/2309.14525), NAACL 2024, \
-Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, Kurt Keutzer, Trevor Darrell
-1. [Detecting and preventing hallucinations in large vision language models](https://arxiv.org/abs/2308.06394), AAAI 2024, \
-Anisha Gunjal, Jihan Yin, Erhan Bas
-1. [Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization](https://arxiv.org/abs/2311.16839), arXiv 2023, \
-Zhiyuan Zhao, Bin Wang, Linke Ouyang, Xiaoyi Dong, Jiaqi Wang, Conghui He
-1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155), NeurIPS 2022, \
-Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda Askell, Peter Welinder, Paul Christiano, Jan Leike, Ryan Lowe
-1. [Training a helpful and harmless assistant with reinforcement learning from human feedback](https://arxiv.org/abs/2204.05862), arXiv 2022, \
-Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, Nicholas Joseph, Saurav Kadavath, Jackson Kernion, Tom Conerly, Sheer El-Showk, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Tristan Hume, Scott Johnston, Shauna Kravec, Liane Lovitt, Neel Nanda, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, Chris Olah, Ben Mann, Jared Kaplan
-1. [Learning to summarize with human feedback](https://arxiv.org/abs/2009.01325), NeurIPS 2020, \
-Nisan Stiennon, Long Ouyang, Jeff Wu, Daniel M. Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, Paul Christiano
-
-### [1.10 Data](#content)
-1. [Fact: Teaching mllms with faithful, concise and transferable rationales](https://arxiv.org/abs/2404.11129), ACM MM 2024, \
-Minghe Gao, Shuang Chen, Liang Pang, Yuan Yao, Jisheng Dang, Wenqiao Zhang, Juncheng Li, Siliang Tang, Yueting Zhuang, Tat-Seng Chua
-    <details> 
-      <summary>Digest</summary>
-      
-      1. Methodology: Generate executable visual programs for image–question pairs and keep only those that yield the correct answer (faithfulness); convert execution traces into natural-language CoTs via AST-based pruning, symbolic merging, and logical bridging (conciseness); filter CoTs by their utility on end-to-end models (transferability); then distill labels+CoTs jointly into MLLMs.
-      
-      2. Cause: spurious correlations and include irrelevant in-context information
-    </details>
-1. [CIEM: Contrastive Instruction Evaluation Method for Better Instruction Tuning](https://arxiv.org/abs/2309.02301), NeurIPS 2023 Workshop, \
-   Hongyu Hu, Jiyuan Zhang, Minyi Zhao, Zhenbang Sun
-1. [Mllms-augmented visual-language representation learning](), arXiv 2023, \
-Y. Liu, K. Wang, W. Shao, P. Luo, Y. Qiao, M. Z. Shou, K. Zhang
-1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), ICLR 2023, \
-F. Liu, K. Lin, L. Li, J. Wang, Y. Yacoob, and L. Wang
-1. [Hallucidoctor: Mitigating hallucinatory toxicity in visual instruction data](), arXiv 2023, \
-Q. Yu, J. Li, L. Wei, L. Pang, W. Ye, B. Qin, S. Tang, Q. Tian, and Y. Zhuang
-
-### [1.11 RAG](#content)
-1. [(ARA) Alleviating Hallucination in Large Vision-Language Models with Active Retrieval Augmentation](https://dl.acm.org/doi/full/10.1145/3742434), ACM TMC 2025, \
-Xiaoye Qu, Qiyuan Chen, Wei Wei, Jiashuo Sun, Daizong Liu, Jianfeng Dong
-
-### [1.12 (Visual) Contrastive Decoding](#content)
+1. [Decoupling Contrastive Decoding: Robust Hallucination Mitigation in Multimodal Large Language Models](https://arxiv.org/abs/2504.08809), NeurIPS 2025, \
+Wei Chen, Xin Yan, Bin Wen, Fan Yang, Tingting Gao, Di Zhang, Long Chen
 1. [Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://arxiv.org/abs/2403.18715), ACL Findings 2024, \
 Xintong Wang, Jingheng Pan, Liang Ding, Chris Biemann
     <details> 
@@ -400,7 +163,7 @@ Lanyun Zhu, Deyi Ji, Tianrun Chen, Peng Xu, Jieping Ye, Jun Liu
       
       1. Methodology: Build an image-biased variant of the LVLM by boosting attention to image tokens, then contrast its logits with the original model (contrastive decoding) and dynamically weight this signal using JSD-based indicators plus an adaptive candidate filter and a lightweight prompt-tuned adapter.
       
-      2. Cause: over-reliance on language priors
+      2. Cause: biased feature learning
     </details>
 1. [Mitigating Hallucination of Large Vision-Language Models via Dynamic Logits Calibration](https://arxiv.org/abs/2506.21509), arXiv 2025, \
 Jiahe Chen, Jiaying He, Qian Shao, Qiyuan Chen, Jiahe Ying, Hongxia Xu, Jintai Chen, Jianwei Zheng, Jian Wu
@@ -437,6 +200,15 @@ Zhaorun Chen, Zhuokai Zhao, Hongyin Luo, Huaxiu Yao, Bo Li, Jiawei Zhou
       
       2. Cause: rely increasingly on prior text
     </details>
+1. [Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization](https://nips.cc/virtual/2024/poster/95118), NeurIPS 2024, \
+Xinyu Lyu, Beitao Chen, Lianli Gao, Hengtao Shen, Jingkuan Song
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: a new optimization strategy for CD
+      
+      2. Cause: Not mentioned (this paper addresses problems of previous CD methods)
+    </details>
 1. [CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models](https://arxiv.org/abs/2406.01920), NeurIPS 2024, \
 Junho Kim, Hyunjun Kim, Yeonju Kim, Yong Man Ro
     <details> 
@@ -444,7 +216,7 @@ Junho Kim, Hyunjun Kim, Yeonju Kim, Yong Man Ro
       
       1. Methodology: CODE contrasts next-token logits computed from the real visual input with logits computed from the model’s own comprehensive description of that image, then applies a dynamic restriction (αₜ) and an adaptive information constraint (βₜ, V_head) to amplify consistent tokens and suppress visually inconsistent ones—without any extra training.
       
-      2. Cause: modality alignment
+      2. Cause: not clearly mentioned
     </details>
 1. [Trusting Your Evidence: Hallucinate Less with Context-aware Decoding](https://arxiv.org/abs/2305.14739), NAACL 2024, \
    Weijia Shi, Xiaochuang Han, Mike Lewis, Yulia Tsvetkov, Luke Zettlemoyer, Scott Wen-tau Yih
@@ -463,34 +235,357 @@ Qidong Huang, Xiaoyi Dong, Pan Zhang, Bin Wang, Conghui He, Jiaqi Wang, Dahua Li
 1. [Contrastive decoding: Open-ended text generation as optimization](https://arxiv.org/abs/2210.15097), ACL 2023, \
    Xiang Lisa Li, Ari Holtzman, Daniel Fried, Percy Liang, Jason Eisner, Tatsunori Hashimoto, Luke Zettlemoyer, Mike Lewis
 
-## [2. Applications](#content)
-### [2.1 Revolutionay Generative Models](#content)
-1. [Looks Too Good To Be True: An Information-Theoretic Analysis of Hallucinations in Generative Restoration Models](https://arxiv.org/abs/2405.16475), NeurIPS 2024, \
-Regev Cohen, Idan Kligvasser, Ehud Rivlin, Daniel Freedman
+[1.1.2 attention rectification]
+1. [When Images Speak Louder: Mitigating Language Bias-induced Hallucinations in VLMs through Cross-Modal Guidance](https://arxiv.org/abs/2510.10466), arXiv 2025, \
+Jinjin Cao, Zhiyang Chen, Zijun Wang, Liyuan Ma, Weijian Luo, Guojun Qi
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: They propose Cross-Modal Guidance (CMG), a training-free decoding scheme that builds an “amateur” model by masking cross-modal and inter-visual attention in selected layers, then reweights the original logits using a PMI-style ratio between the original and masked output distributions, with dynamic attention masking and dynamic layer selection (via cosine-similarity) to choose where to mask.
+      
+      2. Cause: language bias (image-token attention decays through depth while text/system tokens dominate)
+    </details>
+1. [Nullu: Mitigating Object Hallucinations in Large Vision-Language Models via HalluSpace Projection](https://arxiv.org/abs/2412.13817), CVPR 2025, \
+Le Yang, Ziwei Zheng, Boxu Chen, Zhengyu Zhao, Chenhao Lin, Chao Shen
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The authors contrast hidden features from paired truthful vs. hallucinated prompts to find a low-rank “HalluSpace,” then orthogonalize (project) LLM MLP weights into its null space—“Nullu”—so inputs are mapped away from hallucination directions, cutting OH without extra inference cost.
+      
+      2. Cause: language prior
+    </details>
 
-### [2.2 Promptable Segmentation](#content)
-1. [Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation](https://nips.cc/virtual/2024/poster/96318), NeurIPS 2024, \
-Jian Hu, Jiayi Lin, Junchi Yan, Shaogang Gong
+### [1.2 Modality Align]
+1. [Cure or Poison? Embedding Instructions Visually Alters Hallucination in Vision-Language Models](https://arxiv.org/abs/2508.01678), arXiv 2025, \
+Zhaochen Wang, Yiwei Wang, Yujun Cai
+1. [(MOF) Eyes wide shut? exploring the visual shortcomings of multimodal llms](https://arxiv.org/abs/2401.06209), arXiv 2024, \
+Shengbang Tong, Zhuang Liu, Yuexiang Zhai, Yi Ma, Yann LeCun, Saining Xie
+1. [Enhancing multimodal large language models with vision detection models: An empirical study](https://arxiv.org/abs/2401.17981v2), arXiv 2024, \
+Qirui Jiao, Daoyuan Chen, Yilun Huang, Yaliang Li, Ying Shen
+1. [Dualfocus: Integrating macro and micro perspectives in multi-modal large language models](https://arxiv.org/abs/2402.14767), arXiv 2024, \
+Yuhang Cao, Pan Zhang, Xiaoyi Dong, Dahua Lin, Jiaqi Wang
+1. [(VTPrompt) Joint visual and text prompting for improved object-centric perception with multimodal large language models](https://arxiv.org/abs/2404.04514), arXiv 2024, \
+Songtao Jiang, Yan Zhang, Chenyi Zhou, Yeying Jin, Yang Feng, Jian Wu, Zuozhu Liu
+1. [(COMM) From clip to dino: Visual encoders shout in multi-modal large language models](https://arxiv.org/abs/2310.08825), arXiv 2023, \
+Dongsheng Jiang, Yuchen Liu, Songlin Liu, Jin'e Zhao, Hao Zhang, Zhen Gao, Xiaopeng Zhang, Jin Li, Hongkai Xiong
 
-### [2.3 Audio Visual Models](#content)
-1. [AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models](https://iclr.cc/virtual/2025/poster/28638), ICLR 2025, \
-Kim Sung-Bin, Oh Hyun-Bin, Lee Jung-Mok, Arda Senocak, Joon Son Chung, Tae-Hyun Oh
+### [1.3 Model Architecture]
+1. [MCA-LLaVA: Manhattan Causal Attention for Reducing Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2507.09184), ACM MM 2025, \
+Qiyan Zhao, Xiaofeng Zhang, Yiheng Li, Yun Xing, Xiaosong Yuan, Feilong Tang, Sinan Fan, Xuhang Chen, Xuyao Zhang, Dahan Wang
+1. [Mitigating Object Hallucination via Concentric Causal Attention](https://arxiv.org/abs/2410.15926), NeurIPS 2024, \
+Yun Xing, Yiheng Li, Ivan Laptev, Shijian Lu
 
-### [2.4 Video](#content)
-1. [VidHalluc: Evaluating Temporal Hallucinations in Multimodal Large Language Models for Video Understanding](https://arxiv.org/abs/2412.03735), CVPR 2025, \
-Chaoyu Li, Eun Woo Im, Pooyan Fazli
-1. [MASH-VLM: Mitigating Action-Scene Hallucination in Video-LLMs through Disentangled Spatial-Temporal Representations](https://arxiv.org/abs/2503.15871), CVPR 2025, \
-Kyungho Bae, Jinhyung Kim, Sihaeng Lee, Soonyoung Lee, Gunhee Lee, Jinwoo Choi
+### [1.4 Post Hoc Remediation]
+1. [Mitigating Hallucination in Large Vision-Language Models through Aligning Attention Distribution to Information Flow](https://arxiv.org/abs/2505.14257), EMNLP 2025, \
+Jianfei Zhao, Feng Zhang, Xin Sun, Chong Feng
+1. [Treble Counterfactual VLMs: A Causal Approach to Hallucination](https://arxiv.org/abs/2503.06169), EMNLP 2025, \
+Shawn Li, Jiashu Qu, Yuxiao Zhou, Yuehan Qin, Tiankai Yang, Yue Zhao
+1. [MRFD: Multi-Region Fusion Decoding with Self-Consistency for Mitigating Hallucinations in LVLMs](https://arxiv.org/abs/2508.10264), EMNLP 2025, \
+Haonan Ge, Yiwei Wang, Ming-Hsuan Yang, Yujun Cai
+1. [Mitigating Object Hallucinations in MLLMs via Multi-Frequency Perturbations](https://arxiv.org/abs/2503.14895), EMNLP 2025, \
+Shuo Li, Jiajun Sun, Guodong Zheng, Xiaoran Fan, Yujiong Shen, Yi Lu, Zhiheng Xi, Yuming Yang, Wenming Tan, Tao Ji, Tao Gui, Qi Zhang, Xuanjing Huang
+1. [Mitigating Hallucinations in Vision-Language Models through Image-Guided Head Suppression](https://arxiv.org/abs/2505.16411), EMNLP 2025, \
+Sreetama Sarkar, Yue Che, Alex Gavin, Peter A. Beerel, Souvik Kundu
+1. [Shallow Focus, Deep Fixes: Enhancing Shallow Layers Vision Attention Sinks to Alleviate Hallucination in LVLMs](https://aclanthology.org/2025.emnlp-main.174/), EMNLP 2025, \
+Xiaofeng Zhang, Yihao Quan, Chen Shen, Chaochen Gu, Xiaosong Yuan, Shaotian Yan, Jiawei Cao, Hao Cheng, Kaijie Wu, Jieping Ye
+1. [Poison as Cure: Visual Noise for Mitigating Object Hallucinations in LVMs](https://arxiv.org/abs/2501.19164), NeurIPS 2025, \
+Kejia Zhang, Keda Tao, Jiasheng Tang, Huan Wang
+1. [Grounding Language with Vision: A Conditional Mutual Information Calibrated Decoding Strategy for Reducing Hallucinations in LVLMs](https://arxiv.org/abs/2505.19678), NeurIPS 2025, \
+Hao Fang, Changle Zhou, Jiawei Kong, Kuofeng Gao, Bin Chen, Shu-Tao Xia
+1. [Image Tokens Matter: Mitigating Hallucination in Discrete Tokenizer-based Large Vision-Language Models via Latent Editing](https://arxiv.org/abs/2505.21547), NeurIPS 2025, \
+Weixing Wang, Zifeng Ding, Jindong Gu, Rui Cao, Christoph Meinel, Gerard de Melo, Haojin Yang
+1. [Intervene-All-Paths: Unified Mitigation of LVLM Hallucinations across Alignment Formats](https://arxiv.org/abs/2511.17254), NeurIPS 2025, \
+Jiaye Qian, Ge Zheng, Yuchen Zhu, Sibei Yang
+1. [Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance](https://arxiv.org/abs/2402.08680), ICML 2025, \
+Linxi Zhao, Yihe Deng, Weitong Zhang, Quanquan Gu
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: MARINE is a training-free, API-free decoding framework that aggregates object-level signals from open-source image-grounded models (e.g., DETR, RAM++) into a textual guidance prompt and linearly mixes guided vs. unguided logits with a strength parameter γ during generation.
+      
+      2. Cause: (1) insufficient visual context from the vision encoder, (2) distortion/loss during vision→text projection, and (3) inherent LLM hallucinations
+    </details>
+1. [Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models](https://arxiv.org/abs/2410.03577), ICML 2025, \
+Xin Zou, Yizhou Wang, Yibo Yan, Yuanhuiyi Lyu, Kening Zheng, Sirui Huang, Junkai Chen, Peijie Jiang, Jia Liu, Chang Tang, Xuming Hu
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: MemVR “looks twice” by dynamically detecting high token-level uncertainty and re-injecting visual tokens into a middle FFN layer as key–value “memory,” shifting hidden states without extra training or multi-round decoding.
+      
+      2. Cause: Modality imbalance
+    </details>
+1. [DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models](https://iclr.cc/virtual/2025/poster/30108), ICLR 2025, \
+Kaishen Wang, Hengrui Gu, Meijun Gao, Kaixiong Zhou
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: DAMO, a training-free decoding scheme that accumulates “activation momentum” across layers and, when a divergence in layer-wise prediction trends is detected, adaptively refines later-layer activations with a higher momentum weight to preserve earlier visual semantics.
+      
+      2. Cause: localized surges in later layers —- models “overthink”
+    </details>
+1. [Mitigating Modality Prior-Induced Hallucinations in Multimodal Large Language Models via Deciphering Attention Causality](https://iclr.cc/virtual/2025/poster/30629), ICLR 2025, \
+Guanyu Zhou, Yibo Yan, Xin Zou, Kun Wang, Aiwei Liu, Xuming Hu
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: CAUSALMM, a structural-causal-model–based decoding framework that treats visual and language priors as confounders and applies back-door adjustment with counterfactual interventions on both visual and language attention to realign outputs with the actual multimodal inputs.
+      
+      2. Cause: Bias from modality priors
+    </details>
+1. [Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs](https://iclr.cc/virtual/2025/poster/27678), ICLR 2025, \
+Barrett Tang, Zile Huang, Chengzhi Liu, Qiang Sun, Harry Yang, Ser-Nam Lim
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: TAME—a plug-and-play inference-time reparameterization of the QK matrix, which dynamically shrinks/puffs the eigenspectrum variance to curb over-propagation of anchor tokens—requiring no extra decoding passes or training.
+      
+      2. Cause: anchor tokens over-propagate
+    </details>
+1. [Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention](https://iclr.cc/virtual/2025/poster/30556), ICLR 2025, \
+Tianyun Yang, Ziniu Li, Juan Cao, Chang Xu
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: Use causal mediation via zero-ablation to quantify each module/head’s effect, identify “hallucination heads” (mostly mid/deep MHA heads), analyze their text-over-image attention bias and inheritance from the base LLM, then mitigate with a decoding-time adaptive deactivation (AD-HH) and a targeted fine-tuning (TF-HH) that reduce text-token reliance.
+      
+      2. Cause: specific multi-head attention heads that over-attend to prior text (vs. image)
+    </details>
+1. [Seeing Far and Clearly: Mitigating Hallucinations in MLLMs with Attention Causal Decoding](https://arxiv.org/abs/2505.16652), CVPR 2025, \
+Feilong Tang, Chengzhi Liu, Zhongxing Xu, Ming Hu, Zelin Peng, Zhiwei Yang, Jionglong Su, Minquan Lin, Yifan Peng, Xuelian Cheng, Imran Razzak, Zongyuan Ge
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: FarSight, a plug-and-play decoding strategy that alters the causal mask with (i) upper-triangular attention registers to absorb outlier-token attention and (ii) a progressively diminishing masking rate to encode absolute positional awareness, improving vision↔text token propagation without extra training.
+      
+      2. Cause: attention collapse and positional information decay
+    </details>
+1. [Analyzing and Mitigating Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2310.00754), ICLR 2024, \
+Yiyang Zhou, Chenhang Cui, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, Huaxiu Yao
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: LURE trains a lightweight “hallucination revisor” using GPT-3.5–constructed hallucinatory captions—made by inserting likely co-occurring objects and masking uncertain/late objects with “[IDK]”—then, at inference, tags uncertain/late tokens and has the revisor rewrite the caption to remove hallucinations.
+      
+      2. Cause: Three key factors—spurious co-occurrence between objects in data, uncertainty during decoding, and object position (hallucinations concentrate later in the sequence due to autoregressive error accumulation).
+    </details>
+1. [Volcano: mitigating multimodal hallucination through self-feedback guided revision](https://arxiv.org/abs/2311.07362), NAACL 2024, \
+Seongyun Lee, Sue Hyun Park, Yongrae Jo, Minjoon Seo
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: VOLCANO runs an iterative critique → revise → decide loop: it generates an initial answer, produces natural-language feedback grounded in the image, revises the answer using that feedback, and decides whether to accept the revision—repeating up to three iterations.
+      
+      2. Cause: vision encoders may fail to ground image content
+    </details>
+1. [Woodpecker: Hallucination correction for multimodal large language models](https://arxiv.org/abs/2310.16045), arXiv 2023, \
+Shukang Yin, Chaoyou Fu, Sirui Zhao, Tong Xu, Hao Wang, Dianbo Sui, Yunhang Shen, Ke Li, Xing Sun, Enhong Chen
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: A training-free five-stage pipeline—extract key concepts, formulate questions, validate visually with an open-set detector and a VQA model, convert Q&A to visual claims, then have an LLM rewrite the output with grounded boxes for evidence.
+      
+      2. Cause: MLLMs hallucinate more when generating longer text; errors shifting with dataset characteristics (e.g., long-tailed distributions) in popular/adversarial settings
+    </details>
 
-### [2.5 Biology](#content)
+### [1.5 Training-based Methods]
+
+[1.5.1 Fine-tuning]
+
+1. [Hallucination at a Glance: Controlled Visual Edits and Fine-Grained Multimodal Learning](https://arxiv.org/abs/2506.07227), NeurIPS 2025, \
+Tianyi Bai, Yuxuan Fan, Jiantao Qiu, Fupeng Sun, Jiayi Song, Junlin Han, Zichen Liu, Conghui He, Wentao Zhang, Binhang Yuan
+1. [Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment](https://iclr.cc/virtual/2025/poster/27739), ICLR 2025, \
+Pritam Sarkar, Sayna Ebrahimi, Ali Etemad, Ahmad Beirami, Sercan Arik, Tomas Pfister
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The paper proposes Data-augmented Phrase-level Alignment (DPA)—fine-tuning MLLMs with pairs of correct vs. synthetically hallucinated responses, minimizing the relative log-likelihood of hallucinated phrases while constraining drift via a token-wise forward-KL to a frozen reference model.
+      
+      2. Cause: spurious co-occurrences
+    </details>
+1. [Mitigating Object Hallucinations in Large Vision-Language Models via Attention Calibration](https://arxiv.org/abs/2502.01969), arXiv 2025, \
+Younan Zhu, Linwei Tao, Minjing Dong, Chang Xu
+1. [Generate, but Verify: Reducing Hallucination in Vision-Language Models with Retrospective Resampling](https://arxiv.org/abs/2504.13169), NeurIPS 2025, \
+Tsung-Han Wu, Heekyung Lee, Jiaxin Ge, Joseph E. Gonzalez, Trevor Darrell, David M. Chan
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: REVERSE fine-tunes a VLM with span-level confidence tokens (<SPAN>, </CN>, </UN>) and, at inference, monitors the probability of the “unconfident” token to trigger backtracking plus retrospective resampling (rejection sampling + query rewriting) until a confident phrase is produced.
+      
+      2. Cause: language priors (VLMs’ implicit confidence (token probabilities) is mis-calibrated and poorly correlated with correctness, and existing decoding tweaks can’t correct errors once generated—so language priors slip in ungrounded content)
+    </details>
+1. [Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models](https://arxiv.org/abs/2402.09801), EMNLP 2024, \
+Shangyu Xing, Fei Zhao, Zhen Wu, Tuo An, Weihao Chen, Chunhui Li, Jianbing Zhang, Xinyu Dai
+Timin Gao, Peixian Chen, Mengdan Zhang, Chaoyou Fu, Yunhang Shen, Yan Zhang, Shengchuan Zhang, Xiawu Zheng, Xing Sun, Liujuan Cao, Rongrong Ji
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: EFUF curates positive/negative sub-sentences using CLIP-based object–image relevance (no paired human labels), then fine-tunes with three losses—positive, negative via gradient ascent, and a sentence loss—to “unlearn” hallucinated objects while preserving fluency.
+      
+      2. Cause: not clearly mentioned
+    </details>
+
+[1.5.2 Preference Learning]
+
+DPO-based methods use DPO to mitigate hallucination without examine the root cause in-depth.
+1. [Mitigating Hallucinations in Large Vision-Language Models by Self-Injecting Hallucinations](https://www.arxiv.org/abs/2509.11287), EMNLP 2025, \
+Yifan Lu, Ziqi Zhang, Chunfeng Yuan, Jun Gao, Congxuan Zhang, Xiaojuan Qi, Bing Li, Weiming Hu
+1. [Mitigating Hallucinations in Large Vision-Language Models via Entity-Centric Multimodal Preference Optimization](https://arxiv.org/abs/2506.04039), EMNLP 2025, \
+Jiulong Wu, Zhengliang Shi, Shuaiqiang Wang, Jizhou Huang, Dawei Yin, Lingyong Yan, Min Cao, Min Zhang
+1. [Systematic Reward Gap Optimization for Mitigating VLM Hallucinations](https://arxiv.org/abs/2411.17265), NeurIPS 2025, \
+Lehan He, Zeren Chen, Zhelun Shi, Tianyu Yu, Jing Shao, Lu Sheng
+1. [Stop Learning it all to Mitigate Visual Hallucination, Focus on the Hallucination Target](https://arxiv.org/abs/2506.11417), CVPR 2025, \
+Dokyoon Yoon, Youngsook Song, Woomyong Park
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: TL-DPO, a target-focused variant of Direct Preference Optimization that (i) builds preference pairs only on hallucinated text chunks vs. their corrections and (ii) conditions learning on image regions (via bounding boxes and masking) where the hallucination arises, combining a target-generation loss with a target-condition loss.
+      
+      2. Cause: Not mentioned (this paper addresses problems of previous preference learning methods)
+    </details>
+1. [Mitigating Hallucinations in Large Vision-Language Models via DPO: On-Policy Data Hold the Key](https://chatgpt.com/c/68d76812-3148-8326-b324-0f8bae04582f), CVPR 2025, \
+Zhihe Yang, Xufang Luo, Dongqi Han, Yunjian Xu, Dongsheng Li
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: 
+      
+      2. Cause: Not mentioned (this paper addresses problems of previous preference learning methods)
+    </details>
+1. [(Fact-RLHF) Aligning large multimodal models with factually augmented rlhf](https://arxiv.org/abs/2309.14525), NAACL 2024, \
+Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, Kurt Keutzer, Trevor Darrell
+1. [Detecting and preventing hallucinations in large vision language models](https://arxiv.org/abs/2308.06394), AAAI 2024, \
+Anisha Gunjal, Jihan Yin, Erhan Bas
+1. [Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization](https://arxiv.org/abs/2311.16839), arXiv 2023, \
+Zhiyuan Zhao, Bin Wang, Linke Ouyang, Xiaoyi Dong, Jiaqi Wang, Conghui He
+1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155), NeurIPS 2022, \
+Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda Askell, Peter Welinder, Paul Christiano, Jan Leike, Ryan Lowe
+1. [Training a helpful and harmless assistant with reinforcement learning from human feedback](https://arxiv.org/abs/2204.05862), arXiv 2022, \
+Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, Nicholas Joseph, Saurav Kadavath, Jackson Kernion, Tom Conerly, Sheer El-Showk, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Tristan Hume, Scott Johnston, Shauna Kravec, Liane Lovitt, Neel Nanda, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, Chris Olah, Ben Mann, Jared Kaplan
+1. [Learning to summarize with human feedback](https://arxiv.org/abs/2009.01325), NeurIPS 2020, \
+Nisan Stiennon, Long Ouyang, Jeff Wu, Daniel M. Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, Paul Christiano
+
+[1.5.3 Training]
+
+1. [ReLoop: "Seeing Twice and Thinking Backwards" via Closed-loop Training to Mitigate Hallucinations in Multimodal understanding](https://arxiv.org/abs/2507.04943), EMNLP 2025, \
+Jianjiang Yang, Yanshu li, Ziyan Huang
+1. [PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training](https://iclr.cc/virtual/2025/poster/28657), ICLR 2025, \
+Cong Chen, Mingyu Liu, Chenchen Jing, Yizhou Zhou, Fengyun Rao, Hao Chen, Bo Zhang, Chunhua Shen
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: They introduce HalFscore, a concept-level metric built from GPT-4o–extracted triplets and language graphs to measure accuracy & completeness, and propose PerturboLLaVA, a training scheme that injects adversarially perturbed texts to weaken language priors and force stronger image grounding.
+      
+      2. Cause: over-rely on pretrained language priors
+
+      3. Detection: HalFscore: extract subject–relation–object triplets with GPT-4o from both model captions and ground-truth dense captions, build concept graphs, then compare to mark hallucinations (extra/incorrect concepts) and omissions, computing precision/recall and their F-score.
+    </details>
+
+### [1.7 Internal Embeddings]
+1. [DAPE‑BR: Distance‑Aware Positional Encoding for Mitigating Object Hallucination in LVLMs](https://aclanthology.org/2025.findings-emnlp.459.pdf), EMNLP 2025, \
+Mingrui Xie, Tianxiang Xu, Qianhai Tang, Shanming Yao, Xiaofeng Zhang, Junliang Du
+1. [Steering LVLMs via Sparse Autoencoder for Hallucination Mitigation](https://arxiv.org/abs/2505.16146), EMNLP 2025, \
+Zhenglin Hua, Jinghan He, Zijun Yao, Tianxu Han, Haiyun Guo, Yuheng Jia, Junfeng Fang
+1. [On Epistemic Uncertainty of Visual Tokens for Object Hallucinations in Large Vision-Language Models](https://arxiv.org/abs/2510.09008), NeurIPS 2025, \
+Hoigi Seo, Dong Un Kang, Hyunjin Cho, Joohoon Lee, Se Young Chun
+1. [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering](https://arxiv.org/abs/2502.03628), ICML 2025, \
+Zhuowei Li, Haizhou Shi, Yunhe Gao, Di Liu, Zhenting Wang, Yuxiao Chen, Ting Liu, Long Zhao, Hao Wang, Dimitris N. Metaxas
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The authors propose VISTA, a training-free, inference-time method that (i) injects a Visual Steering Vector (VSV) into activations to reinforce image evidence and (ii) performs Self-Logits Augmentation (SLA) by ensembling late-layer (pre-final) logits to bias decoding toward semantically grounded tokens, improving factual grounding across decoding strategies.
+      
+      2. Cause: gradual visual information loss as language priors accumulate in the residual stream
+    </details>
+1. [Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering](https://iclr.cc/virtual/2025/poster/30013), ICLR 2025, \　
+Sheng Liu, Haotian Ye, James Y Zou
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: Visual & Textual Intervention (VTI)—a training-free, test-time latent-space steering method that pre-computes stable “directions” from (i) averaged embeddings of lightly masked images and (ii) pairs of non-hallucinated vs. hallucinated captions, then adds these vectors to all layers during decoding to curb hallucinations.
+      
+      2. Cause: visual encoder
+    </details>
+1. [Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations](https://iclr.cc/virtual/2025/poster/30724), ICLR 2025, \
+Nick Jiang, Anish Kachinthaya, Suzanne Petryk, Yossi Gandelsman
+1. [VASparse: Towards Efficient Visual Hallucination Mitigation via Visual-Aware Token Sparsification](https://arxiv.org/abs/2501.06553), CVPR 2025, \
+Xianwei Zhuang, Zhihong Zhu, Yuxin Xie, Liming Liang, Yuexian Zou
+1. [See What You Are Told: Visual Attention Sink in Large Multimodal Models](https://arxiv.org/abs/2503.03321), ICLR 2025, \　　　
+Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The paper identifies irrelevant high-attention visual tokens as sink tokens caused by massive hidden-state activations, then proposes VAR: (1) select image-centric heads using a visual non-sink ratio and (2) redistribute attention budget from sink tokens to non-sink visual tokens in those heads.
+      
+      2. Cause: visual attention sink
+    </details>
+1. [Don't Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models](https://arxiv.org/abs/2405.17820), ACL Findings 2025, \
+Sangmin Woo, Donguk Kim, Jaehyuk Jang, Yubin Choi, Changick Kim
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: The proposed AVISC method finds “blind tokens” by analyzing layer-wise image-attention, then performs contrastive decoding—contrasting logits with and without those tokens—to down-weight their influence at decoding time.
+      
+      2. Cause: visual attention sink
+    </details>
+1. [Mitigating hallucinations in large vision-language models by adaptively constraining information flow](https://arxiv.org/abs/2502.20750), AAAI 2025, \
+Jiaqi Bai, Hongcheng Guo, Zhongyuan Peng, Jian Yang, Zhoujun Li, Mohan Li, Zhihong Tian
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: propose AdaVIB, applying a Variational Information Bottleneck to inject stochastic noise that constrains irrelevant visual features, with an entropy-based controller that adapts the noise level to the smoothness of the visual–text similarity distribution.
+      
+      2. Cause: over-confidence in irrelevant visual features when soft visual tokens project to the word embedding space of LLM
+    </details>
+1. [ICT: Image-Object Cross-Level Trusted Intervention for Mitigating Object Hallucination in Large Vision-Language Models](https://arxiv.org/abs/2411.15268), CVPR 2025, \
+Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xuming Hu
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: ICT applies training-free, forward-pass interventions that add precomputed activation-shift vectors to selected attention heads—at both image-level and object-level—identified via headwise binary classifiers, to boost reliance on visual evidence without erasing helpful language priors.
+      
+      2. Cause: over-reliance on language priors
+    </details>
+
+### [1.10 Data]
+1. [Fact: Teaching mllms with faithful, concise and transferable rationales](https://arxiv.org/abs/2404.11129), ACM MM 2024, \
+Minghe Gao, Shuang Chen, Liang Pang, Yuan Yao, Jisheng Dang, Wenqiao Zhang, Juncheng Li, Siliang Tang, Yueting Zhuang, Tat-Seng Chua
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: Generate executable visual programs for image–question pairs and keep only those that yield the correct answer (faithfulness); convert execution traces into natural-language CoTs via AST-based pruning, symbolic merging, and logical bridging (conciseness); filter CoTs by their utility on end-to-end models (transferability); then distill labels+CoTs jointly into MLLMs.
+      
+      2. Cause: spurious correlations and include irrelevant in-context information
+    </details>
+1. [CIEM: Contrastive Instruction Evaluation Method for Better Instruction Tuning](https://arxiv.org/abs/2309.02301), NeurIPS 2023 Workshop, \
+   Hongyu Hu, Jiyuan Zhang, Minyi Zhao, Zhenbang Sun
+1. [Mllms-augmented visual-language representation learning](), arXiv 2023, \
+Y. Liu, K. Wang, W. Shao, P. Luo, Y. Qiao, M. Z. Shou, K. Zhang
+1. [Mitigating hallucination in large multi-modal models via robust instruction tuning](), ICLR 2023, \
+F. Liu, K. Lin, L. Li, J. Wang, Y. Yacoob, and L. Wang
+1. [Hallucidoctor: Mitigating hallucinatory toxicity in visual instruction data](), arXiv 2023, \
+Q. Yu, J. Li, L. Wei, L. Pang, W. Ye, B. Qin, S. Tang, Q. Tian, and Y. Zhuang
+
+### [1.11 RAG]
+1. [(ARA) Alleviating Hallucination in Large Vision-Language Models with Active Retrieval Augmentation](https://dl.acm.org/doi/full/10.1145/3742434), ACM TMC 2025, \
+Xiaoye Qu, Qiyuan Chen, Wei Wei, Jiashuo Sun, Daizong Liu, Jianfeng Dong
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: ARA triggers retrieval only when needed via confidence/mutual-information difficulty metrics, then performs coarse-to-fine retrieval (full image + grounded object crops), reranks retrieved image–text pairs by caption similarity, and fuses them during decoding to answer more faithfully.
+      
+      2. Cause: gradual visual information loss as language priors accumulate in the residual stream
+    </details>
+
+## [2. Applications]
+### [2.5 Biology]
 **CXR**
 1. [FactCheXcker: Mitigating Measurement Hallucinations in Chest X-ray Report Generation Models](https://arxiv.org/abs/2411.18672), CVPR 2025, \
 Alice Heiman, Xiaoman Zhang, Emma Chen, Sung Eun Kim, Pranav Rajpurkar
 
-### [2.7 Counterfactual Presupposition Questions](#content)
+### [2.7 Counterfactual Presupposition Questions]
 1. [Antidote: A Unified Framework for Mitigating LVLM Hallucinations in Counterfactual Presupposition and Object Perception](https://arxiv.org/abs/2504.20468), CVPR 2025, \
 Yuanchen Wu, Lu Zhang, Hang Yao, Junlong Du, Ke Yan, Shouhong Ding, Yunsheng Wu, Xiaoqiang Li
 
-### [2.8 Reasoning Models](#content)
+### [2.8 Reasoning Models]
 1. [Mitigating Hallucination in Multimodal Reasoning via Functional Attention Control](https://arxiv.org/abs/2510.10285), arXiv 2025, \
 Haolang Lu, Bolun Chu, WeiYe Fu, Guoshun Nan, Junning Liu, Minghui Pan, Qiankun Li, Yi Yu, Hua Wang, Kun Wang

@@ -8,6 +8,19 @@
 </table>
 
 ## [1. Detection](#content)
+1. [GLSim: Detecting Object Hallucinations in LVLMs via Global-Local Similarity](https://arxiv.org/abs/2508.19972), NeurIPS 2025, \
+Seongheon Park, Sharon Li
+1. [PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training](https://iclr.cc/virtual/2025/poster/28657), ICLR 2025, \
+Cong Chen, Mingyu Liu, Chenchen Jing, Yizhou Zhou, Fengyun Rao, Hao Chen, Bo Zhang, Chunhua Shen
+    <details> 
+      <summary>Digest</summary>
+      
+      1. Methodology: They introduce HalFscore, a concept-level metric built from GPT-4o–extracted triplets and language graphs to measure accuracy & completeness, and propose PerturboLLaVA, a training scheme that injects adversarially perturbed texts to weaken language priors and force stronger image grounding.
+      
+      2. Cause: over-rely on pretrained language priors
+
+      3. Detection: HalFscore: extract subject–relation–object triplets with GPT-4o from both model captions and ground-truth dense captions, build concept graphs, then compare to mark hallucinations (extra/incorrect concepts) and omissions, computing precision/recall and their F-score.
+    </details>
 1. [SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding](https://arxiv.org/abs/2506.08391), ICML 2025, \
 Woohyeon Park, Woojin Kim, Jaeik Kim, Jaeyoung Do
     <details> 
@@ -79,6 +92,20 @@ Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Ch
    Bohan Zhai, Shijia Yang, Chenfeng Xu, Sheng Shen, Kurt Keutzer, Chunyuan Li, Manling Li
 
 ## [2. Benchmark](#content)
+1. [HALLUCINOGEN: Benchmarking Hallucination in Implicit Reasoning within Large Vision Language Models](https://aclanthology.org/2025.uncertainlp-main.10/), EMNLP 2025, \
+Ashish Seth, Dinesh Manocha, Chirag Agarwal
+1. [Diving into Mitigating Hallucinations from a Vision Perspective for Large Vision-Language Models](https://arxiv.org/abs/2509.13836), EMNLP 2025, \
+Weihang Wang, Xinhao Li, Ziyue Wang, Yan Pang, Jielei Zhang, Peiyi Li, Qiang Zhang, Longwen Gao
+1. [Hallucination at a Glance: Controlled Visual Edits and Fine-Grained Multimodal Learning](https://arxiv.org/abs/2506.07227), NeurIPS 2025, \
+Tianyi Bai, Yuxuan Fan, Jiantao Qiu, Fupeng Sun, Jiayi Song, Junlin Han, Zichen Liu, Conghui He, Wentao Zhang, Binhang Yuan
+1. [Seeing is Believing? Mitigating OCR Hallucinations in Multimodal Large Language Models](https://arxiv.org/abs/2506.20168), NeurIPS 2025, \
+Zhentao He, Can Zhang, Ziheng Wu, Zhenghao Chen, Yufei Zhan, Yifan Li, Zhao Zhang, Xian Wang, Minghui Qiu
+1. [More Thinking, Less Seeing? Assessing Amplified Hallucination in Multimodal Reasoning Models](https://arxiv.org/abs/2505.21523), NeurIPS 2025, \
+Chengzhi Liu, Zhongxing Xu, Qingyue Wei, Juncheng Wu, James Zou, Xin Eric Wang, Yuyin Zhou, Sheng Liu
+1. [Discovering Compositional Hallucinations in LVLMs](https://openreview.net/pdf/96e01a47f57625c1c899b56cf6c1cbe0fd642344.pdf), NeurIPS 2025, \
+Sibei Yang, Ge Zheng, Jiajin Tang, Jiaye Qian, Hanzhuo Huang, Cheng Shi
+1. [MIRAGE: Assessing Hallucination in Multimodal Reasoning Chains of MLLM](https://arxiv.org/abs/2505.24238), NeurIPS 2025, \
+Bowen Dong, Minheng Ni, Zitong Huang, Guanglei Yang, Wangmeng Zuo, Lei Zhang
 1. [Visual hallucination detection in large vision-language models via evidential conflict](https://www.sciencedirect.com/science/article/abs/pii/S0888613X25001483), ICAR 2025, \
 Tao Huang, Zhekun Liu, Rui Wang, Yang Zhang, Liping Jing
 1. [ODE: Open-Set Evaluation of Hallucinations in Multimodal Large Language Models](https://arxiv.org/abs/2409.09318), CVPR 2025, \
